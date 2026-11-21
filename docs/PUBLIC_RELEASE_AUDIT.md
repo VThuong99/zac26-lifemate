@@ -1,5 +1,11 @@
 # Public release audit — November 21, 2026
 
+This records the initial source-only publication. The subsequent portfolio
+transformation works from that clean public history; its current verification
+scope is in [VALIDATION.md](VALIDATION.md). References below to the rejected
+`main` history mean the separate local research checkout, not GitHub's public
+default branch.
+
 The user explicitly selected the existing **public** repository
 `https://github.com/VThuong99/zac26-lifemate`. It is configured as `origin`.
 GitHub CLI authenticated as `VThuong99` and verified public visibility and
@@ -53,7 +59,7 @@ from the publication snapshot. No frozen original was changed or deleted.
 
 ## Publication boundary
 
-**The existing `main` history is not approved for public push.** Removing files
+**The original local research `main` history is not approved for public push.** Removing files
 in a later commit or adding ignore rules would still transmit their earlier
 blobs. The full research history must remain local. No force-push or history
 rewrite is part of this handover.

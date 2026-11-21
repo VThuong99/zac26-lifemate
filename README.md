@@ -1,143 +1,164 @@
-# LifeMate 2026 — source archive
+# LifeMate 2026 — Vietnamese Speech-to-Tool Agent
 
-Source-only archival snapshot for the team's Zalo AI Challenge 2026 LifeMate work.
-The competition is over for this team. **The frozen K48.46 RC2 solution achieved
-19.6 on the official Private Test leaderboard (user-reported).** No portal receipt
-was available for independent verification. No further training, optimization or
-experiments are part of this archive.
+LifeMate turns Vietnamese speech and conversation history into sequential tool
+calls. It combines fine-tuned speech recognition, a small adapted language model,
+and a deterministic execution controller that feeds tool observations back into
+planning. Built for the Zalo AI Challenge 2026, it explores a difficult engineering
+problem: translating noisy speech into the correct **state changes**, within an
+offline inference budget.
 
-LifeMate maps Vietnamese speech, conversation history and installed-tool context
-to actual tool executions. A request must produce the ordered calls and the final
-state hash from its own organizer `ToolEnv`. Local rules record a 30-second request
-limit, less than 5B LLM parameters, less than 6B total parameters, at most 16,384
-context tokens, and offline inference. RC2 actually uses **8,192 context tokens**,
-seven decision steps and seed `20261030`. Earlier A30 requirements and the later
-RTX 5090 Docker guide describe different hardware; see the qualifications below.
+This repository provides a runnable CPU demonstration, an installable core, and
+the preserved source of the submitted **K48.46 RC2** system. The developer core is
+an import-adapted extraction of real RC2 components; the complete submitted policy
+chain remains frozen in `archive/rc2/`. Model weights and organizer data are absent.
+The final official Private Test score was **19.6 (user-reported)**.
 
-## Final system
+## System architecture
 
-Current and historical audio pass through P34 epoch-2 Gipformer RNNT ASR, with
-scoped CTC/confidence and PhoWhisper corroboration. A P9/P19-adapted
-**Qwen3.5-4B Q8_0** planner emits strict JSON decisions. Two dynamically routed
-LoRA reviewers support write and terminal decisions. The composed agent handles
-reference lookup, temporal interpretation, conditions and continuation; the
-controller validates and executes calls through one split-matched `ToolEnv`.
+```mermaid
+flowchart TD
+    Audio[Current and historical Vietnamese audio] --> ASR[P34 fine-tuned Gipformer RNNT]
+    Evidence[Confidence / CTC / scoped PhoWhisper] --> ASR
+    ASR --> Context[Transcript + history + installed tool schemas]
+    Context --> Planner[P9/P19-adapted Qwen3.5-4B Q8_0]
+    Planner --> Policies[Composed policies + routed LoRA reviewers]
+    Policies --> Controller[Deterministic controller]
+    Controller --> SDK[Validate and call through one ToolEnv per request]
+    SDK -->|observations| Context
+    SDK --> Output[Actual ordered calls + final state hash]
+```
 
-The deployed behavior is the RC2 entrypoint and its complete imported policy
-chain, not just the older top-level `src/agent.py`.
-See [architecture](docs/ARCHITECTURE.md) and [final results](docs/FINAL_RESULTS.md).
+See the [execution path](docs/ARCHITECTURE.md) and
+[source map](docs/SOURCE_MAP.md) for the entrypoint, ASR sidecars, reviewer routing,
+and mounted SDK integration.
 
-## Repository map
+## Implemented capabilities
+
+- **Vietnamese ASR adaptation:** P34 fine-tunes Gipformer with RNNT and CTC losses;
+  epoch-2 ONNX inference is supplemented by scoped acoustic corroboration.
+- **Small-model adaptation:** sequential P9/P19 LoRA training of Qwen3.5-4B,
+  including gated real-ASR variants, followed by merge and GGUF conversion.
+- **Structured decisions:** JSON-constrained tool proposals, observed-ID grounding,
+  schema checks, and explicit finish decisions.
+- **Stateful execution:** validation before dispatch, actual call logs, deadline
+  checks, and one caller-owned environment per request. History is context;
+  previous tool effects are not replayed.
+- **Review and deployment:** Q8_0 serving through llama.cpp, dynamically selected
+  write/terminal adapters, offline Docker transport and CLI/notebook entrypoints.
+- **Execution-grounded evaluation:** local state-gated tool-call F1, trace analysis,
+  and preserved release parity checks with clearly stated limits.
+
+## Technical approach
+
+The system predicts one action at a time, then observes its result. This allows
+later arguments to use returned identifiers and makes failed calls visible to
+the planner. Deterministic control flow constrains execution; it does not make
+model decisions semantically correct.
+
+RC2 uses an **8,192-token context**, a **seven-decision budget**, and a **30-second
+request deadline**. Two LoRA reviewers share the decision backbone. The write
+reviewer uses DPO; the terminal reviewer uses SFT plus a reference-anchored
+first-token preference loss, not full-sequence DPO. Training implementations and
+restoration requirements are mapped in [training/](training/README.md).
+
+## Repository structure
 
 ```text
-README.md
-docs/
-  ARCHITECTURE.md          final runtime and historical training recipes
-  EXPERIMENT_HISTORY.md    evidence-based research summary
-  LESSONS_LEARNED.md       evaluation and reliability lessons
-  FINAL_RESULTS.md         score provenance, identities and limitations
-  ARCHIVAL_HANDOVER.md     preservation inventory and GitHub handover status
-  PUBLIC_RELEASE_AUDIT.md  audit findings and publication boundaries
-archive/
-  MANIFEST.json            exact copy list, original paths, sizes and SHA-256
-  FROZEN_RC2_SHA256.json    original RC2 tree integrity baseline
-  WORKSPACE_INVENTORY.json pre-archive workspace sizes and file counts
-  RESEARCH_INDEX.csv      local research report/catalog/ledger fingerprints
-  PUBLIC_EXCLUSIONS.json  data-bearing reports excluded from this snapshot
-  rc2/                    source-only RC2 copy, recipes and release receipts
-  host_validation/        original host identity/validation helper source
-  private_test/           original continuation and diagnostic helper source
-scripts/verify_archive.py  CPU-only archive integrity check
+src/lifemate/       Installable ASR, planner, agent, controller and local metrics
+training/          Training implementation map and restoration requirements
+configs/           RC2 parameter reference and exact source mapping
+examples/          Explicitly synthetic, in-memory demonstration
+scripts/           Source export, integrity and publication checks
+tests/             CPU tests of core behavior and frozen transport
+.github/workflows/ Python 3.11/3.12 lint, tests, checks and wheel smoke test
+docs/              Architecture, setup, evaluation, results and engineering notes
+archive/           Unchanged RC2 source, historical recipes and evidence
 ```
 
-This snapshot retains 363 exact source/configuration/evidence copies. Two parity
-reports containing organizer transcript text are excluded. The complete original
-archive, research history and uncommitted work remain local and are not ancestors
-of this publication branch. Inference code is unchanged.
+Start with [asr.py](src/lifemate/asr.py),
+[llm_planner.py](src/lifemate/llm_planner.py),
+[agent.py](src/lifemate/agent.py) and [controller.py](src/lifemate/controller.py).
+The final composed agent is
+[FinishSourceOrderAgent](archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/finish_consistent_review_e2e_v1/agent.py),
+selected by the frozen [RC2 transport](archive/rc2/overlay/predict.py).
 
-## Reproduce inference
+## Getting started
 
-These are reference instructions for a future authorized reproduction. They were
-**not executed** during archival. A Git checkout alone has no weights, native
-binaries, organizer SDK/data or complete training environment.
-
-Use the preserved original image at
-`../lifemate-final-20261116-rc2/artifacts/lifemate-k-k48.46-20261116-rc2.tar.gz`.
-Its SHA-256 is
-`e2aaa0a3c8f54e673f7700c443846a974be09257f3e28145ca9f0fb5076232f5`.
-First verify the local originals:
+Python **3.11 or 3.12**, Git and a Linux-compatible environment are sufficient for
+the lightweight workflow. The core has no third-party runtime dependencies.
 
 ```bash
-python3 -B scripts/verify_archive.py --originals-root .. --frozen-root ../lifemate-final-20261116-rc2
-cd ../lifemate-final-20261116-rc2/artifacts
-sha256sum -c lifemate-k-k48.46-20261116-rc2.tar.gz.sha256
-docker load -i lifemate-k-k48.46-20261116-rc2.tar.gz
+git clone https://github.com/VThuong99/zac26-lifemate.git
+cd zac26-lifemate
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -e '.[dev]'
+lifemate-demo
 ```
 
-Verify the loaded image's configuration and rootfs identities against
-[RELEASE.json](archive/rc2/artifacts/RELEASE.json) using the retained
-[image identity guide](archive/host_validation/IMAGE_IDENTITY.md).
-An image-store ID, OCI manifest digest and configuration digest are distinct;
-a matching tag alone is insufficient. Set `RC2_IMAGE_ID` to the verified loaded
-immutable ID. On a qualified GPU host with a fresh writable result directory:
+The demo sends scripted JSON through the real base planner, parser, agent and
+controller: list a synthetic light, use its observed ID, turn it on, then finish.
+Its output explicitly reports mock execution. **It performs no ASR, LLM inference,
+official SDK execution, or external side effects.** Its hash is a mock state hash.
+
+[Development](docs/DEVELOPMENT.md) covers extension points and package scope.
+[Real inference](docs/INFERENCE.md) requires separately authorized checkpoints,
+native binaries, the matching organizer SDK/data, and the preserved environment.
+A fresh clone is not a complete inference or training distribution.
+
+## Testing and evaluation
 
 ```bash
-: "${RC2_IMAGE_ID:?Set the verified immutable image ID}"
-: "${APPROVED_DATA_ROOT:?Set the authorized split parent directory}"
-RC2_OUTPUT=$(mktemp -d)
-docker run --rm --gpus '"device=0"' --network none --cpus 16 --memory 48g \
-  --memory-swap 48g --shm-size 2g --pids-limit 1024 \
-  --user "$(id -u):$(id -g)" --cap-drop ALL --security-opt no-new-privileges \
-  -v "$APPROVED_DATA_ROOT:/data:ro" -v "$RC2_OUTPUT:/result" \
-  "$RC2_IMAGE_ID" /bin/bash /code/predict.sh
+python -m unittest discover -s tests -v
+python scripts/test_archived_helpers.py
+python -m ruff check src tests scripts examples
+python scripts/verify_source_layout.py
+python scripts/verify_archive.py
+python scripts/check_repository.py
 ```
 
-The mounted root must contain a split directory with its matching JSONL, tool
-catalog, audio and `zaic_tools`. Use `--split SPLIT` after `predict.sh` if several
-splits exist. Omit `--limit` for a complete run. Output has exactly `id`,
-`tool_calls`, `state_hash`, and integer millisecond `time`. A failed request aborts
-the submitted batch entrypoint and leaves `.partial` plus diagnostic evidence.
-The separate Private Test continuation driver changes that batch behavior;
-it is not an equivalent replay of the submitted entrypoint.
+Tests use synthetic fixtures and mocked boundaries. They cover action validation,
+observation feedback, no replay of history, deadline handling, strict JSON,
+state-gated metrics, ASR input boundaries and RC2 partial-output failure behavior.
+Source checks verify that the extracted modules differ only in imports and that
+the archive still matches its manifest. CI also builds and tests an isolated wheel.
+See [evaluation methodology](docs/EVALUATION.md) for what these checks establish.
 
-RTX 5090 RC2 smoke/CLI/notebook parity receipts are preserved. Actual A30 execution
-was not established. Driver/CUDA compatibility must follow the recorded host
-workflow; do not silently replace the backend or enlarge context. The image is
-the strongest preserved inference artifact. Rebuilding from the source-only
-copy additionally requires the original base/rootfs, native and Python assets.
+## Competition results
 
-## Research and training reproduction
+| System | Split | Score | Provenance |
+|---|---|---:|---|
+| Frozen P19 baseline | Official Public | **40.63** | User-reported official result; historical project records |
+| P34 ASR update | Public | **44.69** | Reported result; historical project records |
+| Final K48.46 RC2 | Official Private | **19.6** | User-reported on November 21, 2026 |
 
-[Architecture](docs/ARCHITECTURE.md) maps each trained component to its recipe.
-The [historical 65-file training restoration receipt](archive/rc2/overlay/training_code/restored/lifemate/RESTORE_RECEIPT.json)
-and [training restoration record](archive/rc2/overlay/training_code/TRAINING_RESTORATION.md)
-retain historical implementations and limitations. Authorized audio, reviewed
-training inputs, base checkpoints and environment restoration remain necessary;
-no clean-machine retraining has been demonstrated. Original checkpoints remain
-in their existing locations.
+No independent portal receipt was available. The final Private Test JSONL used a
+**diagnostic continuation workaround**, as reported by the user. The original
+Docker batch could terminate when a prompt exceeded its 8,192-token context;
+continuation changed batch error handling. A completed host continuation receipt
+was unavailable for independent verification. These results do not establish a
+causal benefit for individual components. [Full provenance and failure analysis](docs/FINAL_RESULTS.md).
 
-Read [experiment history](docs/EXPERIMENT_HISTORY.md) and
-[lessons learned](docs/LESSONS_LEARNED.md) before interpreting local scores.
-Public scores 40.63 / 44.69 / 46.11 / 48.46 are historical user reports, not
-independently verified portal receipts. Local approximate scores are a separate
-evidence class.
+## Limitations and lessons learned
 
-## Archive checks and sharing
+The final Private result was disappointing. Local improvements on repeatedly
+inspected development cohorts did not establish generalization. Valid JSON,
+reviewer agreement and successful tool calls did not guarantee correct intent.
+The context-overflow incident exposed missing headroom and request-level failure
+isolation. Full retraining, a fresh-clone GPU run, and actual A30 execution remain
+unverified. The implementation is a competition engineering project, not a
+production-ready assistant. [Lessons learned](docs/LESSONS_LEARNED.md).
 
-```bash
-python3 -B scripts/verify_archive.py
-```
+## References and acknowledgments
 
-This checks copied bytes only; it runs no model, training or ToolEnv. Additional
-lightweight validation and remaining handover requirements are recorded in
-[ARCHIVAL_HANDOVER.md](docs/ARCHIVAL_HANDOVER.md).
+The project builds on Qwen, Gipformer/Icefall, PhoWhisper, Sherpa ONNX,
+llama.cpp, and the organizer's ToolEnv interface. Pinned revisions, upstream
+references and notices are retained in the
+[training record](archive/rc2/overlay/training_code/README.md),
+[model manifest](archive/rc2/overlay/manifests/models.json) and
+[third-party notices](archive/rc2/overlay/licenses/).
 
-The publication destination is the existing public repository
-`https://github.com/VThuong99/zac26-lifemate`. This source-only publication branch
-contains no original research-history ancestors. The
-[public-release audit](docs/PUBLIC_RELEASE_AUDIT.md) records the restricted
-content excluded from this snapshot. On November 21, 2026, the user confirmed
-authority to publicly release the reviewed team/company source snapshot at
-`0cb8a6b8a732045c53a583bcadd07839a82c49da`. No blanket open-source license is
-granted here. Never add organizer datasets, audio, weights, Docker archives,
-credentials or assets with unresolved redistribution rights.
+Public source visibility does not grant a blanket open-source license. No new
+LICENSE is asserted. Organizer data, weights, image archives and original
+research-history blobs remain excluded. See [publication boundaries](docs/PUBLIC_RELEASE_AUDIT.md)
+and the [archival handover](docs/ARCHIVAL_HANDOVER.md) for detailed records.

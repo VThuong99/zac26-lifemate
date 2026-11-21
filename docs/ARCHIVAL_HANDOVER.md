@@ -10,6 +10,11 @@ manifest metadata; the reviewed source files remain unchanged.
 
 ## Publication contents
 
+This section describes the initial 379-file public snapshot. The later portfolio
+layout adds a traceable developer package, synthetic tests/demo and documentation
+as normal descendants of public `main`. The original archive remains unchanged;
+see the [current source map](SOURCE_MAP.md) and [validation record](VALIDATION.md).
+
 The [README](../README.md) maps the source tree. The exact 363 copied files are
 listed in [MANIFEST.json](../archive/MANIFEST.json). They preserve final inference,
 recovered training implementations/recipes, Docker definitions, host validation,

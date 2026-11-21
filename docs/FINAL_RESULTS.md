@@ -9,11 +9,11 @@ workspace. No score was recomputed during archival.
 
 | System / evaluation | Score | Evidence class |
 |---|---:|---|
-| P19 Public Test | 40.63 | Historical user report; no portal receipt inspected. |
+| Frozen P19 baseline, official Public Test | 40.63 | User-reported official result; historical records agree; no portal receipt inspected. |
 | P34 Public Test | 44.69 | Historical user report; no portal receipt inspected. |
 | Composed Q4 Public Test | 46.11 | Historical user report; no portal receipt inspected. |
 | K Public Test | 48.46 | Historical user report; saved K output identity verified locally. |
-| K48.46 RC2 Private Test | **19.6** | User report in the final archival request. |
+| K48.46 RC2, official Private Test | **19.6** | User-reported on November 21, 2026. |
 | K local 95 / 200 cohorts | 64.72 / 70.30 | Approximate exposed-development reconstructions; not official scores. |
 | P34 local 95 / 200 cohorts | 58.29 / 56.30 | Same historical reconstruction comparison; not independent generalization. |
 
@@ -72,6 +72,11 @@ were never resolved by a parity pass.
 
 ## Private Test interruption and continuation
 
+The user reports that the final Private Test JSONL used the diagnostic
+continuation workaround. This is an explicit report of how the final output was
+obtained, not an independently verified host receipt. The public source still
+preserves the original batch-abort behavior.
+
 The November 20 local investigation records **625 inputs**, an **8,192-token**
 configured context and a **host-reported 8,209-token rejected prompt**. The next
 request after the reported 323-row prefix was `private_0327`, index 323. Its static
@@ -110,6 +115,8 @@ Semantic errors include wrong entities, conditions, numbers, omitted goals and
 unsupported consequential actions. Local scores and reviewer agreement did not
 eliminate them. The configured context can overflow before the rule's 16K maximum;
 the rule does not silently change the submitted 8K configuration. Full training
-reproduction, authorized transfer locations, company/organizer redistribution
-rights and actual A30 validation remain unresolved. See
+reproduction, authorized transfer locations, checkpoint/organizer asset redistribution
+rights and actual A30 validation remain unresolved. The reviewed public source
+release was authorized separately; that does not grant redistribution of the
+missing assets. See
 [handover status](ARCHIVAL_HANDOVER.md).

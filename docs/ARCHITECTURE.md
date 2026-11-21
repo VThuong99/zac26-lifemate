@@ -1,4 +1,12 @@
-# Final K48.46 RC2 architecture
+# System architecture
+
+For a file-by-file reading path, start with the [source map](SOURCE_MAP.md).
+The installable [core](../src/lifemate/) exposes the original ASR/planner/controller
+components with import-only relocation. Its [mock demo](../examples/README.md)
+exercises the base loop. The submitted K system additionally composes the
+policies, acoustic sidecars and reviewers described below; it continues to use
+the unchanged archived modules. See [development](DEVELOPMENT.md) and
+[real inference](INFERENCE.md) for the two environments.
 
 This document describes the frozen November 16 RC2 implementation. Archived
 RC1/P34 documents retain their historical claims; the
@@ -74,7 +82,9 @@ state are supplied to the planner.
 
 ## Historical training recipes
 
-These are archival descriptions, not instructions to resume training now.
+These are historical recipes, not a claim of clean-machine training reproduction.
+The [training map](../training/README.md) links each implementation and provides
+a checked public-source export into an isolated study workspace.
 Exact implementations/configurations are retained under
 [training_code](../archive/rc2/overlay/training_code/README.md), including its
 `historical/`, `p19_generation_snapshot/` and `restored/lifemate/` trees.
