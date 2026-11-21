@@ -1,0 +1,30 @@
+# Descriptive record of the submitted runtime, not a config consumed by RC2.
+# RC2 obtains these constants from its frozen Python/server launch code.
+[release]
+name = "K48.46 RC2"
+entrypoint = "archive/rc2/overlay/predict.py"
+worker_arm = "C"
+
+[planner]
+model = "P9/P19-adapted Qwen3.5-4B"
+quantization = "Q8_0"
+context_tokens = 8192
+seed = 20261030
+temperature = 0
+max_decisions = 7
+request_deadline_seconds = 30
+prompt_cache = false
+thinking = false
+
+[asr]
+primary = "P34 epoch-2 Gipformer RNNT"
+sample_rate_hz = 16000
+channels = 1
+decoder = "greedy_search"
+threads = 4
+corroboration = ["ONNX confidence", "P34 PyTorch CTC", "PhoWhisper-medium"]
+
+[reviewers]
+write_adapter_id = 0
+terminal_adapter_id = 1
+default_scale = 0.0

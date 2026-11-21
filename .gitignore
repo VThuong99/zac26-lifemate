@@ -72,3 +72,11 @@ unsloth_compiled_cache/
 *.bak
 *.tmp
 *.swp
+
+# Local packaging and test artifacts.
+build/
+dist/
+*.egg-info/
+.coverage
+htmlcov/
+.tox/

@@ -1,0 +1,98 @@
+{
+  "format": 1,
+  "public_base_commit": "5799264cc7fa4594b890e81600a959c9fbaf2be5",
+  "transformation": "Only from-import namespace and module-name relocation; all other source bytes are preserved.",
+  "import_modules": {
+    "agent": "agent",
+    "controller": "controller",
+    "decision_parser": "decision_parser",
+    "llm_client": "llm_client",
+    "llm_planner": "llm_planner",
+    "planning_policy": "planning_policy",
+    "tool_catalog": "tool_catalog",
+    "tool_schema_formatter": "tool_schema_formatter",
+    "tool_call_matcher": "tool_call_matcher",
+    "evaluate": "evaluation",
+    "p10_audio": "asr",
+    "p10_metrics": "asr_metrics",
+    "p11_phowhisper": "phowhisper",
+    "p14_formatting": "text_normalization"
+  },
+  "files": [
+    {
+      "source": "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/agent.py",
+      "target": "src/lifemate/agent.py",
+      "source_sha256": "4f1bafa2cf6dddae24ff689951699b2d0dcecf593f29734a576a6e0d147e887c"
+    },
+    {
+      "source": "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/controller.py",
+      "target": "src/lifemate/controller.py",
+      "source_sha256": "c8929fb32336c80f42704b11906a9be278f87e176a254f4a4e79a263fe20176e"
+    },
+    {
+      "source": "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/decision_parser.py",
+      "target": "src/lifemate/decision_parser.py",
+      "source_sha256": "801c067d117e226df2c97ff84d59626028d30aad119d83d7aff6ec63ac0f2d12"
+    },
+    {
+      "source": "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/llm_client.py",
+      "target": "src/lifemate/llm_client.py",
+      "source_sha256": "418bf06a427a4e889727d666c002b374adff7c0267905b12c5c4a07f03b58c3c"
+    },
+    {
+      "source": "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/llm_planner.py",
+      "target": "src/lifemate/llm_planner.py",
+      "source_sha256": "0097a6e18774d13095615ce1a5067366c50fdcd4fba734374a9b054073e356d3"
+    },
+    {
+      "source": "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/planning_policy.py",
+      "target": "src/lifemate/planning_policy.py",
+      "source_sha256": "e90acddbf6388656179128dfb58291c3b9fe9d6301dd041ff470e8725082888e"
+    },
+    {
+      "source": "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/tool_catalog.py",
+      "target": "src/lifemate/tool_catalog.py",
+      "source_sha256": "ed0026c6f6f8804ab3a722a3150eb96581a0eb9c52f8a40eb3f593961e459fce"
+    },
+    {
+      "source": "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/tool_schema_formatter.py",
+      "target": "src/lifemate/tool_schema_formatter.py",
+      "source_sha256": "a1b84efe9461d8d8ae2951640e7eb2be5ad0c9b7bbdb4ab97189c0159761dbfb"
+    },
+    {
+      "source": "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/tool_call_matcher.py",
+      "target": "src/lifemate/tool_call_matcher.py",
+      "source_sha256": "0bfd2e4537594ba103462dc9cae5ce07dbfa0b2a6d16936b4e453828cb3e55b9"
+    },
+    {
+      "source": "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/evaluate.py",
+      "target": "src/lifemate/evaluation.py",
+      "source_sha256": "3a3b69f3125a70a84db4ada7d938570fe87fe7893de8a24cd13ee68c11901891"
+    },
+    {
+      "source": "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/p10_audio.py",
+      "target": "src/lifemate/asr.py",
+      "source_sha256": "86dc4bdbbefdb1d1e33ccc974f56ddfd16e418c11a4729130dad62ea619e341f"
+    },
+    {
+      "source": "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/p10_metrics.py",
+      "target": "src/lifemate/asr_metrics.py",
+      "source_sha256": "efef1087b560ef645d491bcab322408b0262c0e301484f74c89eb0de70245a0f"
+    },
+    {
+      "source": "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/p11_phowhisper.py",
+      "target": "src/lifemate/phowhisper.py",
+      "source_sha256": "9de56e5ca2c2c6283d14f3a2f78d31fd0883e745d2800f781445560e393a77c4"
+    },
+    {
+      "source": "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/p14_formatting.py",
+      "target": "src/lifemate/text_normalization.py",
+      "source_sha256": "f7b38dc791ec17059f7464aee43d3decf1f8f2998ff0d2c9cbd150cf843433d6"
+    },
+    {
+      "source": "archive/rc2/overlay/runtime/lifemate/k_schema_helpers.py",
+      "target": "src/lifemate/schema_validation.py",
+      "source_sha256": "054eba91ababe54e6b459c66719d3703d7a9130a0fdfd36e2f8039a77ce73915"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68,<85"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lifemate-engineering"
+version = "0.1.0"
+description = "Vietnamese audio-to-tool agent: portable engineering core and frozen RC2 reference"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["ruff==0.11.13"]
+
+[project.scripts]
+lifemate-demo = "lifemate.demo:main"
+
+[project.urls]
+Repository = "https://github.com/VThuong99/zac26-lifemate"
+Documentation = "https://github.com/VThuong99/zac26-lifemate/tree/main/docs"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["lifemate*"]
+
+[tool.ruff]
+target-version = "py311"
+extend-exclude = ["archive"]
+
+[tool.ruff.lint]
+# Catch syntax, undefined names and invalid control flow without reformatting
+# historical implementations whose only adaptation is their import namespace.
+select = ["E9", "F63", "F7", "F82"]
