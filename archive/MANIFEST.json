@@ -1,0 +1,1823 @@
+{
+  "format": 1,
+  "created_date": "2026-11-21",
+  "purpose": "Source-only public-release candidate; excludes organizer data and original research history; source ownership approval pending",
+  "workspace_layout": "Original paths are relative to the workspace containing lifemate/ and its sibling release directories.",
+  "files": {
+    "archive/rc2/overlay/Dockerfile": {
+      "source": "lifemate-final-20261116-rc2/overlay/Dockerfile",
+      "sha256": "8a5754272d05ff5993a59f8c83b1904f452b657faace20e39e76209a37a0aa3d",
+      "bytes": 1986
+    },
+    "archive/rc2/overlay/FINAL_CANDIDATE.md": {
+      "source": "lifemate-final-20261116-rc2/overlay/FINAL_CANDIDATE.md",
+      "sha256": "ca9ae3136a8ad1b1a13d730604d16b8ae74b21b4ba76dbc3b2c4b1ec91073037",
+      "bytes": 1067
+    },
+    "archive/rc2/overlay/README.md": {
+      "source": "lifemate-final-20261116-rc2/overlay/README.md",
+      "sha256": "44fc4aeb5afcd235b3bebc0d3ad082b76cbfb80a2e84f73fb351e723b6545df5",
+      "bytes": 6422
+    },
+    "archive/rc2/overlay/apt-packages.install.txt": {
+      "source": "lifemate-final-20261116-rc2/overlay/apt-packages.install.txt",
+      "sha256": "8a182fadc321e567f1ef9da072471bdeb3656a8e727deb8d73f06d76d79333de",
+      "bytes": 220
+    },
+    "archive/rc2/overlay/bootstrap_rootfs.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/bootstrap_rootfs.py",
+      "sha256": "70439ee49eb6e66ddbb2843f46a09b05724d30c2a95089166404ff1b0312b805",
+      "bytes": 3283
+    },
+    "archive/rc2/overlay/build.sh": {
+      "source": "lifemate-final-20261116-rc2/overlay/build.sh",
+      "sha256": "a2cc86f2b64a28bb5cbebfd1046ee05ad91dae52edbb6258e251107ba1c800c5",
+      "bytes": 591
+    },
+    "archive/rc2/overlay/build_backend.sh": {
+      "source": "lifemate-final-20261116-rc2/overlay/build_backend.sh",
+      "sha256": "47efb35262cb984e2f3a569a2e9dd7e303779ad22834d4647b20dd190e3b1c9f",
+      "bytes": 638
+    },
+    "archive/rc2/overlay/dockerignore.template": {
+      "source": "lifemate-final-20261116-rc2/overlay/dockerignore.template",
+      "sha256": "e2430275d4585859370428baf1c6150170906ca5ace3fc19cf31fe02fad7be44",
+      "bytes": 438
+    },
+    "archive/rc2/overlay/docs/COMPLIANCE.md": {
+      "source": "lifemate-final-20261116-rc2/overlay/docs/COMPLIANCE.md",
+      "sha256": "f1c3dc36f12c7e0eb8a65960efbf081ae61be6084f272dd59a61f2a701fdfc08",
+      "bytes": 10011
+    },
+    "archive/rc2/overlay/docs/PUBLICATION_AUDIT.md": {
+      "source": "lifemate-final-20261116-rc2/overlay/docs/PUBLICATION_AUDIT.md",
+      "sha256": "276845d984cd7aaf4456329b7239b208fea5e7eb13278dda7da599618063f333",
+      "bytes": 4095
+    },
+    "archive/rc2/overlay/docs/TRANSFER.md": {
+      "source": "lifemate-final-20261116-rc2/overlay/docs/TRANSFER.md",
+      "sha256": "167121394a73114eb296a1a92b670879016c1a8317ad1a81017572e17ee77917",
+      "bytes": 6016
+    },
+    "archive/rc2/overlay/export_image.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/export_image.py",
+      "sha256": "3af3a4b6cf2ba719bf1aada7d1c15b1733771fb72fe6bf50d733af940bfd30bb",
+      "bytes": 6985
+    },
+    "archive/rc2/overlay/licenses/Gipformer-model-card.md": {
+      "source": "lifemate-final-20261116-rc2/overlay/licenses/Gipformer-model-card.md",
+      "sha256": "187f8b7717e37f869aa1bb75d25d5e09b2d220178d8e171f1461e88326fe92f5",
+      "bytes": 7077
+    },
+    "archive/rc2/overlay/licenses/PhoWhisper-model-card.md": {
+      "source": "lifemate-final-20261116-rc2/overlay/licenses/PhoWhisper-model-card.md",
+      "sha256": "736bfe608f0cf60fd942fbf734b10e0df70659ab5b9504f8bf2e194365e0c0a1",
+      "bytes": 1021
+    },
+    "archive/rc2/overlay/licenses/icefall-LICENSE": {
+      "source": "lifemate-final-20261116-rc2/overlay/licenses/icefall-LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    "archive/rc2/overlay/licenses/llama.cpp-LICENSE": {
+      "source": "lifemate-final-20261116-rc2/overlay/licenses/llama.cpp-LICENSE",
+      "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d",
+      "bytes": 1078
+    },
+    "archive/rc2/overlay/manifests/icefall.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/manifests/icefall.json",
+      "sha256": "594d86af480b9f16a746999bdb992c6346ae7e8faf4fdc61434bdcfd6333a645",
+      "bytes": 10520
+    },
+    "archive/rc2/overlay/manifests/models.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/manifests/models.json",
+      "sha256": "072bf859f6a48ef1df38e811b049db9b45c2dca7cbbce2966d3bd3dbbefdcdaa",
+      "bytes": 14924
+    },
+    "archive/rc2/overlay/manifests/native.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/manifests/native.json",
+      "sha256": "c1b699ba083bfc7f22746db17cb1cd29745d5dba31c309b1d8d008a53f010520",
+      "bytes": 11411
+    },
+    "archive/rc2/overlay/manifests/python-distributions.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/manifests/python-distributions.json",
+      "sha256": "045779f038ec4fa8329814294ef6f1e1a256f7abdaec2145777ef05ec483f94a",
+      "bytes": 66777
+    },
+    "archive/rc2/overlay/manifests/python-exclusions.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/manifests/python-exclusions.json",
+      "sha256": "d48d8d8b6879bef001b4d609a493ecf01777912f5b80423314206278d1556729",
+      "bytes": 452
+    },
+    "archive/rc2/overlay/manifests/quarantined-sm80.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/manifests/quarantined-sm80.json",
+      "sha256": "90df5b9dc41fe6d5b064f3a62ae2987e83c4b5410117bb05727f766a6d8ca8f8",
+      "bytes": 5153
+    },
+    "archive/rc2/overlay/manifests/source-release.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/manifests/source-release.json",
+      "sha256": "e25b22391960f69dff98caad0edb33247642b1709f0bfa1574fd113de12ddad4",
+      "bytes": 57159
+    },
+    "archive/rc2/overlay/manifests/source.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/manifests/source.json",
+      "sha256": "1a3976d528fa12ce63cba80f4798a915cd655690bdcc4d40c8b93b6081c0830b",
+      "bytes": 64971
+    },
+    "archive/rc2/overlay/manifests/system-packages.txt": {
+      "source": "lifemate-final-20261116-rc2/overlay/manifests/system-packages.txt",
+      "sha256": "a132e0b8fd25729b592898d4f9ef83cb7cdae9d6958aafd290c94f66c3391ecd",
+      "bytes": 7956
+    },
+    "archive/rc2/overlay/predict.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/predict.py",
+      "sha256": "7b219f66b4887a364da99f1809eab2485ea6e398f5937d524a06c1c930bfcba1",
+      "bytes": 13053
+    },
+    "archive/rc2/overlay/predict.sh": {
+      "source": "lifemate-final-20261116-rc2/overlay/predict.sh",
+      "sha256": "7d0ef3184d0e1f5b4695742d7df1726a6a4768f4f5a5d3faa3e48cb33be4c96c",
+      "bytes": 303
+    },
+    "archive/rc2/overlay/predict_notebook.ipynb": {
+      "source": "lifemate-final-20261116-rc2/overlay/predict_notebook.ipynb",
+      "sha256": "cab25f158a230d04b1fc99e2d0224a2eb37274fb47ff09af8e7f2698aedb8901",
+      "bytes": 2307
+    },
+    "archive/rc2/overlay/prepare_rootfs.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/prepare_rootfs.py",
+      "sha256": "ec9ef184ce50a6602b271ee35c4abd71210026958e5dd86477806d8910b5fbe9",
+      "bytes": 2636
+    },
+    "archive/rc2/overlay/requirements.txt": {
+      "source": "lifemate-final-20261116-rc2/overlay/requirements.txt",
+      "sha256": "c7d5d3c3f2bae3ab1a7035b02d4af20763d0915367420011314d93a9a2f914e1",
+      "bytes": 3254
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/adapter_read_before_write_v1/tool_kinds.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/adapter_read_before_write_v1/tool_kinds.json",
+      "sha256": "b877640b06bc7c0651388624179ab8c4620113dc15031b45da4a7e8ba90472af",
+      "bytes": 4827
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/anchored_first_error_e2e_v1/run.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/anchored_first_error_e2e_v1/run.py",
+      "sha256": "15de1e7825050242a0ec857e43ffe93bc9ae2298f7ace25dbf0d0e8f212877de",
+      "bytes": 6679
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/asr_entropy_substitution_v1/policy.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/asr_entropy_substitution_v1/policy.py",
+      "sha256": "6a4958240d207dd839ecd41784c245ddac053113c9363d14f84121769d550f70",
+      "bytes": 2147
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/asr_logit_ensemble_v1/ensemble.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/asr_logit_ensemble_v1/ensemble.py",
+      "sha256": "da90a6cf395521656f09b065e1a3d49ac3ff48bef5a1ccb6e9c0d134dcd72f2c",
+      "bytes": 2949
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/asr_token_confidence_v1/confidence.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/asr_token_confidence_v1/confidence.py",
+      "sha256": "3dd13815ba0bfc97ff67c79b3e1972210fc2863f088df1853be18399e876dab9",
+      "bytes": 1502
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/bill_threshold_workflow_v3/guard.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/bill_threshold_workflow_v3/guard.py",
+      "sha256": "0a55c22151ad5abc14d06ceca7fc2d4a968c98f7bccbc52ab249e0c0e8feaeaa",
+      "bytes": 7034
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/calendar_relative_update_v3/guard.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/calendar_relative_update_v3/guard.py",
+      "sha256": "23612e58cf8e38819e7119f4814d21bd696e86d3b2ed37ec92decfec7e041e11",
+      "bytes": 1489
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/calendar_relative_update_v3/observation.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/calendar_relative_update_v3/observation.py",
+      "sha256": "6aab7aedc22e7b786d6d91e93099bdc103d21b88caff864343d6a19fee0b6e89",
+      "bytes": 3493
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/calendar_scope_composition_v1/agent.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/calendar_scope_composition_v1/agent.py",
+      "sha256": "cfd8689de83ac1e50ae198da2741d5c1ea65b8bc9017f4ff9ddd71bfc255c9fe",
+      "bytes": 9356
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/colloquial_clock_candidates_v2/compose.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/colloquial_clock_candidates_v2/compose.py",
+      "sha256": "8c0590ca5bd09a2fd01706e0fe317ba1b6d044fbc2e20b1690ceffeb98d7ce0c",
+      "bytes": 1956
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/colloquial_clock_scope_v4/compose.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/colloquial_clock_scope_v4/compose.py",
+      "sha256": "53c937d4d4b56fe83f0fbd1a0b39ea2bc33db46592badb23b9515688004c9c6b",
+      "bytes": 1695
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/combined_temporal_v1/combined.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/combined_temporal_v1/combined.py",
+      "sha256": "38f4f97b5ca848b881942dc2eb25d39db38f634f64d027c336f0ec8fd50f90e4",
+      "bytes": 747
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/conditional_precondition_review_v1/policy.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/conditional_precondition_review_v1/policy.py",
+      "sha256": "a7b8316fff6b960c802daa22566a4fa5d10b37669c92ff2a7ae70ab39d9e93ff",
+      "bytes": 2686
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/conditional_terminal_pref_flight_e2e_v1/safety_gate.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/conditional_terminal_pref_flight_e2e_v1/safety_gate.py",
+      "sha256": "d5ba1d917edd858f4001185207f29d47012125543c27b0c0ad64c544e149ba55",
+      "bytes": 1263
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/conditional_terminal_pref_flight_e2e_v1/worker.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/conditional_terminal_pref_flight_e2e_v1/worker.py",
+      "sha256": "6047cb849d00890e3b459216c869191272d1fcaa0a2798467c18b63b4a12d722",
+      "bytes": 13989
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/contextual_route_time_scope_v3/compose.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/contextual_route_time_scope_v3/compose.py",
+      "sha256": "b239de26db84ccbfec6e4514d27db069357e87e7e2fd3ff7ab22e1d0ad87090a",
+      "bytes": 3615
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/corroborated_digit_evidence_q8_v1/compose.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/corroborated_digit_evidence_q8_v1/compose.py",
+      "sha256": "d9c5aec90824a2ac30cc141d467862faf632c6463110fa96b2a42ade11b4b1f0",
+      "bytes": 1162
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/corroborated_digit_evidence_q8_v1/runtime.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/corroborated_digit_evidence_q8_v1/runtime.py",
+      "sha256": "5f5f8e939ce12dd40c051bd2fd4bfef322a02bfe39c695489e32704a9327a32e",
+      "bytes": 1621
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/ctc_entropy_corroboration_v1/policy.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/ctc_entropy_corroboration_v1/policy.py",
+      "sha256": "8fe8b2c1dcf0873ccae00b09a39ac90890c5f3365962d49f04e21d7e8f51c022",
+      "bytes": 1549
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/ctc_entropy_corroboration_v1/runtime.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/ctc_entropy_corroboration_v1/runtime.py",
+      "sha256": "4cd70219194b70295e3b6b2d0bff0375940e6fc04755b07fb314b8bd8742f10a",
+      "bytes": 5436
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/date_anchor_conditional_v2/anchor.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/date_anchor_conditional_v2/anchor.py",
+      "sha256": "dcd58e6827e430db6efdf59631c84b7c2eed802e3027a31201a57a38d0831c29",
+      "bytes": 590
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/date_anchor_v1/anchor.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/date_anchor_v1/anchor.py",
+      "sha256": "f5dea7ba6882267d2d4307dff927422af0417e5c4ed1080de98548ebde6a45c5",
+      "bytes": 1899
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/delivery_branch_stop_v1/guard.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/delivery_branch_stop_v1/guard.py",
+      "sha256": "0d278dcf043f0d4364d098fcdc2048504096db4eaf4981bc958becb401e7efc0",
+      "bytes": 1863
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/delivery_composed_v1/agent.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/delivery_composed_v1/agent.py",
+      "sha256": "ef23bd629780f612fbdfc340c762e92e3c7bc3611495229fd4646e84e334096c",
+      "bytes": 6058
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/delivery_condition_observation_v1/observation.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/delivery_condition_observation_v1/observation.py",
+      "sha256": "26c66ea591f20f7ec7c25b7ba720b2652bf01ac0a4ac0980bfded541a925265a",
+      "bytes": 3280
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/dpo_write_abstention_v2/policy.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/dpo_write_abstention_v2/policy.py",
+      "sha256": "7adc1b93ea8b5a2296dba482b9198b9b4e0492943b9c8369d30b1beaa7275bc1",
+      "bytes": 1458
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/finish_consistent_review_e2e_v1/agent.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/finish_consistent_review_e2e_v1/agent.py",
+      "sha256": "fbc6e6214ef8cd6c8cea5f3e2c496e7e8368f0e02f74409ec9c96a00f11fec6a",
+      "bytes": 11527
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/finish_consistent_review_e2e_v1/compose.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/finish_consistent_review_e2e_v1/compose.py",
+      "sha256": "e00ecc1188ac84d18c3479f0fa0c150603c6d0c913dc7f6a8a7af89b1bb63902",
+      "bytes": 43
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/finish_consistent_review_e2e_v1/policy.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/finish_consistent_review_e2e_v1/policy.py",
+      "sha256": "30dba0ebf9b85ef75cf386fc11555db8a59da790c52d3568c6c2b22a365a7b99",
+      "bytes": 632
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/finish_verbatim_recap_v1/transform.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/finish_verbatim_recap_v1/transform.py",
+      "sha256": "08ba2298f29dee9326881a0b0026122721ce96587fad13dab8940c44923235a8",
+      "bytes": 488
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/gold_branch_reminder_guard_v1/guard.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/gold_branch_reminder_guard_v1/guard.py",
+      "sha256": "7d86bf067001b1da4b3e0bd1eb84b2aaeed9dd72321d73b309b903e3aee31ada",
+      "bytes": 2938
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/gold_price_comparison_v1/observation.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/gold_price_comparison_v1/observation.py",
+      "sha256": "03d5f973e7f9ae53d4e6802d608632ac4ef791027491e0e06b853b01a6e422e3",
+      "bytes": 3119
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/grounded_clarification_v4/agent.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/grounded_clarification_v4/agent.py",
+      "sha256": "6b50fdb644ccd1d1fdbbce8ceee8a16c05f64a31e339019d11d071095deb6e8d",
+      "bytes": 8559
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/grounded_clarification_v4/policy.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/grounded_clarification_v4/policy.py",
+      "sha256": "257879fd7c30fa8f5af775a412542221ec952d2b46553b78cda92451247d27bf",
+      "bytes": 4252
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/library_composed_v1/agent.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/library_composed_v1/agent.py",
+      "sha256": "01a8c17597a2eb6197ccf481c0fd470dc4c245629f887b068e3bd2bfb71eca83",
+      "bytes": 5704
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/library_history_binding_v1/binding.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/library_history_binding_v1/binding.py",
+      "sha256": "a5c406600fd4e379913386ea7b96916c76224fbce82f4892e347fb1fb7480701",
+      "bytes": 2387
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/light_fan_exception_guard_v1/guard.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/light_fan_exception_guard_v1/guard.py",
+      "sha256": "cc635f10b0ea3a7ca525901d036a89404b5deaffffa07616ceb1c226acc6b78f",
+      "bytes": 3847
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/light_fan_exception_guard_v2/guard.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/light_fan_exception_guard_v2/guard.py",
+      "sha256": "46ed8e1c690618f8d092afc87180e3e40546d5eed919299276cf4e27c9deb5c2",
+      "bytes": 4831
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/max_entropy_asr_e2e_v1/runtime.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/max_entropy_asr_e2e_v1/runtime.py",
+      "sha256": "eeaa0fae2ff86345e1775c6a8b86181a77600d5006b960096514f45660fe7766",
+      "bytes": 2153
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/max_subword_entropy_consensus_v1/policy.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/max_subword_entropy_consensus_v1/policy.py",
+      "sha256": "01ddad749b1bca6721aabea9f788db86f3b30da1c31b8fc2fbbbf848e61cd9e0",
+      "bytes": 3205
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/message_content_schema_v1/compose.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/message_content_schema_v1/compose.py",
+      "sha256": "6f7cd4e3e381cca1b7cccb5f386b03cdd57d4a2f3f46fefc22abc43a436a0afd",
+      "bytes": 864
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/missed_callback_ambiguity_v1/guard.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/missed_callback_ambiguity_v1/guard.py",
+      "sha256": "c2ccc86fd2b339d0743f578e6e13ad3d4ab0c4c4b5a3b52260ce0b95ea88ece2",
+      "bytes": 3347
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/observed_route_arithmetic_v1/compose.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/observed_route_arithmetic_v1/compose.py",
+      "sha256": "09f9ae05acd17d5126999352b4f89aff7ba4e6cb6cac139f0e4a7dabf47c9e23",
+      "bytes": 3430
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/qr_branch_ambiguity_v1/guard.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/qr_branch_ambiguity_v1/guard.py",
+      "sha256": "faa691b01d4d3d7783f504586c981b62ec514acbb8087cd330518345f353db09",
+      "bytes": 2870
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/qr_history_ambiguity_v1/guard.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/qr_history_ambiguity_v1/guard.py",
+      "sha256": "240c2c9f4c3153aaf3cf1c1764ae8c6698b0eddd4018a8e8e948b19bef85f899",
+      "bytes": 3716
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/recipient_provenance_e2e_v1/run.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/recipient_provenance_e2e_v1/run.py",
+      "sha256": "d28fcb1bf9e0c09965d6d7105ed9065f966c7e97d609aee0ab55adf27c30f71e",
+      "bytes": 8583
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/recipient_provenance_facts_v1/compose.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/recipient_provenance_facts_v1/compose.py",
+      "sha256": "71281ea3b13f6ae8b9654a8a2b9f0442a6e1f7aadc25f0c556f330b5c994b6ba",
+      "bytes": 1852
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/schema_date_reference_v2/policy.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/schema_date_reference_v2/policy.py",
+      "sha256": "fec6ed3ce03c1ec04ac5539db0185d4d64ac74e5bbbdb9fcdab892337b028e82",
+      "bytes": 2097
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/schema_date_scope_v3/agent.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/schema_date_scope_v3/agent.py",
+      "sha256": "c3df3e6872196f766a7b4a7817a3604e1e292adc0ef644e980a2e2b042892960",
+      "bytes": 8760
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/schema_date_scope_v3/policy.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/schema_date_scope_v3/policy.py",
+      "sha256": "b11abaf71c06a189aa4fb93e022b9ead519f27434f1ba0acb1581a080d5624da",
+      "bytes": 2964
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/schema_feedback_review_v1/policy.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/schema_feedback_review_v1/policy.py",
+      "sha256": "3d557bbdb23f652c84297638ed0132ee56b395466ea3d0561fcd40784954dc94",
+      "bytes": 2970
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/scoped_adapter_read_e2e_v1/run.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/scoped_adapter_read_e2e_v1/run.py",
+      "sha256": "48d6a75f3e8205c11c3095f6f379d06a231a4d10788e4a683e9a8e61d53e8a53",
+      "bytes": 9207
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/scoped_adapter_read_review_v1/agent.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/scoped_adapter_read_review_v1/agent.py",
+      "sha256": "ebe3fa851e48da8a7d29c3c6f76b243ca255acfb26346ddfe3a4dee046d967f9",
+      "bytes": 10525
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/scoped_adapter_read_review_v1/policy.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/scoped_adapter_read_review_v1/policy.py",
+      "sha256": "d780309cfaa92cb5f7d5bfda6d53d6df354d462f436e63aaf3cc5ca26a2df255",
+      "bytes": 1338
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/secondary_digit_consensus_runtime_v1/runtime.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/secondary_digit_consensus_runtime_v1/runtime.py",
+      "sha256": "6b228875aca37735d98e0344051e035bac527f86281db2cb104be3a7499f10e2",
+      "bytes": 3082
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/secondary_digit_consensus_screen_v1/compose.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/secondary_digit_consensus_screen_v1/compose.py",
+      "sha256": "73b4b7ea9904b83ffd7e86c58d7648d6812ac7de911c905f7d2aa52ad70b0d39",
+      "bytes": 1312
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/shared_asr_digit_composition_v1/shared_ctc.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/shared_asr_digit_composition_v1/shared_ctc.py",
+      "sha256": "69e4a70d3b5da434b66b0522530c813147342c6102ee09dd7e8112a971a2599d",
+      "bytes": 888
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/shared_asr_parent_router_v1/router.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/shared_asr_parent_router_v1/router.py",
+      "sha256": "8b220e473a3384b22e9694726efa300c9f5accd0202138c405d9f2743e19320c",
+      "bytes": 581
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/spoken_digit_evidence_q8_v1/compose.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/spoken_digit_evidence_q8_v1/compose.py",
+      "sha256": "43a354736fa583a5ea629befd22f9a8f2f3b3d5581312d959bd31386376fdc60",
+      "bytes": 1892
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/temporal_chat_v1/compose.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/temporal_chat_v1/compose.py",
+      "sha256": "7fb19ff4fec6c36c98707710a8a1f92d5f57077c4028089a3480b2a758feb185",
+      "bytes": 355
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/temporal_chat_wallet_v1/compose.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/temporal_chat_wallet_v1/compose.py",
+      "sha256": "0c389ed8853606e05e092c8aecb430ebdabaf84390be5564f1f6671c01722c81",
+      "bytes": 341
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/text_search_identity_schema_v1/compose.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/text_search_identity_schema_v1/compose.py",
+      "sha256": "c8aafa42c4e2a832d01a76b2656786fec812c925a639fcefd523244cebc4092a",
+      "bytes": 1484
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/text_search_identity_scope_v3/compose.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/text_search_identity_scope_v3/compose.py",
+      "sha256": "4beaa8fb5f6c08c86e6c6584147f92f9f44826b9a67b2b43fb122e92538a7030",
+      "bytes": 1448
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/typed_reference_lookup_v2/policy.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/typed_reference_lookup_v2/policy.py",
+      "sha256": "b2eedc4122304883bdc0c2f4aa39d47dfb24911cef50c765250e1c0c951abfd0",
+      "bytes": 3156
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/unified_reference_grounding_v1/agent.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/unified_reference_grounding_v1/agent.py",
+      "sha256": "e4ae6f04eac1de920c9e1a931aa0474cdc1779ae34bad40e747466ee071e0f26",
+      "bytes": 9814
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/unified_reference_grounding_v1/policy.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/unified_reference_grounding_v1/policy.py",
+      "sha256": "310ddb2599c21e30788e66359fea192441212731e28e3f6e190998fe32da38e8",
+      "bytes": 3216
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/unique_chat_binding_v1/binding.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/unique_chat_binding_v1/binding.py",
+      "sha256": "3a689989cfc3fb04622e8f09394ce0d7b4a4af7f3a00e3bd472228abe69ce77f",
+      "bytes": 2043
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/unique_chat_binding_v2/binding.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/unique_chat_binding_v2/binding.py",
+      "sha256": "66bee496d0baed1e47ef17af712359aaacd679d6cdd330134ccfa82e827ce5c6",
+      "bytes": 906
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/unobserved_reference_read_v1/policy.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/unobserved_reference_read_v1/policy.py",
+      "sha256": "4916260fdf044bf010a64dcf64ffd71afc658086be1da56f46fbb819d2a0e21e",
+      "bytes": 2651
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/wallet_bill_observation_v1/observation.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/wallet_bill_observation_v1/observation.py",
+      "sha256": "e890f8d030dc98c453066c326a7cb0faba7d2be19912f6321d4319cf984231dc",
+      "bytes": 2383
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/wallet_bill_observation_v2/observation.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/wallet_bill_observation_v2/observation.py",
+      "sha256": "8bc821dfed105b14658c0c09a553c41f0b6f5ef1aa1d60a06fc1861ee4bbf156",
+      "bytes": 1198
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/wallet_vague_amount_guard_v2/guard.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/wallet_vague_amount_guard_v2/guard.py",
+      "sha256": "6f54234847b5bac9d2dfe210145697b8b4eed686d65092d2dd822c83e2250810",
+      "bytes": 4574
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/weather_false_branch_stop_v1/guard.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/weather_false_branch_stop_v1/guard.py",
+      "sha256": "8afc1a92d86e3e3d7850b1b54ddc495a30210be39bf8546fa3d6780921510681",
+      "bytes": 1770
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/continuous_improvement/weekday_temporal_scope_v3/anchor.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/continuous_improvement/weekday_temporal_scope_v3/anchor.py",
+      "sha256": "e23192da0ca5fca957b322bc7ba71eace199261516e3f466c0b0d9e72466f7ab",
+      "bytes": 2805
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/p32_oracle_text_v1/run.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/p32_oracle_text_v1/run.py",
+      "sha256": "736324a1f29babd46002d2d645b9365817738486a59e0762c9757464626c99ad",
+      "bytes": 7504
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/p42_temporal_itn/temporal.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/p42_temporal_itn/temporal.py",
+      "sha256": "2eb405ec542e7dae656c38c550777dba42d1eb37163bdae2083dea99670a6612",
+      "bytes": 3276
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/p43_safe_temporal_itn/protocol.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/p43_safe_temporal_itn/protocol.json",
+      "sha256": "9c138e80f7f7d94247013c69c809f4e38e7c0225bb7e63e34c57668614af070d",
+      "bytes": 2337
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/p43_safe_temporal_itn/run_e2e.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/p43_safe_temporal_itn/run_e2e.py",
+      "sha256": "4c202cca23b4045fc9d1985a872ef7e06ab76a042ae1e0b8493a681c7960cb4b",
+      "bytes": 7021
+    },
+    "archive/rc2/overlay/runtime/lifemate/experiments/p43_safe_temporal_itn/temporal.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/experiments/p43_safe_temporal_itn/temporal.py",
+      "sha256": "9a1e35fa130d81c2e8509952b9869d72eea60c0c59863d2f0216c8fa66e33a56",
+      "bytes": 1755
+    },
+    "archive/rc2/overlay/runtime/lifemate/k_schema_helpers.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/k_schema_helpers.py",
+      "sha256": "054eba91ababe54e6b459c66719d3703d7a9130a0fdfd36e2f8039a77ce73915",
+      "bytes": 4420
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/prompts/explicit_stopping.txt": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/prompts/explicit_stopping.txt",
+      "sha256": "4001ff33e5d1cf5372d5eea4aafd5cfa4c2a06acc21808dd80f1314bedf7195d",
+      "bytes": 893
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/scripts/analyze_p10_sensitive.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/scripts/analyze_p10_sensitive.py",
+      "sha256": "af1112e40964425af5d91b0268f6e1c0550fd268dc73526f484c1b7f7b8c25ad",
+      "bytes": 4553
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/scripts/analyze_p11_results.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/scripts/analyze_p11_results.py",
+      "sha256": "cb9f41a8e995b0f9fcd349a09cda1341b1a191ef69c1f4dd8a786e643cbe73e3",
+      "bytes": 10479
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/scripts/evaluate_p10.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/scripts/evaluate_p10.py",
+      "sha256": "8de10066cd4c1c2b548aecad26e358941d1ab19cb58f234cb82254cb17f8f7a4",
+      "bytes": 12387
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/scripts/evaluate_p11.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/scripts/evaluate_p11.py",
+      "sha256": "e9791cf9e41464338c603b4bdf90509285c45399d240253af7bc12fee1b20a0c",
+      "bytes": 13027
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/scripts/evaluate_p14_formatting.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/scripts/evaluate_p14_formatting.py",
+      "sha256": "ce584445c4f7f9332e37d078c947e9fa800fd4075682fc159efa37dbc965e15d",
+      "bytes": 12844
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/scripts/evaluate_p15_robustness.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/scripts/evaluate_p15_robustness.py",
+      "sha256": "fae1b5d4fc9f3096ec2f57146502aa4f8dc086c82429b88aa701be37510a5b08",
+      "bytes": 17495
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/scripts/prepare_p14_formatting.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/scripts/prepare_p14_formatting.py",
+      "sha256": "f58c5d785ec016272c2372a7808c3ecd11cd2c307c97089b6d36a2418c0b5eb0",
+      "bytes": 4323
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/scripts/run_p10_audio.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/scripts/run_p10_audio.py",
+      "sha256": "8398ba3c32278d5519efb7e1cd40df4c68020007a1a58f0d5a913b4ce0c21c56",
+      "bytes": 3800
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/scripts/verify_p10_outputs.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/scripts/verify_p10_outputs.py",
+      "sha256": "d64fe68ce18dbab20cbcf0ede91671f1532544572349343c9fd0049df6169609",
+      "bytes": 3742
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/__init__.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/agent.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/agent.py",
+      "sha256": "4f1bafa2cf6dddae24ff689951699b2d0dcecf593f29734a576a6e0d147e887c",
+      "bytes": 4007
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/controller.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/controller.py",
+      "sha256": "c8929fb32336c80f42704b11906a9be278f87e176a254f4a4e79a263fe20176e",
+      "bytes": 947
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/decision_parser.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/decision_parser.py",
+      "sha256": "801c067d117e226df2c97ff84d59626028d30aad119d83d7aff6ec63ac0f2d12",
+      "bytes": 1128
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/evaluate.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/evaluate.py",
+      "sha256": "3a3b69f3125a70a84db4ada7d938570fe87fe7893de8a24cd13ee68c11901891",
+      "bytes": 5734
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/llm_client.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/llm_client.py",
+      "sha256": "418bf06a427a4e889727d666c002b374adff7c0267905b12c5c4a07f03b58c3c",
+      "bytes": 6189
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/llm_planner.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/llm_planner.py",
+      "sha256": "0097a6e18774d13095615ce1a5067366c50fdcd4fba734374a9b054073e356d3",
+      "bytes": 9680
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/p10_audio.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/p10_audio.py",
+      "sha256": "86dc4bdbbefdb1d1e33ccc974f56ddfd16e418c11a4729130dad62ea619e341f",
+      "bytes": 7578
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/p10_metrics.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/p10_metrics.py",
+      "sha256": "efef1087b560ef645d491bcab322408b0262c0e301484f74c89eb0de70245a0f",
+      "bytes": 4255
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/p11_numbers.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/p11_numbers.py",
+      "sha256": "a1bce0882a54769140817640e61fc9e1e6e7654514ed8a6aadba7e9bffd9b524",
+      "bytes": 5992
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/p11_phowhisper.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/p11_phowhisper.py",
+      "sha256": "9de56e5ca2c2c6283d14f3a2f78d31fd0883e745d2800f781445560e393a77c4",
+      "bytes": 4942
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/p14_formatting.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/p14_formatting.py",
+      "sha256": "f7b38dc791ec17059f7464aee43d3decf1f8f2998ff0d2c9cbd150cf843433d6",
+      "bytes": 2164
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/p9_data.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/p9_data.py",
+      "sha256": "7f28d7045665f7244e7081547d88d01641357bae2fe8aff105b5597e346d872c",
+      "bytes": 4222
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/planning_policy.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/planning_policy.py",
+      "sha256": "e90acddbf6388656179128dfb58291c3b9fe9d6301dd041ff470e8725082888e",
+      "bytes": 2715
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/supervised_actions.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/supervised_actions.py",
+      "sha256": "24dd57468202771d09342a906d5092befefffb096f3cb553eaec2f185f6c1e18",
+      "bytes": 5259
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/tool_call_matcher.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/tool_call_matcher.py",
+      "sha256": "0bfd2e4537594ba103462dc9cae5ce07dbfa0b2a6d16936b4e453828cb3e55b9",
+      "bytes": 3477
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/tool_catalog.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/tool_catalog.py",
+      "sha256": "ed0026c6f6f8804ab3a722a3150eb96581a0eb9c52f8a40eb3f593961e459fce",
+      "bytes": 1008
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/tool_schema_formatter.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/src/tool_schema_formatter.py",
+      "sha256": "a1b84efe9461d8d8ae2951640e7eb2be5ad0c9b7bbdb4ab97189c0159761dbfb",
+      "bytes": 1492
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/submission_p19/run.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p19_submission_staging_v1/submission_p19/run.py",
+      "sha256": "aff05f9512cd987ad5f82fa338eb4d090578f4444c1e6357b98f85597b485da0",
+      "bytes": 4261
+    },
+    "archive/rc2/overlay/runtime/lifemate/results/p34_gipformer_finetune_v1/selection.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/lifemate/results/p34_gipformer_finetune_v1/selection.json",
+      "sha256": "7dc2d868b722d257f2df55cff8d6326c42ca1a778716865376ea3a29c05a538b",
+      "bytes": 974
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/asr_datamodule.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/asr_datamodule.py",
+      "sha256": "a7dd8e1fc26413d2f0097931fa3ccc77e514068d2761ce2b5140d65bf8c1c036",
+      "bytes": 17652
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/attention_decoder.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/attention_decoder.py",
+      "sha256": "a9984edb638bb55aa5d987a2f325095cf5cc26d393c6c617e6ff3a83cad1d2f1",
+      "bytes": 20115
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/decoder.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/decoder.py",
+      "sha256": "92ee967e4b927a3ef2e4cc2d900756609a191f859c956a400cfe642d6ef0cf52",
+      "bytes": 4755
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/encoder_interface.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/encoder_interface.py",
+      "sha256": "fc70f530c33e2489435ff2cb4bb0dad8b9d6f58a248c425cbd6100c62f628569",
+      "bytes": 1652
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/export-onnx.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/export-onnx.py",
+      "sha256": "4e632b5d36b76c0883bc1a2aa5103a82c0cc9fbe9f2521450c65a0e8ece68117",
+      "bytes": 23222
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/joiner.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/joiner.py",
+      "sha256": "2d924a5a00f7a2bb2340c1a991f8a71037bcfbc7e98cbabe26527ffa7d4030d4",
+      "bytes": 2213
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/label_smoothing.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/label_smoothing.py",
+      "sha256": "32234a83a21a2444d2f789990e2a99d4d3e70f561c5de0184182d84658ac7867",
+      "bytes": 3874
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/model.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/model.py",
+      "sha256": "1e516fec1ad65220470a7db69bf3d16e4736a0b9943ef8f5ad75bb962d7a3296",
+      "bytes": 18066
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/optim.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/optim.py",
+      "sha256": "7282cd6db1d234e086110feb1f39f076a76095a6b026b939cebc81f2ed0f5d45",
+      "bytes": 50335
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/scaling.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/scaling.py",
+      "sha256": "d5a5db141cd00b4beaa990fe6827599b3248b2fddd87e8dc7809b0dbd9d6633b",
+      "bytes": 70943
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/subsampling.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/subsampling.py",
+      "sha256": "e04de281f136560e2d44b5f7df174d0364b5feb2c22608173b60de02630c2a66",
+      "bytes": 13138
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/train.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/train.py",
+      "sha256": "1f1a7099182a2bf970a4d7aca45b0eef9f10cd3dcf66262bbb11247da53e6068",
+      "bytes": 51319
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/zipformer.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/zipformer.py",
+      "sha256": "4d5365ed19dee07f5a51fcaaa26e18310f7fafbdf2a391e24a7cc01d1b2e8cfe",
+      "bytes": 93875
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/__init__.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/__init__.py",
+      "sha256": "7da4b3c496a3d8a5d9f3bcb7dfe1958340fc8237b03eba5d6eeba94501ea8444",
+      "bytes": 1427
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/byte_utils.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/byte_utils.py",
+      "sha256": "21c9c52130f1bfb4f2e5dda1fe239589af2660d778522db8f97a5d681a50c0e2",
+      "bytes": 4043
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/checkpoint.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/checkpoint.py",
+      "sha256": "938f24209aee82108fd693f5e76cbcc4809b41e6a06598478540ff0cd4ffa76d",
+      "bytes": 15572
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/context_graph.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/context_graph.py",
+      "sha256": "9a694cd56e3d804090f75f78e7f2f02078162e6fd91237de0f1316059a774c37",
+      "bytes": 22548
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/decode.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/decode.py",
+      "sha256": "e9af7585836686e02710bb8c937f52cc423a1b1a6eee86dfee845c02c4c35f99",
+      "bytes": 78452
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/diagnostics.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/diagnostics.py",
+      "sha256": "6ab1fe00dd9eff357ff430df75967a48de4e8affc6839f9aeff99cccdef7e178",
+      "bytes": 28652
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/dist.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/dist.py",
+      "sha256": "6a162acd9ebc13e35a9530b2c01f069220418d2d3651eb96a7c6bc976b12bbdf",
+      "bytes": 1966
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/env.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/env.py",
+      "sha256": "251e0430c3a1dc4fcf3d52d1f8069d7b65619778600b637de70dc2fa8513ec92",
+      "bytes": 3508
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/err.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/err.py",
+      "sha256": "0310d8bea2d14eed9a3d2fc785ea1e749a520ec79fe84fae543326e51b7d0118",
+      "bytes": 2142
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/hooks.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/hooks.py",
+      "sha256": "615cc4b135d250cb0f328048d4c5c2d4019b9bb80ae89ee51a314e5171c7fbfd",
+      "bytes": 4295
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/lm_wrapper.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/lm_wrapper.py",
+      "sha256": "b83053ca20f0850990a15e86b809f278a94ed3589a47f85eac03437426040f06",
+      "bytes": 7821
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/ngram_lm.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/ngram_lm.py",
+      "sha256": "e943c2d605bab6c39bfc3033392e8b84e14088eaed92468d6e735c1e49893d8a",
+      "bytes": 5295
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/rnn_lm/__init__.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/rnn_lm/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/rnn_lm/model.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/rnn_lm/model.py",
+      "sha256": "01cf2167957dba5d2f0ba0b6d3705ffe64f4447858647011625604d168e51ca5",
+      "bytes": 10312
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/transformer_lm/__init__.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/transformer_lm/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/transformer_lm/attention.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/transformer_lm/attention.py",
+      "sha256": "94fe04858e011ca91bc73a8b9d38c6b48560a508eba8f7b860a99241c455ad24",
+      "bytes": 22349
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/transformer_lm/encoder.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/transformer_lm/encoder.py",
+      "sha256": "109cebc39d36d6256f98fb0c7ff07a83aff1a5bddba8dd6dda399a8b8e39993c",
+      "bytes": 11234
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/transformer_lm/model.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/transformer_lm/model.py",
+      "sha256": "ee4f4960b6104d2f3d7405a1cd8f495531bc3c023f6cbece4d7895462255a582",
+      "bytes": 3396
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/transformer_lm/scaling.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/transformer_lm/scaling.py",
+      "sha256": "57fb71f4f29fb3321a2eaa72642fcfb0caab95c810bc68337f6bbbfceb766e1d",
+      "bytes": 36364
+    },
+    "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/utils.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/utils.py",
+      "sha256": "35beb5077b458872621094d7b176adf58fb6a7d4de81a60f033184052b6555d6",
+      "bytes": 84221
+    },
+    "archive/rc2/overlay/start_jupyter.sh": {
+      "source": "lifemate-final-20261116-rc2/overlay/start_jupyter.sh",
+      "sha256": "5257cc0f07838290c18144b025fb44a65286644ff040b5823e707de2ac51a390",
+      "bytes": 352
+    },
+    "archive/rc2/overlay/tests/test_transport.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/tests/test_transport.py",
+      "sha256": "b8f286f68578ece6d81facbb1ae36930ddd0d741b50b1f16e989716918cff987",
+      "bytes": 3088
+    },
+    "archive/rc2/overlay/training_code/README.md": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/README.md",
+      "sha256": "be2a02c89036ea5822f1e87df4036d71f3c7ae103f0f7ff279685d2a597fcb65",
+      "bytes": 6726
+    },
+    "archive/rc2/overlay/training_code/TRAINING_ASSET_STATUS.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/TRAINING_ASSET_STATUS.json",
+      "sha256": "69bd4a57c82fafd7b777c148e2530c20c6a6f7701a44376ccf10f6ad4be5b6fb",
+      "bytes": 7860
+    },
+    "archive/rc2/overlay/training_code/TRAINING_RESTORATION.md": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/TRAINING_RESTORATION.md",
+      "sha256": "062062407ac1b09b4f079f9c83707fb954e7faca1d0472f040d473306caf40e8",
+      "bytes": 6273
+    },
+    "archive/rc2/overlay/training_code/historical/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/branch_preference.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/branch_preference.py",
+      "sha256": "e259266dd004f78e1160eecf9ba7b8d81f3ec651e88fb5795fc4540b74d06a85",
+      "bytes": 685
+    },
+    "archive/rc2/overlay/training_code/historical/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/convert.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/convert.py",
+      "sha256": "ee47f540c2fdf32d17c7dfb87bd85bb47f00992a58b8a48ad81d3f3a10424df7",
+      "bytes": 1468
+    },
+    "archive/rc2/overlay/training_code/historical/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/prepare.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/prepare.py",
+      "sha256": "cf16f1ff42dc0d68529e21d09ebe9986a678758b34003c4f839742b55f186cf8",
+      "bytes": 5224
+    },
+    "archive/rc2/overlay/training_code/historical/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/recipe.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/recipe.json",
+      "sha256": "0a02b89e1f586aec352018777887679cd6e1ccd0367c6070c6fa5bba98e0d1ab",
+      "bytes": 1624
+    },
+    "archive/rc2/overlay/training_code/historical/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/train.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/train.py",
+      "sha256": "676088267b3fad5392897215d74e0c6528aefc2a80e516f2ebe1eb389a629314",
+      "bytes": 8249
+    },
+    "archive/rc2/overlay/training_code/historical/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/verify_conversion.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/verify_conversion.py",
+      "sha256": "7de09c3d1a42549bb175e1f2125f89e16aa0733b1ad4dedb97c91c050d4c3992",
+      "bytes": 3399
+    },
+    "archive/rc2/overlay/training_code/historical/experiments/continuous_improvement/dpo_finish_overlay_v1/conversion_metadata.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/experiments/continuous_improvement/dpo_finish_overlay_v1/conversion_metadata.json",
+      "sha256": "eb4c7c69fd38015dcfd085f27cca743dcf2586f95adf0a11f7ffe210d229d4a8",
+      "bytes": 860
+    },
+    "archive/rc2/overlay/training_code/historical/experiments/continuous_improvement/dpo_finish_overlay_v1/convert.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/experiments/continuous_improvement/dpo_finish_overlay_v1/convert.py",
+      "sha256": "8836899c78084df05d5094203afacd7ca012843368ffe1c2b191c9bb93a4c575",
+      "bytes": 1423
+    },
+    "archive/rc2/overlay/training_code/historical/experiments/continuous_improvement/p19_champion_q8_v1/identity.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/experiments/continuous_improvement/p19_champion_q8_v1/identity.json",
+      "sha256": "ead2b47048850b95e882d9a9b5aa82325ee240b0974707dcf24b6e9e82bf575f",
+      "bytes": 1477
+    },
+    "archive/rc2/overlay/training_code/historical/experiments/p34_asr_data_v1/prepare.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/experiments/p34_asr_data_v1/prepare.py",
+      "sha256": "83cdeb96128c721723a0c4066b1b4594c3b01ca1be83c810e278f73455587287",
+      "bytes": 13213
+    },
+    "archive/rc2/overlay/training_code/historical/experiments/p34_asr_data_v1/protocol.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/experiments/p34_asr_data_v1/protocol.json",
+      "sha256": "b52a0f498f94a268d8b335959cacf00010be5452be78e9245fede9f4c38d6e90",
+      "bytes": 1649
+    },
+    "archive/rc2/overlay/training_code/historical/experiments/p34_gipformer_finetune/eval_dev.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/experiments/p34_gipformer_finetune/eval_dev.py",
+      "sha256": "b82ef2e5eaa5eabe502b5334a0bb68e966856022b657e25f916dd4ba88c73b39",
+      "bytes": 2369
+    },
+    "archive/rc2/overlay/training_code/historical/experiments/p34_gipformer_finetune/export.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/experiments/p34_gipformer_finetune/export.py",
+      "sha256": "926a471cf9280331f8d27a2c849537e6a70cdbf39fec1c5fb08f0edd2cfd3c7b",
+      "bytes": 792
+    },
+    "archive/rc2/overlay/training_code/historical/experiments/p34_gipformer_finetune/export_epoch.sh": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/experiments/p34_gipformer_finetune/export_epoch.sh",
+      "sha256": "38ee4ffbb5a7709ed114d87bc28386291a1c4e5555b2f4294975d29d9c56431a",
+      "bytes": 905
+    },
+    "archive/rc2/overlay/training_code/historical/experiments/p34_gipformer_finetune/protocol.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/experiments/p34_gipformer_finetune/protocol.json",
+      "sha256": "9cfb2452effb43ad96868bd8bdb1e40640c834050cdb96c03531e327ecb4b7a6",
+      "bytes": 2254
+    },
+    "archive/rc2/overlay/training_code/historical/experiments/p34_gipformer_finetune/select.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/experiments/p34_gipformer_finetune/select.py",
+      "sha256": "fe0b3a43dc3a557a67bacf06de1735843fa96c2c4a39332aaffe1a9a0cc7b480",
+      "bytes": 1703
+    },
+    "archive/rc2/overlay/training_code/historical/experiments/p34_gipformer_finetune/train.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/experiments/p34_gipformer_finetune/train.py",
+      "sha256": "a08a8b2e32c3aaed8376d26ed44fc71d047dbf567e58fb7f5a4cc8de65b03749",
+      "bytes": 7205
+    },
+    "archive/rc2/overlay/training_code/historical/experiments/p34_tokenizer_fix_v1/prepare.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/experiments/p34_tokenizer_fix_v1/prepare.py",
+      "sha256": "ff872cd8f1d34fdc1134b6ceca09b6f103cea255e9f24da1be0bf1b1ff37e1d4",
+      "bytes": 7076
+    },
+    "archive/rc2/overlay/training_code/historical/results/p19_real_asr_sft_train_v1/config.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/results/p19_real_asr_sft_train_v1/config.json",
+      "sha256": "c6f81e0428447c626ccbd28d48033b824a3251302a66f2093e2e48c1bf442ddc",
+      "bytes": 8511
+    },
+    "archive/rc2/overlay/training_code/historical/results/p19_real_asr_sft_train_v1/summary.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/results/p19_real_asr_sft_train_v1/summary.json",
+      "sha256": "2f4bd689154637d579e023bd4e1d6410d1a7476c2e0d36da768b926ed917cec1",
+      "bytes": 354
+    },
+    "archive/rc2/overlay/training_code/historical/results/p20c_grounding_preferences_v1/export.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/results/p20c_grounding_preferences_v1/export.py",
+      "sha256": "ef6ce233f85ec0cce58f3178de21cc5bd3bbf74b45349306a1d0921ee4e7159d",
+      "bytes": 4086
+    },
+    "archive/rc2/overlay/training_code/historical/results/p20c_grounding_preferences_v1/freeze_training.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/results/p20c_grounding_preferences_v1/freeze_training.py",
+      "sha256": "00a3bfa9472fa77347ac44873a86fc1d7d1f448f7cc4516b2bb68030ed336770",
+      "bytes": 3088
+    },
+    "archive/rc2/overlay/training_code/historical/results/p20c_grounding_preferences_v1/protocol.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/results/p20c_grounding_preferences_v1/protocol.json",
+      "sha256": "6393dea0a257ace0a49a663d9d64dddcfad8231691e827096943d486ce11c69f",
+      "bytes": 2472
+    },
+    "archive/rc2/overlay/training_code/historical/results/p20c_grounding_preferences_v1/train.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/results/p20c_grounding_preferences_v1/train.py",
+      "sha256": "77679bb4a2eac0486c3eff2c6fcf91412201d8e9c55fa04b4e874e60dcfe164f",
+      "bytes": 9203
+    },
+    "archive/rc2/overlay/training_code/historical/results/p34_gipformer_finetune_v1/checkpoint_validation.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/results/p34_gipformer_finetune_v1/checkpoint_validation.json",
+      "sha256": "733a370dee0f9316da61ae4f91d29e3a468bc172e71fa9c322c176bc7a0f064e",
+      "bytes": 1358
+    },
+    "archive/rc2/overlay/training_code/historical/results/p34_gipformer_finetune_v1/training_requirements.txt": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/results/p34_gipformer_finetune_v1/training_requirements.txt",
+      "sha256": "3618e0b3e318cbdda748d911fa4fc41428e34302168bc7b2eff03c7d27648eb3",
+      "bytes": 1693
+    },
+    "archive/rc2/overlay/training_code/historical/results/p9_bf16_lora_epoch1_v1/config.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/results/p9_bf16_lora_epoch1_v1/config.json",
+      "sha256": "cc9e8b7df0777dc79d895f8a6ad15826b3cfb0f2b45620d76edaff14b2b3a42a",
+      "bytes": 15951
+    },
+    "archive/rc2/overlay/training_code/historical/src/p10_audio.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/src/p10_audio.py",
+      "sha256": "86dc4bdbbefdb1d1e33ccc974f56ddfd16e418c11a4729130dad62ea619e341f",
+      "bytes": 7578
+    },
+    "archive/rc2/overlay/training_code/historical/src/p11_phowhisper.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/src/p11_phowhisper.py",
+      "sha256": "9de56e5ca2c2c6283d14f3a2f78d31fd0883e745d2800f781445560e393a77c4",
+      "bytes": 4942
+    },
+    "archive/rc2/overlay/training_code/historical/src/p9_data.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/src/p9_data.py",
+      "sha256": "7f28d7045665f7244e7081547d88d01641357bae2fe8aff105b5597e346d872c",
+      "bytes": 4222
+    },
+    "archive/rc2/overlay/training_code/historical/src/p9_training.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/src/p9_training.py",
+      "sha256": "30b2266768cc818a6e753ce7af4308abcd11ba205e88bceef2bd5bae1ab7b0e1",
+      "bytes": 2838
+    },
+    "archive/rc2/overlay/training_code/p19_generation_snapshot/scripts/export_p19_checkpoint.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/p19_generation_snapshot/scripts/export_p19_checkpoint.py",
+      "sha256": "edfb967f936dfa9735e5afda22c000c6eb8d656a4510ffc6005a00d789a58a35",
+      "bytes": 2485
+    },
+    "archive/rc2/overlay/training_code/p19_generation_snapshot/scripts/export_p9.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/p19_generation_snapshot/scripts/export_p9.py",
+      "sha256": "4c21b00a758c8349e58b473350eb1010fa39f2345beba756bfefb3e14e800f77",
+      "bytes": 3920
+    },
+    "archive/rc2/overlay/training_code/p19_generation_snapshot/scripts/train_p19_real_asr.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/p19_generation_snapshot/scripts/train_p19_real_asr.py",
+      "sha256": "29a7aa2e17ddd3ee61f4f8a9ed2540c9a647dbaa0a4797a9524c9d103b605f6a",
+      "bytes": 7708
+    },
+    "archive/rc2/overlay/training_code/p19_generation_snapshot/scripts/train_p9.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/p19_generation_snapshot/scripts/train_p9.py",
+      "sha256": "bd162f0606baede30c2fd336a496741a0db8ee45fa1454ecbd68a82643594a8b",
+      "bytes": 9059
+    },
+    "archive/rc2/overlay/training_code/p19_generation_snapshot/src/p14_formatting.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/p19_generation_snapshot/src/p14_formatting.py",
+      "sha256": "f7b38dc791ec17059f7464aee43d3decf1f8f2998ff0d2c9cbd150cf843433d6",
+      "bytes": 2164
+    },
+    "archive/rc2/overlay/training_code/p19_generation_snapshot/src/p19_format_training.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/p19_generation_snapshot/src/p19_format_training.py",
+      "sha256": "2152f09bb6b11aa3298f0e8c7d39e567b79f9f24ae1e057f985128cda6041c7b",
+      "bytes": 1844
+    },
+    "archive/rc2/overlay/training_code/p19_generation_snapshot/src/p19_real_asr_training.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/p19_generation_snapshot/src/p19_real_asr_training.py",
+      "sha256": "af924436065d60c1bc8973865da2d1bb07ef4d294613d8d830d9d1b2a4c8e9ad",
+      "bytes": 593
+    },
+    "archive/rc2/overlay/training_code/p19_generation_snapshot/src/p9_data.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/p19_generation_snapshot/src/p9_data.py",
+      "sha256": "7f28d7045665f7244e7081547d88d01641357bae2fe8aff105b5597e346d872c",
+      "bytes": 4222
+    },
+    "archive/rc2/overlay/training_code/p19_generation_snapshot/src/p9_training.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/p19_generation_snapshot/src/p9_training.py",
+      "sha256": "30b2266768cc818a6e753ce7af4308abcd11ba205e88bceef2bd5bae1ab7b0e1",
+      "bytes": 2838
+    },
+    "archive/rc2/overlay/training_code/p19_generation_snapshot/src/tool_call_matcher.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/p19_generation_snapshot/src/tool_call_matcher.py",
+      "sha256": "0bfd2e4537594ba103462dc9cae5ce07dbfa0b2a6d16936b4e453828cb3e55b9",
+      "bytes": 3477
+    },
+    "archive/rc2/overlay/training_code/p19_generation_snapshot/src/tool_catalog.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/p19_generation_snapshot/src/tool_catalog.py",
+      "sha256": "ed0026c6f6f8804ab3a722a3150eb96581a0eb9c52f8a40eb3f593961e459fce",
+      "bytes": 1008
+    },
+    "archive/rc2/overlay/training_code/p19_generation_snapshot/src/tool_schema_formatter.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/p19_generation_snapshot/src/tool_schema_formatter.py",
+      "sha256": "a1b84efe9461d8d8ae2951640e7eb2be5ad0c9b7bbdb4ab97189c0159761dbfb",
+      "bytes": 1492
+    },
+    "archive/rc2/overlay/training_code/required-private-assets.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/required-private-assets.json",
+      "sha256": "a28f78bda6e09513e4bbd5d46d343459d6cd078ad6f00b0c87cf58bdba790856",
+      "bytes": 3170
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/RESTORE_RECEIPT.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/RESTORE_RECEIPT.json",
+      "sha256": "1826a83b4412a2be66e0d0e2374f90fa55a1a1510f8141d533321ad3f1ed9ccf",
+      "bytes": 7711
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/branch_preference.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/branch_preference.py",
+      "sha256": "e259266dd004f78e1160eecf9ba7b8d81f3ec651e88fb5795fc4540b74d06a85",
+      "bytes": 685
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/convert.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/convert.py",
+      "sha256": "ee47f540c2fdf32d17c7dfb87bd85bb47f00992a58b8a48ad81d3f3a10424df7",
+      "bytes": 1468
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/prepare.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/prepare.py",
+      "sha256": "cf16f1ff42dc0d68529e21d09ebe9986a678758b34003c4f839742b55f186cf8",
+      "bytes": 5224
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/recipe.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/recipe.json",
+      "sha256": "0a02b89e1f586aec352018777887679cd6e1ccd0367c6070c6fa5bba98e0d1ab",
+      "bytes": 1624
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/train.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/train.py",
+      "sha256": "676088267b3fad5392897215d74e0c6528aefc2a80e516f2ebe1eb389a629314",
+      "bytes": 8249
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/verify_conversion.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/experiments/continuous_improvement/conditional_terminal_preference_sft_v1/verify_conversion.py",
+      "sha256": "7de09c3d1a42549bb175e1f2125f89e16aa0733b1ad4dedb97c91c050d4c3992",
+      "bytes": 3399
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/experiments/continuous_improvement/dpo_finish_overlay_v1/conversion_metadata.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/experiments/continuous_improvement/dpo_finish_overlay_v1/conversion_metadata.json",
+      "sha256": "eb4c7c69fd38015dcfd085f27cca743dcf2586f95adf0a11f7ffe210d229d4a8",
+      "bytes": 860
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/experiments/continuous_improvement/dpo_finish_overlay_v1/convert.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/experiments/continuous_improvement/dpo_finish_overlay_v1/convert.py",
+      "sha256": "8836899c78084df05d5094203afacd7ca012843368ffe1c2b191c9bb93a4c575",
+      "bytes": 1423
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/experiments/continuous_improvement/finish_verbatim_recap_v1/transform.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/experiments/continuous_improvement/finish_verbatim_recap_v1/transform.py",
+      "sha256": "08ba2298f29dee9326881a0b0026122721ce96587fad13dab8940c44923235a8",
+      "bytes": 488
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/experiments/continuous_improvement/p19_champion_q8_v1/identity.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/experiments/continuous_improvement/p19_champion_q8_v1/identity.json",
+      "sha256": "ead2b47048850b95e882d9a9b5aa82325ee240b0974707dcf24b6e9e82bf575f",
+      "bytes": 1477
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/experiments/p34_asr_data_v1/prepare.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/experiments/p34_asr_data_v1/prepare.py",
+      "sha256": "83cdeb96128c721723a0c4066b1b4594c3b01ca1be83c810e278f73455587287",
+      "bytes": 13213
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/experiments/p34_asr_data_v1/protocol.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/experiments/p34_asr_data_v1/protocol.json",
+      "sha256": "b52a0f498f94a268d8b335959cacf00010be5452be78e9245fede9f4c38d6e90",
+      "bytes": 1649
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/experiments/p34_gipformer_finetune/eval_dev.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/experiments/p34_gipformer_finetune/eval_dev.py",
+      "sha256": "b82ef2e5eaa5eabe502b5334a0bb68e966856022b657e25f916dd4ba88c73b39",
+      "bytes": 2369
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/experiments/p34_gipformer_finetune/export.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/experiments/p34_gipformer_finetune/export.py",
+      "sha256": "926a471cf9280331f8d27a2c849537e6a70cdbf39fec1c5fb08f0edd2cfd3c7b",
+      "bytes": 792
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/experiments/p34_gipformer_finetune/export_epoch.sh": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/experiments/p34_gipformer_finetune/export_epoch.sh",
+      "sha256": "38ee4ffbb5a7709ed114d87bc28386291a1c4e5555b2f4294975d29d9c56431a",
+      "bytes": 905
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/experiments/p34_gipformer_finetune/protocol.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/experiments/p34_gipformer_finetune/protocol.json",
+      "sha256": "9cfb2452effb43ad96868bd8bdb1e40640c834050cdb96c03531e327ecb4b7a6",
+      "bytes": 2254
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/experiments/p34_gipformer_finetune/select.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/experiments/p34_gipformer_finetune/select.py",
+      "sha256": "fe0b3a43dc3a557a67bacf06de1735843fa96c2c4a39332aaffe1a9a0cc7b480",
+      "bytes": 1703
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/experiments/p34_gipformer_finetune/train.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/experiments/p34_gipformer_finetune/train.py",
+      "sha256": "a08a8b2e32c3aaed8376d26ed44fc71d047dbf567e58fb7f5a4cc8de65b03749",
+      "bytes": 7205
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/experiments/p34_tokenizer_fix_v1/prepare.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/experiments/p34_tokenizer_fix_v1/prepare.py",
+      "sha256": "ff872cd8f1d34fdc1134b6ceca09b6f103cea255e9f24da1be0bf1b1ff37e1d4",
+      "bytes": 7076
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/experiments/requirements-p9.txt": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/experiments/requirements-p9.txt",
+      "sha256": "92ba6f52f29748c2909fb11960db4b7545cb6b0c40e31206a250364cf6d2b1d8",
+      "bytes": 202
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/prompts/explicit_stopping.txt": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/prompts/explicit_stopping.txt",
+      "sha256": "4001ff33e5d1cf5372d5eea4aafd5cfa4c2a06acc21808dd80f1314bedf7195d",
+      "bytes": 893
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/results/p19_real_asr_sft_train_v1/config.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/results/p19_real_asr_sft_train_v1/config.json",
+      "sha256": "c6f81e0428447c626ccbd28d48033b824a3251302a66f2093e2e48c1bf442ddc",
+      "bytes": 8511
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/results/p19_real_asr_sft_train_v1/summary.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/results/p19_real_asr_sft_train_v1/summary.json",
+      "sha256": "2f4bd689154637d579e023bd4e1d6410d1a7476c2e0d36da768b926ed917cec1",
+      "bytes": 354
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/results/p20c_grounding_preferences_v1/export.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/results/p20c_grounding_preferences_v1/export.py",
+      "sha256": "ef6ce233f85ec0cce58f3178de21cc5bd3bbf74b45349306a1d0921ee4e7159d",
+      "bytes": 4086
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/results/p20c_grounding_preferences_v1/freeze_training.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/results/p20c_grounding_preferences_v1/freeze_training.py",
+      "sha256": "00a3bfa9472fa77347ac44873a86fc1d7d1f448f7cc4516b2bb68030ed336770",
+      "bytes": 3088
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/results/p20c_grounding_preferences_v1/protocol.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/results/p20c_grounding_preferences_v1/protocol.json",
+      "sha256": "6393dea0a257ace0a49a663d9d64dddcfad8231691e827096943d486ce11c69f",
+      "bytes": 2472
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/results/p20c_grounding_preferences_v1/train.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/results/p20c_grounding_preferences_v1/train.py",
+      "sha256": "77679bb4a2eac0486c3eff2c6fcf91412201d8e9c55fa04b4e874e60dcfe164f",
+      "bytes": 9203
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/results/p34_gipformer_finetune_v1/checkpoint_validation.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/results/p34_gipformer_finetune_v1/checkpoint_validation.json",
+      "sha256": "733a370dee0f9316da61ae4f91d29e3a468bc172e71fa9c322c176bc7a0f064e",
+      "bytes": 1358
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/results/p34_gipformer_finetune_v1/training_requirements.txt": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/results/p34_gipformer_finetune_v1/training_requirements.txt",
+      "sha256": "3618e0b3e318cbdda748d911fa4fc41428e34302168bc7b2eff03c7d27648eb3",
+      "bytes": 1693
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/results/p9_bf16_lora_epoch1_v1/config.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/results/p9_bf16_lora_epoch1_v1/config.json",
+      "sha256": "cc9e8b7df0777dc79d895f8a6ad15826b3cfb0f2b45620d76edaff14b2b3a42a",
+      "bytes": 15951
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/scripts/analyze_p10_sensitive.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/scripts/analyze_p10_sensitive.py",
+      "sha256": "af1112e40964425af5d91b0268f6e1c0550fd268dc73526f484c1b7f7b8c25ad",
+      "bytes": 4553
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/scripts/analyze_p11_results.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/scripts/analyze_p11_results.py",
+      "sha256": "cb9f41a8e995b0f9fcd349a09cda1341b1a191ef69c1f4dd8a786e643cbe73e3",
+      "bytes": 10479
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/scripts/evaluate_p10.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/scripts/evaluate_p10.py",
+      "sha256": "8de10066cd4c1c2b548aecad26e358941d1ab19cb58f234cb82254cb17f8f7a4",
+      "bytes": 12387
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/scripts/evaluate_p11.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/scripts/evaluate_p11.py",
+      "sha256": "e9791cf9e41464338c603b4bdf90509285c45399d240253af7bc12fee1b20a0c",
+      "bytes": 13027
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/scripts/evaluate_p14_formatting.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/scripts/evaluate_p14_formatting.py",
+      "sha256": "ce584445c4f7f9332e37d078c947e9fa800fd4075682fc159efa37dbc965e15d",
+      "bytes": 12844
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/scripts/evaluate_p15_robustness.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/scripts/evaluate_p15_robustness.py",
+      "sha256": "fae1b5d4fc9f3096ec2f57146502aa4f8dc086c82429b88aa701be37510a5b08",
+      "bytes": 17495
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/scripts/export_p19_checkpoint.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/scripts/export_p19_checkpoint.py",
+      "sha256": "edfb967f936dfa9735e5afda22c000c6eb8d656a4510ffc6005a00d789a58a35",
+      "bytes": 2485
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/scripts/export_p9.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/scripts/export_p9.py",
+      "sha256": "4c21b00a758c8349e58b473350eb1010fa39f2345beba756bfefb3e14e800f77",
+      "bytes": 3920
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/scripts/prepare_p14_formatting.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/scripts/prepare_p14_formatting.py",
+      "sha256": "f58c5d785ec016272c2372a7808c3ecd11cd2c307c97089b6d36a2418c0b5eb0",
+      "bytes": 4323
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/scripts/run_p10_audio.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/scripts/run_p10_audio.py",
+      "sha256": "8398ba3c32278d5519efb7e1cd40df4c68020007a1a58f0d5a913b4ce0c21c56",
+      "bytes": 3800
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/scripts/train_p19_real_asr.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/scripts/train_p19_real_asr.py",
+      "sha256": "29a7aa2e17ddd3ee61f4f8a9ed2540c9a647dbaa0a4797a9524c9d103b605f6a",
+      "bytes": 7708
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/scripts/train_p9.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/scripts/train_p9.py",
+      "sha256": "bd162f0606baede30c2fd336a496741a0db8ee45fa1454ecbd68a82643594a8b",
+      "bytes": 9059
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/scripts/verify_p10_outputs.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/scripts/verify_p10_outputs.py",
+      "sha256": "d64fe68ce18dbab20cbcf0ede91671f1532544572349343c9fd0049df6169609",
+      "bytes": 3742
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/src/agent.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/src/agent.py",
+      "sha256": "4f1bafa2cf6dddae24ff689951699b2d0dcecf593f29734a576a6e0d147e887c",
+      "bytes": 4007
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/src/controller.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/src/controller.py",
+      "sha256": "c8929fb32336c80f42704b11906a9be278f87e176a254f4a4e79a263fe20176e",
+      "bytes": 947
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/src/decision_parser.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/src/decision_parser.py",
+      "sha256": "801c067d117e226df2c97ff84d59626028d30aad119d83d7aff6ec63ac0f2d12",
+      "bytes": 1128
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/src/evaluate.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/src/evaluate.py",
+      "sha256": "3a3b69f3125a70a84db4ada7d938570fe87fe7893de8a24cd13ee68c11901891",
+      "bytes": 5734
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/src/llm_client.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/src/llm_client.py",
+      "sha256": "418bf06a427a4e889727d666c002b374adff7c0267905b12c5c4a07f03b58c3c",
+      "bytes": 6189
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/src/llm_planner.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/src/llm_planner.py",
+      "sha256": "0097a6e18774d13095615ce1a5067366c50fdcd4fba734374a9b054073e356d3",
+      "bytes": 9680
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/src/p10_audio.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/src/p10_audio.py",
+      "sha256": "86dc4bdbbefdb1d1e33ccc974f56ddfd16e418c11a4729130dad62ea619e341f",
+      "bytes": 7578
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/src/p10_metrics.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/src/p10_metrics.py",
+      "sha256": "efef1087b560ef645d491bcab322408b0262c0e301484f74c89eb0de70245a0f",
+      "bytes": 4255
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/src/p11_numbers.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/src/p11_numbers.py",
+      "sha256": "a1bce0882a54769140817640e61fc9e1e6e7654514ed8a6aadba7e9bffd9b524",
+      "bytes": 5992
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/src/p11_phowhisper.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/src/p11_phowhisper.py",
+      "sha256": "9de56e5ca2c2c6283d14f3a2f78d31fd0883e745d2800f781445560e393a77c4",
+      "bytes": 4942
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/src/p14_formatting.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/src/p14_formatting.py",
+      "sha256": "f7b38dc791ec17059f7464aee43d3decf1f8f2998ff0d2c9cbd150cf843433d6",
+      "bytes": 2164
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/src/p19_format_training.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/src/p19_format_training.py",
+      "sha256": "2152f09bb6b11aa3298f0e8c7d39e567b79f9f24ae1e057f985128cda6041c7b",
+      "bytes": 1844
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/src/p19_real_asr_training.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/src/p19_real_asr_training.py",
+      "sha256": "af924436065d60c1bc8973865da2d1bb07ef4d294613d8d830d9d1b2a4c8e9ad",
+      "bytes": 593
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/src/p9_data.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/src/p9_data.py",
+      "sha256": "7f28d7045665f7244e7081547d88d01641357bae2fe8aff105b5597e346d872c",
+      "bytes": 4222
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/src/p9_inference.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/src/p9_inference.py",
+      "sha256": "e0b0f8f25da264de3aedcdb2569fe85491942b65cf1db651883afc48f0afd493",
+      "bytes": 3439
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/src/p9_training.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/src/p9_training.py",
+      "sha256": "30b2266768cc818a6e753ce7af4308abcd11ba205e88bceef2bd5bae1ab7b0e1",
+      "bytes": 2838
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/src/planning_policy.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/src/planning_policy.py",
+      "sha256": "e90acddbf6388656179128dfb58291c3b9fe9d6301dd041ff470e8725082888e",
+      "bytes": 2715
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/src/supervised_actions.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/src/supervised_actions.py",
+      "sha256": "24dd57468202771d09342a906d5092befefffb096f3cb553eaec2f185f6c1e18",
+      "bytes": 5259
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/src/tool_call_matcher.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/src/tool_call_matcher.py",
+      "sha256": "0bfd2e4537594ba103462dc9cae5ce07dbfa0b2a6d16936b4e453828cb3e55b9",
+      "bytes": 3477
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/src/tool_catalog.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/src/tool_catalog.py",
+      "sha256": "ed0026c6f6f8804ab3a722a3150eb96581a0eb9c52f8a40eb3f593961e459fce",
+      "bytes": 1008
+    },
+    "archive/rc2/overlay/training_code/restored/lifemate/src/tool_schema_formatter.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/src/tool_schema_formatter.py",
+      "sha256": "a1b84efe9461d8d8ae2951640e7eb2be5ad0c9b7bbdb4ab97189c0159761dbfb",
+      "bytes": 1492
+    },
+    "archive/rc2/overlay/training_code/source-manifest.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/source-manifest.json",
+      "sha256": "07514e85975867cfe936678116aa2c03c2737a3a1d07e8da387d339fee1cd197",
+      "bytes": 11545
+    },
+    "archive/rc2/overlay/training_code/training-supplement-manifest.json": {
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/training-supplement-manifest.json",
+      "sha256": "b08e942883611937662d93e8ad4df21ebccc581eea08e4650e2e63b2944391e9",
+      "bytes": 7280
+    },
+    "archive/rc2/overlay/verify_release.py": {
+      "source": "lifemate-final-20261116-rc2/overlay/verify_release.py",
+      "sha256": "9ad506cedd2e4d97e698da3715f61bf880fb2b32d9a4c2dbf8a29bb0df2ec99c",
+      "bytes": 1548
+    },
+    "archive/rc2/Dockerfile": {
+      "source": "lifemate-final-20261116-rc2/Dockerfile",
+      "sha256": "49beb5d78c8afc9de9d13fbe79080591228dcb0c02914f03130071f7eff96563",
+      "bytes": 4247
+    },
+    "archive/rc2/.dockerignore": {
+      "source": "lifemate-final-20261116-rc2/.dockerignore",
+      "sha256": "3f340afc21cad48f10546a9fbee737a5d8146e0cb56fab9d16420cef3d4104b5",
+      "bytes": 61
+    },
+    "archive/rc2/host.sh": {
+      "source": "lifemate-final-20261116-rc2/host.sh",
+      "sha256": "bf3895c66918f79daa2baa07145e6328cbbaf62d843d7b06d55c59a0ba38bcf3",
+      "bytes": 9640
+    },
+    "archive/rc2/BUILD.json": {
+      "source": "lifemate-final-20261116-rc2/BUILD.json",
+      "sha256": "cc21548d068e44aa82d616d526285bd211af380f0f2d73fafb574776c25de981",
+      "bytes": 6240
+    },
+    "archive/rc2/STATUS.json": {
+      "source": "lifemate-final-20261116-rc2/STATUS.json",
+      "sha256": "f70c2d6d6704442fb7e31bd8ad462947d8f1ffffc0435a9a90bd381839702824",
+      "bytes": 1587
+    },
+    "archive/rc2/CONTEXT_SHA256.json": {
+      "source": "lifemate-final-20261116-rc2/CONTEXT_SHA256.json",
+      "sha256": "4e0787eaf9c3f2d72f7c3e89e7f83c91fb1ac605626f2be2918bcd3e8d9a7b48",
+      "bytes": 49793
+    },
+    "archive/rc2/artifacts/RELEASE.json": {
+      "source": "lifemate-final-20261116-rc2/artifacts/RELEASE.json",
+      "sha256": "73bdf17ae4f7da4115b4e586e7fcb46d0d3d79228a7413a07a801810ed72cc19",
+      "bytes": 2503
+    },
+    "archive/rc2/artifacts/lifemate-k-k48.46-20261116-rc2.tar.gz.sha256": {
+      "source": "lifemate-final-20261116-rc2/artifacts/lifemate-k-k48.46-20261116-rc2.tar.gz.sha256",
+      "sha256": "0d2841f5469972b58bfb05f795c0c503e684dd530e7b85572658cffb4e6d9fd9",
+      "bytes": 104
+    },
+    "archive/rc2/artifacts/lifemate-k-k48.46-20261116-rc2.tar.gz.md5": {
+      "source": "lifemate-final-20261116-rc2/artifacts/lifemate-k-k48.46-20261116-rc2.tar.gz.md5",
+      "sha256": "fd0cfd6798c2312ed59d7498de8a144275fa5f7ac170b5ba321cadcb0e55a3e9",
+      "bytes": 72
+    },
+    "archive/rc2/container/entry.sh": {
+      "source": "lifemate-final-20261116-rc2/container/entry.sh",
+      "sha256": "82b760d194549110b6bf09703e37222555956e71afc1eae66cd5afdaed4f9820",
+      "bytes": 538
+    },
+    "archive/rc2/container/preflight.py": {
+      "source": "lifemate-final-20261116-rc2/container/preflight.py",
+      "sha256": "18c8bca622168666ccd85802fd3852d31737ef0aaae81fd3379402d352f43fc5",
+      "bytes": 2100
+    },
+    "archive/rc2/container/run_notebook.py": {
+      "source": "lifemate-final-20261116-rc2/container/run_notebook.py",
+      "sha256": "a96135888159200b660f4cc611b70d58cf91aaa77945874b3e34e2b6c891f5af",
+      "bytes": 1204
+    },
+    "archive/rc2/container/sitecustomize.py": {
+      "source": "lifemate-final-20261116-rc2/container/sitecustomize.py",
+      "sha256": "bd9fa8a51e1ef8ff15ae6df76db3233a25d4ef62756fc53b7a447fae29a01b3c",
+      "bytes": 2101
+    },
+    "archive/rc2/tools/candidate.py": {
+      "source": "lifemate-final-20261116-rc2/tools/candidate.py",
+      "sha256": "7e726a4d7e41335810dca4bd8260a7c30ec0da8b6faa47e3cdc3bd04d56f9df6",
+      "bytes": 17221
+    },
+    "archive/rc2/tools/package.py": {
+      "source": "lifemate-final-20261116-rc2/tools/package.py",
+      "sha256": "a33a70defc893f5384609c8ce8cb6b36b4b98c78bf41f1f4326279a52f90efbe",
+      "bytes": 11298
+    },
+    "archive/rc2/tools/prepare_candidate.py": {
+      "source": "lifemate-final-20261116-rc2/tools/prepare_candidate.py",
+      "sha256": "cb16edac40b4839261ff3b12ea30ff8b39e4f21e19c2011f565070a81ee6f393",
+      "bytes": 6656
+    },
+    "archive/rc2/tools/schema_helpers.py": {
+      "source": "lifemate-final-20261116-rc2/tools/schema_helpers.py",
+      "sha256": "054eba91ababe54e6b459c66719d3703d7a9130a0fdfd36e2f8039a77ce73915",
+      "bytes": 4420
+    },
+    "archive/rc2/tests/test_candidate.py": {
+      "source": "lifemate-final-20261116-rc2/tests/test_candidate.py",
+      "sha256": "30eac90046e43c2fabdaa231c55c0089e832edcd81fc0360cbd7b6f39d46f363",
+      "bytes": 21007
+    },
+    "archive/rc2/tests/test_identity_resume.py": {
+      "source": "lifemate-final-20261116-rc2/tests/test_identity_resume.py",
+      "sha256": "d81f866d2e2e0a8cd9ee2a4236f4b6ef2066d080eaeccca897855f59b6322497",
+      "bytes": 12236
+    },
+    "archive/rc2/tests/test_lock_resume.py": {
+      "source": "lifemate-final-20261116-rc2/tests/test_lock_resume.py",
+      "sha256": "388cca35c15d4afc2b77964c8539387f7777c56476d251c08bd1f883df6b8f20",
+      "bytes": 8400
+    },
+    "archive/rc2/evidence/IDENTITY_CORRECTION.md": {
+      "source": "lifemate-final-20261116-rc2/evidence/IDENTITY_CORRECTION.md",
+      "sha256": "92cf160ad18b855b57ae903ef09b06f720852e1808cd27b1226f49db26b1b83c",
+      "bytes": 5110
+    },
+    "archive/rc2/evidence/LOCK_CORRECTION.md": {
+      "source": "lifemate-final-20261116-rc2/evidence/LOCK_CORRECTION.md",
+      "sha256": "e9599c96bb526d0a20bc3c1a091b9c8124d575e4edac0bafeccd912c46362ea5",
+      "bytes": 3447
+    },
+    "archive/rc2/evidence/PREPARATION_DETAILS.md": {
+      "source": "lifemate-final-20261116-rc2/evidence/PREPARATION_DETAILS.md",
+      "sha256": "5cdfb8a0d603ca62bfafbdc189ac844d3fe96b3319b52c882e5911098bd84ae6",
+      "bytes": 12841
+    },
+    "archive/rc2/evidence/identity-correction.json": {
+      "source": "lifemate-final-20261116-rc2/evidence/identity-correction.json",
+      "sha256": "4a6be4853923663a8ae4a9151d305c05a7f154309310b63049b6c82de00b6a93",
+      "bytes": 11560
+    },
+    "archive/rc2/evidence/lock-correction.json": {
+      "source": "lifemate-final-20261116-rc2/evidence/lock-correction.json",
+      "sha256": "50a1bb85801ac7003287250b651b82f34a58ffbcf653805a51b6b822f641861f",
+      "bytes": 902
+    },
+    "archive/rc2/evidence/base-image-identity.json": {
+      "source": "lifemate-final-20261116-rc2/evidence/base-image-identity.json",
+      "sha256": "2a5a2fcda0940c9c2325ca39d62699ad4abf33abdbb0f6d30b80e5a95aaf86a2",
+      "bytes": 9912
+    },
+    "archive/rc2/evidence/base-receipt-sha256.json": {
+      "source": "lifemate-final-20261116-rc2/evidence/base-receipt-sha256.json",
+      "sha256": "a5b37e391a97a679e0d587ff6a57212019319b8ee4211d73967496ea985276cd",
+      "bytes": 198
+    },
+    "archive/rc2/evidence/gpu-pass.json": {
+      "source": "lifemate-final-20261116-rc2/evidence/gpu-pass.json",
+      "sha256": "f157964ab84bc992dc486db1cce2cfc484e6f9ad0d7496301fa8e65b71c8dbd2",
+      "bytes": 236
+    },
+    "archive/rc2/evidence/smoke-pass.json": {
+      "source": "lifemate-final-20261116-rc2/evidence/smoke-pass.json",
+      "sha256": "d6443ecd552373abb9a8018ba36b63a513165a30a4d717ae11b6c9e84df20bee",
+      "bytes": 238
+    },
+    "archive/rc2/evidence/pilot-pass.json": {
+      "source": "lifemate-final-20261116-rc2/evidence/pilot-pass.json",
+      "sha256": "d73dabb764925c37ba07663452d4f6cd50988e89f86af6eb8c76e2b81303411c",
+      "bytes": 238
+    },
+    "archive/rc2/evidence/notebook-pass.json": {
+      "source": "lifemate-final-20261116-rc2/evidence/notebook-pass.json",
+      "sha256": "a76816ff406b2251f4f9c506696a5428c31a657985b5bc68838b5bf44ac17b6a",
+      "bytes": 241
+    },
+    "archive/rc2/evidence/protected-validator-check.json": {
+      "source": "lifemate-final-20261116-rc2/evidence/protected-validator-check.json",
+      "sha256": "ce4b4efb7d3f30ae6a9e735c0c493f26dc4c89f76b3d1f8c719d27339c71d0ff",
+      "bytes": 95
+    },
+    "archive/rc2/evidence/syntax.json": {
+      "source": "lifemate-final-20261116-rc2/evidence/syntax.json",
+      "sha256": "a0cd2d43a23f82e18333a58ad0fd49d800dbc5a66cd4cd07c99e5cd3def0cae5",
+      "bytes": 110
+    },
+    "archive/rc2/runs/20261116T142101Z-gpu-qtxYSa/report.json": {
+      "source": "lifemate-final-20261116-rc2/runs/20261116T142101Z-gpu-qtxYSa/report.json",
+      "sha256": "afd95ffbaceaf87bb384e07864be7e77bda6686d210eae6ee0dae8f423804944",
+      "bytes": 445
+    },
+    "archive/rc2/runs/20261116T143345Z-pilot-65KOaw/report.json": {
+      "source": "lifemate-final-20261116-rc2/runs/20261116T143345Z-pilot-65KOaw/report.json",
+      "sha256": "8b1629bdea5b4e2f585b0e1f06f66a762f1a4b2554974db99915ffb398b94ab5",
+      "bytes": 939
+    },
+    "archive/rc2/runs/20261116T143326Z-smoke-tX4mwB/report.json": {
+      "source": "lifemate-final-20261116-rc2/runs/20261116T143326Z-smoke-tX4mwB/report.json",
+      "sha256": "7dd22cbca73c88ab8d13651f9f431117cf5b5b4fe809ad2cd02d34f047cd78f7",
+      "bytes": 933
+    },
+    "archive/rc2/runs/20261116T143420Z-notebook-QuZ2ax/report.json": {
+      "source": "lifemate-final-20261116-rc2/runs/20261116T143420Z-notebook-QuZ2ax/report.json",
+      "sha256": "a20fb2f1fbeca07e953bc6df5a2cc9ae55b89bc04a91eefa6f12b78bf2788b08",
+      "bytes": 942
+    },
+    "archive/private_test/lifemate-private-rc2-host-20261120/README.md": {
+      "source": "lifemate-private-rc2-host-20261120/README.md",
+      "sha256": "17a45fd721242156c152cdb5d3f3d94d4ef592768c9344ed47a61e04bccf7e24",
+      "bytes": 17604
+    },
+    "archive/private_test/lifemate-private-rc2-host-20261120/check_results.py": {
+      "source": "lifemate-private-rc2-host-20261120/check_results.py",
+      "sha256": "b3ed10ae9ca8ad967e5c01cccb9a7cf9c9d7f0941cd0b8ce4de59bdf56b96430",
+      "bytes": 12780
+    },
+    "archive/private_test/lifemate-private-rc2-host-20261120/container/continue_inference.py": {
+      "source": "lifemate-private-rc2-host-20261120/container/continue_inference.py",
+      "sha256": "da6654320c344659a65518bfdf8ac974622d35f3fca5c6088e206537b3cf9495",
+      "bytes": 4056
+    },
+    "archive/private_test/lifemate-private-rc2-host-20261120/container/preflight.py": {
+      "source": "lifemate-private-rc2-host-20261120/container/preflight.py",
+      "sha256": "1963ef58533fb3254bde3684a9af80830a6ce89b2156904d1f9d4028ab4db8cc",
+      "bytes": 2994
+    },
+    "archive/private_test/lifemate-private-rc2-host-20261120/container/sitecustomize.py": {
+      "source": "lifemate-private-rc2-host-20261120/container/sitecustomize.py",
+      "sha256": "85da7bc91a2c428180ff16f11daa4438d1061c552d9d26a5fa0a70f384439371",
+      "bytes": 2102
+    },
+    "archive/private_test/lifemate-private-rc2-host-20261120/continue_private_test.py": {
+      "source": "lifemate-private-rc2-host-20261120/continue_private_test.py",
+      "sha256": "97586ad572938026a4a87c9041733a4495cf4e865e634e975124904cfa6fc0a0",
+      "bytes": 19847
+    },
+    "archive/private_test/lifemate-private-rc2-host-20261120/recovery_checks.py": {
+      "source": "lifemate-private-rc2-host-20261120/recovery_checks.py",
+      "sha256": "a67de40900bfeaa12aeaa6de33f3ae9080620950519fccc36194d91a066c5bf7",
+      "bytes": 11319
+    },
+    "archive/private_test/lifemate-private-rc2-host-20261120/run_private_test.py": {
+      "source": "lifemate-private-rc2-host-20261120/run_private_test.py",
+      "sha256": "85e97e2d92b7ebeaa8996fd9f1cd81ecb2e99143fcbc9cd1093b04151627552c",
+      "bytes": 39518
+    },
+    "archive/private_test/lifemate-private-rc2-host-20261120/test_continuation.py": {
+      "source": "lifemate-private-rc2-host-20261120/test_continuation.py",
+      "sha256": "d73ec9b113f114e5d800eba9a3fc12d4ccd2ae814718a80139f960695e22c7a3",
+      "bytes": 21696
+    },
+    "archive/private_test/lifemate-private-rc2-host-20261120/test_output_directory.py": {
+      "source": "lifemate-private-rc2-host-20261120/test_output_directory.py",
+      "sha256": "91e0449886900bad6246ab43ac4382c8ddf360c95a8efddbc423f09f811c55b0",
+      "bytes": 13416
+    },
+    "archive/private_test/lifemate-private-rc2-host-20261120/test_workflow.py": {
+      "source": "lifemate-private-rc2-host-20261120/test_workflow.py",
+      "sha256": "b2c74d7cffa7e1f2f2e24ef5137029a1d3e6fc42f2c9bfa0392ca46cae96d473",
+      "bytes": 15557
+    },
+    "archive/private_test/lifemate-private-rc2-investigation-20261120/LOCAL_VERIFICATION.json": {
+      "source": "lifemate-private-rc2-investigation-20261120/LOCAL_VERIFICATION.json",
+      "sha256": "e3b1aa94962995acd1013a97ff43558171d6822ed61d035ccbb23c37e0c338f9",
+      "bytes": 1476
+    },
+    "archive/private_test/lifemate-private-rc2-investigation-20261120/inspect_failure.py": {
+      "source": "lifemate-private-rc2-investigation-20261120/inspect_failure.py",
+      "sha256": "159a8f640542e45f5aa99422633986627f631a51f28590b8357cddef6325088e",
+      "bytes": 12729
+    },
+    "archive/private_test/lifemate-private-rc2-investigation-20261120/reconstruct_prompt.py": {
+      "source": "lifemate-private-rc2-investigation-20261120/reconstruct_prompt.py",
+      "sha256": "c0de8542167ecd932519e88f699c8c85956481219757bb5e4a8c0fc6ebe2bb29",
+      "bytes": 2783
+    },
+    "archive/private_test/lifemate-private-rc2-investigation-20261120/screen_inputs.py": {
+      "source": "lifemate-private-rc2-investigation-20261120/screen_inputs.py",
+      "sha256": "39f495cb28ee3890603f69a6813aee19762a265c353e009f039068c315e561c2",
+      "bytes": 5355
+    },
+    "archive/private_test/lifemate-private-rc2-investigation-20261120/test_inspect_failure.py": {
+      "source": "lifemate-private-rc2-investigation-20261120/test_inspect_failure.py",
+      "sha256": "1ab57ce1ba5caf75e00dd707778e5e80314ec7f3aab3baa456e01abe82cb522c",
+      "bytes": 2456
+    },
+    "archive/host_validation/FINAL_SUBMISSION_ACTIONS.md": {
+      "source": "lifemate-host-validation/FINAL_SUBMISSION_ACTIONS.md",
+      "sha256": "72993e7aa7dbb4b048683c94d38cfb16336c590f39f4ee8777ccf314f4f6ebbd",
+      "bytes": 12827
+    },
+    "archive/host_validation/IMAGE_IDENTITY.md": {
+      "source": "lifemate-host-validation/IMAGE_IDENTITY.md",
+      "sha256": "fecad18aa2b310e81d4c6afa9166e357baed522871ec5463f0c6f67f28a4e2b7",
+      "bytes": 5131
+    },
+    "archive/host_validation/OFFLINE_HOSTNAME.md": {
+      "source": "lifemate-host-validation/OFFLINE_HOSTNAME.md",
+      "sha256": "2526cd4eb47ed4f2ec429d4416510f822553db05855085273d5f87d34c8edc8c",
+      "bytes": 3788
+    },
+    "archive/host_validation/README.md": {
+      "source": "lifemate-host-validation/README.md",
+      "sha256": "eeb4566c378e76e19afa5f6d2e4ec84675f2fb7f48f16122eab3b259917028ca",
+      "bytes": 16864
+    },
+    "archive/host_validation/SDK_AUDIT.md": {
+      "source": "lifemate-host-validation/SDK_AUDIT.md",
+      "sha256": "7cc37c0b77c5dfbf048a5fb57ec3d3a0329d432a1e01737a874f5d6cdab3d373",
+      "bytes": 3454
+    },
+    "archive/host_validation/container/entry.sh": {
+      "source": "lifemate-host-validation/container/entry.sh",
+      "sha256": "01adc175230054e56d2f8342238593ceee43c90a72ecc398a460b90039fc5813",
+      "bytes": 556
+    },
+    "archive/host_validation/container/preflight.py": {
+      "source": "lifemate-host-validation/container/preflight.py",
+      "sha256": "1f76e08cc52c92529faf19b12af7b25e429b0836abf8215ee7bb835282f60860",
+      "bytes": 3605
+    },
+    "archive/host_validation/container/run_notebook.py": {
+      "source": "lifemate-host-validation/container/run_notebook.py",
+      "sha256": "a96135888159200b660f4cc611b70d58cf91aaa77945874b3e34e2b6c891f5af",
+      "bytes": 1204
+    },
+    "archive/host_validation/container/sitecustomize.py": {
+      "source": "lifemate-host-validation/container/sitecustomize.py",
+      "sha256": "57d8df32d52d52b02ce3233416624ed6c663174da80c8311cda36f821fc05f1f",
+      "bytes": 1444
+    },
+    "archive/host_validation/image_identity.py": {
+      "source": "lifemate-host-validation/image_identity.py",
+      "sha256": "818d3ab6ca897a99717b854024353c0eca1fc2e491813921efed3638ff2bd984",
+      "bytes": 18356
+    },
+    "archive/host_validation/monitor_resources.py": {
+      "source": "lifemate-host-validation/monitor_resources.py",
+      "sha256": "4d9cf82ff767b66f3795c32ce8be48b2c10793e84376211bc056e52deed44733",
+      "bytes": 1102
+    },
+    "archive/host_validation/prepare_reference.py": {
+      "source": "lifemate-host-validation/prepare_reference.py",
+      "sha256": "da6331ded080ab9e6af48c1df973eebd76ae2a46d597582d1a3f7e20eee38fde",
+      "bytes": 4411
+    },
+    "archive/host_validation/run_host_notebook.sh": {
+      "source": "lifemate-host-validation/run_host_notebook.sh",
+      "sha256": "70ea286f04535bd4090581ab314893f0049f8cb97d4ec9fdccebaab388a62e07",
+      "bytes": 291
+    },
+    "archive/host_validation/run_host_validation.sh": {
+      "source": "lifemate-host-validation/run_host_validation.sh",
+      "sha256": "15ea025f43a29d7293a12324a480bcc74d7b90bebe897fad5c0cda0277aa7617",
+      "bytes": 9192
+    },
+    "archive/host_validation/tests/identity_fixtures.py": {
+      "source": "lifemate-host-validation/tests/identity_fixtures.py",
+      "sha256": "6f730431dade90154a3279a6837a875d8cd1905760062d3f9e0d695e47fc70b1",
+      "bytes": 3078
+    },
+    "archive/host_validation/tests/test_analyzer.py": {
+      "source": "lifemate-host-validation/tests/test_analyzer.py",
+      "sha256": "942f9ed0aa2a3dd44fae2274511941e3168862ba21e0952320de04f7faa2132f",
+      "bytes": 7623
+    },
+    "archive/host_validation/tests/test_hostname_fix.py": {
+      "source": "lifemate-host-validation/tests/test_hostname_fix.py",
+      "sha256": "16887db826e23699a9d4502c7978cdfee0b6b6a88de8c50e6dc624225796724d",
+      "bytes": 2189
+    },
+    "archive/host_validation/tests/test_image_identity.py": {
+      "source": "lifemate-host-validation/tests/test_image_identity.py",
+      "sha256": "3f77c18cd715e5d81c2a5f86cdefb6ba0e86ffa0eee2f38cf5ac0aabd95128ab",
+      "bytes": 10356
+    },
+    "archive/host_validation/tests/test_validation.py": {
+      "source": "lifemate-host-validation/tests/test_validation.py",
+      "sha256": "3e17a9bf74360ef7f561b3a1c69e5dfe75896cb7f74cc474d960f4c30674051a",
+      "bytes": 6247
+    },
+    "archive/host_validation/validation.py": {
+      "source": "lifemate-host-validation/validation.py",
+      "sha256": "12732ebe0121dcbc6dafad152ee93f2db7b3b886cdd2bd298a33e5c534ccf325",
+      "bytes": 25810
+    }
+  }
+}

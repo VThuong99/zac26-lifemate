@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "sealed_archive_verification": {
+    "schema_version": 1,
+    "release_manifest_text": "{\n  \"status\": \"RELEASE_BLOCKED\",\n  \"local_tag\": \"lifemate-k:k48.46-20261115-rc1\",\n  \"archive\": \"/workspace/GPU_benchmark/lifemate-release-k-20261115/artifacts/lifemate-k-k48.46-20261115-rc1.tar.gz\",\n  \"archive_bytes\": 17099977244,\n  \"archive_md5\": \"66aae7f0142ca2c9a27d6252969092a9\",\n  \"archive_sha256\": \"410ff23ec66a96456bac046c95ab686ed922fd8e9b295868350657f93fb6568f\",\n  \"image_config_id\": \"sha256:ca9030a7989aed1279c3ad850bc49d2a9950fc6b74c10bcb96811785757b8247\",\n  \"oci_manifest_digest\": \"sha256:4d3ea41c5fab770d6fdc19b4c883b1b324c7554d6ff30a4ebb92e767b4811279\",\n  \"uncompressed_layer_diff_id\": \"sha256:d32c4ca082ba87cc8d4c886a451c892d22449b3f37d7885ee15e8a0226385a26\",\n  \"registry_digest\": null,\n  \"docker_build_executed\": false,\n  \"docker_load_executed\": false,\n  \"construction\": \"digest-verified CUDA base; isolated chroot package install; explicit release files; flattened OCI/Docker-save assembly\",\n  \"publication_performed\": false,\n  \"normalized_release_timestamp\": \"2026-11-15T00:00:00Z\"\n}\n",
+    "release_manifest_sha256": "27ea1b3fdd371cf76a85d6981329e81d28bf1e32b1f12dbbcfff87b243d1e7a9",
+    "archive": {
+      "name": "lifemate-k-k48.46-20261115-rc1.tar.gz",
+      "sha256": "410ff23ec66a96456bac046c95ab686ed922fd8e9b295868350657f93fb6568f",
+      "md5": "66aae7f0142ca2c9a27d6252969092a9",
+      "bytes": 17099977244,
+      "gzip_crc_verified": true
+    },
+    "config_text": "{\"architecture\":\"amd64\",\"config\":{\"Cmd\":[\"/bin/bash\",\"/code/predict.sh\"],\"Entrypoint\":[\"/opt/nvidia/nvidia_entrypoint.sh\"],\"Env\":[\"PATH=/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NVARCH=x86_64\",\"NVIDIA_REQUIRE_CUDA=cuda>=13.2 brand=unknown,driver>=535,driver<536 brand=grid,driver>=535,driver<536 brand=tesla,driver>=535,driver<536 brand=nvidia,driver>=535,driver<536 brand=quadro,driver>=535,driver<536 brand=quadrortx,driver>=535,driver<536 brand=nvidiartx,driver>=535,driver<536 brand=vapps,driver>=535,driver<536 brand=vpc,driver>=535,driver<536 brand=vcs,driver>=535,driver<536 brand=vws,driver>=535,driver<536 brand=cloudgaming,driver>=535,driver<536 brand=unknown,driver>=570,driver<571 brand=grid,driver>=570,driver<571 brand=tesla,driver>=570,driver<571 brand=nvidia,driver>=570,driver<571 brand=quadro,driver>=570,driver<571 brand=quadrortx,driver>=570,driver<571 brand=nvidiartx,driver>=570,driver<571 brand=vapps,driver>=570,driver<571 brand=vpc,driver>=570,driver<571 brand=vcs,driver>=570,driver<571 brand=vws,driver>=570,driver<571 brand=cloudgaming,driver>=570,driver<571 brand=unknown,driver>=580,driver<581 brand=grid,driver>=580,driver<581 brand=tesla,driver>=580,driver<581 brand=nvidia,driver>=580,driver<581 brand=quadro,driver>=580,driver<581 brand=quadrortx,driver>=580,driver<581 brand=nvidiartx,driver>=580,driver<581 brand=vapps,driver>=580,driver<581 brand=vpc,driver>=580,driver<581 brand=vcs,driver>=580,driver<581 brand=vws,driver>=580,driver<581 brand=cloudgaming,driver>=580,driver<581 brand=unknown,driver>=590,driver<591 brand=grid,driver>=590,driver<591 brand=tesla,driver>=590,driver<591 brand=nvidia,driver>=590,driver<591 brand=quadro,driver>=590,driver<591 brand=quadrortx,driver>=590,driver<591 brand=nvidiartx,driver>=590,driver<591 brand=vapps,driver>=590,driver<591 brand=vpc,driver>=590,driver<591 brand=vcs,driver>=590,driver<591 brand=vws,driver>=590,driver<591 brand=cloudgaming,driver>=590,driver<591\",\"NV_CUDA_CUDART_VERSION=13.2.51-1\",\"CUDA_VERSION=13.2.0\",\"LD_LIBRARY_PATH=/code/native/cuda13.1:/opt/k-python/main/torch/lib:/opt/k-python/main/nvidia/cuda_nvrtc/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64\",\"NVIDIA_VISIBLE_DEVICES=all\",\"NVIDIA_DRIVER_CAPABILITIES=compute,utility\",\"NV_CUDA_LIB_VERSION=13.2.0-1\",\"NV_NVTX_VERSION=13.2.20-1\",\"NV_LIBNPP_VERSION=13.1.0.44-1\",\"NV_LIBNPP_PACKAGE=libnpp-13-2=13.1.0.44-1\",\"NV_LIBCUSPARSE_VERSION=12.7.9.17-1\",\"NV_LIBCUBLAS_PACKAGE_NAME=libcublas-13-2\",\"NV_LIBCUBLAS_VERSION=13.3.0.5-1\",\"NV_LIBCUBLAS_PACKAGE=libcublas-13-2=13.3.0.5-1\",\"NVIDIA_PRODUCT_NAME=CUDA\",\"NV_CUDA_CUDART_DEV_VERSION=13.2.51-1\",\"NV_NVML_DEV_VERSION=13.2.51-1\",\"NV_LIBCUSPARSE_DEV_VERSION=12.7.9.17-1\",\"NV_LIBNPP_DEV_VERSION=13.1.0.44-1\",\"NV_LIBNPP_DEV_PACKAGE=libnpp-dev-13-2=13.1.0.44-1\",\"NV_LIBCUBLAS_DEV_VERSION=13.3.0.5-1\",\"NV_LIBCUBLAS_DEV_PACKAGE_NAME=libcublas-dev-13-2\",\"NV_LIBCUBLAS_DEV_PACKAGE=libcublas-dev-13-2=13.3.0.5-1\",\"NV_CUDA_NSIGHT_COMPUTE_VERSION=13.2.0-1\",\"NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE=cuda-nsight-compute-13-2=13.2.0-1\",\"LIBRARY_PATH=/usr/local/cuda/lib64/stubs\",\"PYTHONPATH=/opt/k-python/main:/opt/k-python/sherpa:/opt/k-python/jupyter\",\"PYTHONHASHSEED=20261030\",\"PYTHONDONTWRITEBYTECODE=1\",\"HF_HUB_OFFLINE=1\",\"TRANSFORMERS_OFFLINE=1\",\"TOKENIZERS_PARALLELISM=false\",\"CUBLAS_WORKSPACE_CONFIG=:4096:8\",\"LIFEMATE_RUNTIME_ROOT=/code/runtime\",\"LIFEMATE_NATIVE_ROOT=/code/native\"],\"Labels\":{\"lifemate.release.status\":\"RELEASE_BLOCKED\",\"maintainer\":\"NVIDIA CORPORATION <cudatools@nvidia.com>\",\"org.opencontainers.image.ref.name\":\"ubuntu\",\"org.opencontainers.image.title\":\"LifeMate frozen K 48.46\",\"org.opencontainers.image.version\":\"k48.46-20261115-rc1\"},\"OnBuild\":null,\"WorkingDir\":\"/code\"},\"created\":\"2026-11-15T00:00:00Z\",\"history\":[{\"comment\":\"Normalized release timestamp; Docker runtime/A30/rights remain blocked\",\"created\":\"2026-11-15T00:00:00Z\",\"created_by\":\"LifeMate explicit-input daemonless assembly\"}],\"moby.buildkit.buildinfo.v1\":\"eyJmcm9udGVuZCI6ImRvY2tlcmZpbGUudjAiLCJzb3VyY2VzIjpbeyJ0eXBlIjoiZG9ja2VyLWltYWdlIiwicmVmIjoiZ2l0bGFiLW1hc3Rlci5udmlkaWEuY29tOjUwMDUvY3VkYS1pbnN0YWxsZXIvY3VkYS9yZWxlYXNlLWNhbmRpZGF0ZS9jdWRhOjEzLjIuMC1ydW50aW1lLXVidW50dTI0LjA0IiwicGluIjoic2hhMjU2OjdmYWRhNzBjNWVkMWI4NWNiM2MxNWI1M2Y1MTMwMGZkYWNmZjFjMzE0NjZhMjBlNGYyYjI5YWQ5NTJmZDYzYTIifV19\",\"moby.buildkit.cache.v0\":\"W3siZGlnZXN0Ijoic2hhMjU2OjY2ODJlZWM3NTlkYmQwMGIzNzQ4NTI5ZWI1Nzc0MTFiMGYyZDlhZTcyYWY1N2E2NDZhZTNmOGQ2NjFkYjAxMTQiLCJpbnB1dHMiOltbeyJsaW5rIjo0fV1dfSx7ImRpZ2VzdCI6InNoYTI1Njo3MGNlYjdjZmM0Mzg0ZDM5ZWViY2JlZmEzZTAxNjY0MjM3OTk0NzAyYjNlNmRkNGIyMzIyMGE4MzhhZGVmMTVlIn0seyJsYXllcnMiOlt7ImxheWVyIjoxMiwiY3JlYXRlZEF0IjoiMjAyNi0wMy0wOVQyMjo1MjowNi4yODY0ODg2MjhaIn1dLCJkaWdlc3QiOiJzaGEyNTY6YjIyNjFlYjExYWZjMWNlZmRmNjIzNDRlMTA3YzcwMTNmMjZmMjExYjRjOWRmMmFiYTU5MDRlOTdmNzRmNGYwZiIsImlucHV0cyI6W1t7ImxpbmsiOjB9XV19LHsiZGlnZXN0Ijoic2hhMjU2OmZhY2YxZmYzMTk4OGM0MmFhZGI3NmNlMGFkOWIxZDA4YmYyZTZlZmJmYmE2NjY3MTZmNmE1ZmNkZjZiYjlhOTkifSx7ImxheWVycyI6W3sibGF5ZXIiOjEwLCJjcmVhdGVkQXQiOiIyMDI2LTAzLTA5VDIyOjUyOjA2LjA1OTYxODMyWiJ9XSwiZGlnZXN0Ijoic2hhMjU2OmZmMDgwNjc0Mzg3NGExODg4NDNmMWVmNDJjMWMxNGJhNWU0YWU4ZWQxODg2ODJlNjdjMTQwODk3ZjJlMjAwOGYiLCJpbnB1dHMiOltbeyJsaW5rIjoxfSx7ImxpbmsiOjN9LHsibGluayI6NX1dXX0seyJkaWdlc3QiOiJ5NmhqYnNkMWdnNmN1c3B1d2sybXpsZWMyIn1d\",\"os\":\"linux\",\"rootfs\":{\"diff_ids\":[\"sha256:d32c4ca082ba87cc8d4c886a451c892d22449b3f37d7885ee15e8a0226385a26\"],\"type\":\"layers\"}}",
+    "docker_save_manifest_text": "[{\"Config\":\"ca9030a7989aed1279c3ad850bc49d2a9950fc6b74c10bcb96811785757b8247.json\",\"Layers\":[\"d32c4ca082ba87cc8d4c886a451c892d22449b3f37d7885ee15e8a0226385a26/layer.tar\"],\"RepoTags\":[\"lifemate-k:k48.46-20261115-rc1\"]}]",
+    "layers": [
+      {
+        "path": "d32c4ca082ba87cc8d4c886a451c892d22449b3f37d7885ee15e8a0226385a26/layer.tar",
+        "digest": "sha256:d32c4ca082ba87cc8d4c886a451c892d22449b3f37d7885ee15e8a0226385a26",
+        "size": 24281600000
+      }
+    ]
+  },
+  "image_inspect_sha256": "be5089a00c92fb5d226ec14ead6921ffbae8b5c7b75273550d137fef2b64c709",
+  "image_config_digest": "sha256:ca9030a7989aed1279c3ad850bc49d2a9950fc6b74c10bcb96811785757b8247",
+  "release_oci_manifest_digest": "sha256:4d3ea41c5fab770d6fdc19b4c883b1b324c7554d6ff30a4ebb92e767b4811279",
+  "release_oci_index_digest": "sha256:8bab0a348c5cae63783e16ff90fe28a0959c4097dc3aa2ad2a7bc8f11f086456",
+  "docker_store_image_id": "sha256:92212d536574ef62f6ab32edaf4c9ce926e64ffb4863e6864bd61c979d708755",
+  "docker_store_id_semantics": "containerd_target_descriptor",
+  "store_descriptor": {
+    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+    "digest": "sha256:92212d536574ef62f6ab32edaf4c9ce926e64ffb4863e6864bd61c979d708755",
+    "size": 427,
+    "annotations": {
+      "io.containerd.image.name": "docker.io/library/lifemate-k:k48.46-20261115-rc1",
+      "org.opencontainers.image.ref.name": "k48.46-20261115-rc1"
+    }
+  },
+  "verified_docker_image_reference": "sha256:92212d536574ef62f6ab32edaf4c9ce926e64ffb4863e6864bd61c979d708755",
+  "rootfs_diff_ids": [
+    "sha256:d32c4ca082ba87cc8d4c886a451c892d22449b3f37d7885ee15e8a0226385a26"
+  ],
+  "derived_target_descriptors": {
+    "sha256:92212d536574ef62f6ab32edaf4c9ce926e64ffb4863e6864bd61c979d708755": {
+      "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+      "digest": "sha256:92212d536574ef62f6ab32edaf4c9ce926e64ffb4863e6864bd61c979d708755",
+      "size": 427,
+      "kind": "containerd_docker_save_manifest"
+    },
+    "sha256:4d3ea41c5fab770d6fdc19b4c883b1b324c7554d6ff30a4ebb92e767b4811279": {
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "digest": "sha256:4d3ea41c5fab770d6fdc19b4c883b1b324c7554d6ff30a4ebb92e767b4811279",
+      "size": 405,
+      "kind": "sealed_oci_manifest"
+    },
+    "sha256:8bab0a348c5cae63783e16ff90fe28a0959c4097dc3aa2ad2a7bc8f11f086456": {
+      "mediaType": "application/vnd.oci.image.index.v1+json",
+      "digest": "sha256:8bab0a348c5cae63783e16ff90fe28a0959c4097dc3aa2ad2a7bc8f11f086456",
+      "size": 320,
+      "kind": "sealed_single_platform_oci_index"
+    }
+  },
+  "os": "linux",
+  "architecture": "amd64",
+  "runtime_config_verified": true
+}

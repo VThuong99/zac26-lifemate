@@ -1,0 +1,49 @@
+{
+  "created_utc": "2026-11-16T14:39:58.309283+00:00",
+  "tag": "lifemate-k:k48.46-20261116-rc2",
+  "docker_store_image_id": "sha256:e212336277d5b37c5359599961c56b7f9331e4f63b3985902a2e7c588c114a8c",
+  "archive": "lifemate-k-k48.46-20261116-rc2.tar.gz",
+  "bytes": 16805691094,
+  "oci_manifest_digest": "sha256:e212336277d5b37c5359599961c56b7f9331e4f63b3985902a2e7c588c114a8c",
+  "original_build_context_sha256": "e6f9f2872fb0d4507f165d51483c4909cd2eb5184ea2212298c59a7bcc9e9b25",
+  "sha256": "e2aaa0a3c8f54e673f7700c443846a974be09257f3e28145ca9f0fb5076232f5",
+  "md5": "fecf2555ec4e1fdecc97ebca84e07fc7",
+  "image_config_digest": "sha256:00cf5905325e57fa68e7034d4e773bc81fcea8e347d41c3e3e100e47de486306",
+  "rootfs_diff_ids": [
+    "sha256:8cb79c8d27ce91d0df79e76f176334c962d30a8ca10d57210681ef7f00900e32",
+    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+  ],
+  "members": 7,
+  "source_archive": "lifemate-k-source-20261116-rc2.tar.gz",
+  "source_sha256": "569b0fdc8ff8522cb0f81829a11616d00a14afe9740a00dee9677e7e56e5d586",
+  "build_sha256": "cc21548d068e44aa82d616d526285bd211af380f0f2d73fafb574776c25de981",
+  "context_sha256": "4e0787eaf9c3f2d72f7c3e89e7f83c91fb1ac605626f2be2918bcd3e8d9a7b48",
+  "validation": {
+    "gpu": {
+      "build_sha256": "cc21548d068e44aa82d616d526285bd211af380f0f2d73fafb574776c25de981",
+      "report": "runs/20261116T142101Z-gpu-qtxYSa/report.json",
+      "report_sha256": "afd95ffbaceaf87bb384e07864be7e77bda6686d210eae6ee0dae8f423804944"
+    },
+    "smoke": {
+      "build_sha256": "cc21548d068e44aa82d616d526285bd211af380f0f2d73fafb574776c25de981",
+      "report": "runs/20261116T143326Z-smoke-tX4mwB/report.json",
+      "report_sha256": "7dd22cbca73c88ab8d13651f9f431117cf5b5b4fe809ad2cd02d34f047cd78f7"
+    },
+    "pilot": {
+      "build_sha256": "cc21548d068e44aa82d616d526285bd211af380f0f2d73fafb574776c25de981",
+      "report": "runs/20261116T143345Z-pilot-65KOaw/report.json",
+      "report_sha256": "8b1629bdea5b4e2f585b0e1f06f66a762f1a4b2554974db99915ffb398b94ab5"
+    },
+    "notebook": {
+      "build_sha256": "cc21548d068e44aa82d616d526285bd211af380f0f2d73fafb574776c25de981",
+      "report": "runs/20261116T143420Z-notebook-QuZ2ax/report.json",
+      "report_sha256": "a20fb2f1fbeca07e953bc6df5a2cc9ae55b89bc04a91eefa6f12b78bf2788b08"
+    }
+  },
+  "full634_rc2_tested": false,
+  "a30_tested": false,
+  "complete_training_restoration": false,
+  "redistribution_authorized": false,
+  "uploaded": false,
+  "submitted": false
+}

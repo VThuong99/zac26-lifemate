@@ -1,0 +1,37 @@
+{
+  "selected_stage_pass": true,
+  "stage": "smoke",
+  "sdk_checks_pass": true,
+  "behavioral_parity_pass": true,
+  "overall_release_compliance": "UNRESOLVED",
+  "remaining_blockers": [
+    "Training restoration and immutable authorized inputs incomplete",
+    "Redistribution authorization unresolved",
+    "Actual A30 runtime unverified"
+  ],
+  "comparison": {
+    "expected": 1,
+    "records": 1,
+    "exact_cases": 1,
+    "parity_pass": true,
+    "issues": [],
+    "first_divergence": null,
+    "all_action_divergences": [],
+    "failed_receipts": [],
+    "status_counts": {
+      "finished": 1
+    },
+    "timing": {
+      "pass": true,
+      "issues": [],
+      "measured_records": 1,
+      "max_ms": 2582,
+      "mean_ms": 2582.0,
+      "limit_ms_exclusive": 30000,
+      "equality_to_reference_required": false
+    }
+  },
+  "sdk_module_executions": 44,
+  "permitted_environment_opens": 1,
+  "operational_checks_pass": true
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "source": "train/train.jsonl",
+    "exists_locally": true,
+    "bytes": 7198841,
+    "sha256": "24c42c79fbe8db932fe9817d041c0d0ca422ac8177b413cc1be0cda1fd8941a8",
+    "included": false,
+    "immutable_download_url": null,
+    "permission": "UNRESOLVED; do not upload"
+  },
+  {
+    "source": "experiments/supervised_family_split_v2.json",
+    "exists_locally": true,
+    "bytes": 79658,
+    "sha256": "499f85fb477d6f04be5ba4f601f11c5db1b0740add2cb46fdffd1bd920e3c062",
+    "included": false,
+    "immutable_download_url": null,
+    "permission": "UNRESOLVED; do not upload"
+  },
+  {
+    "source": "results/p19_real_asr_training_gate_v1/transcripts.jsonl",
+    "exists_locally": true,
+    "bytes": 142174,
+    "sha256": "be8a929ef7901342f6f3f7eacc225ed35b429076845b1ed92b236e5c5be1e8da",
+    "included": false,
+    "immutable_download_url": null,
+    "permission": "UNRESOLVED; do not upload"
+  },
+  {
+    "source": "results/p34_tokenizer_fix_v4/train.jsonl",
+    "exists_locally": true,
+    "bytes": 3418040,
+    "sha256": "2afe60e94fefad5731700a2e0032b7cd07b284e7657d53bdb666aa0c58df99c5",
+    "included": false,
+    "immutable_download_url": null,
+    "permission": "UNRESOLVED; do not upload"
+  },
+  {
+    "source": "results/p34_tokenizer_fix_v4/dev.jsonl",
+    "exists_locally": true,
+    "bytes": 390974,
+    "sha256": "fba7f3483c9037f145d4f0ff28be8113429de5a383ee528d3518a7676690f60c",
+    "included": false,
+    "immutable_download_url": null,
+    "permission": "UNRESOLVED; do not upload"
+  },
+  {
+    "source": "results/p20c_grounding_preferences_v1/frozen_inputs.json",
+    "exists_locally": true,
+    "bytes": 1131,
+    "sha256": "708f94f8b5118e931b44d8e278c9b06348685192dfbb8d2506187a160614dee6",
+    "included": false,
+    "immutable_download_url": null,
+    "permission": "UNRESOLVED; do not upload"
+  },
+  {
+    "source": "results/p20c_grounding_preferences_v1/grammar_masks.pkl.z",
+    "exists_locally": true,
+    "bytes": 122925,
+    "sha256": "5da90b6986d6b7f22e5a4a0041ab7a7efe28fd538e04857584cdd922772174cf",
+    "included": false,
+    "immutable_download_url": null,
+    "permission": "UNRESOLVED; do not upload"
+  },
+  {
+    "source": "results/p20c_grounding_preferences_v1/pairs_audited.jsonl",
+    "exists_locally": true,
+    "bytes": 719131,
+    "sha256": "aba5dd30d5e5829c634797ee3a1bb43d139eb3e6ccc4bb2aa6d1e9070dddfab0",
+    "included": false,
+    "immutable_download_url": null,
+    "permission": "UNRESOLVED; do not upload"
+  },
+  {
+    "source": "experiments/continuous_improvement/conditional_terminal_preference_sft_v1/training_inputs.pkl",
+    "exists_locally": true,
+    "bytes": 757422,
+    "sha256": "1a24f4047e42d5d89e6af113113341a46618f491f1623455e38e634406334ff2",
+    "included": false,
+    "immutable_download_url": null,
+    "permission": "UNRESOLVED; do not upload"
+  },
+  {
+    "source": "experiments/continuous_improvement/conditional_terminal_preference_sft_v1/pairs.pkl",
+    "exists_locally": true,
+    "bytes": 34166,
+    "sha256": "713e30f86e568fb11755a183a45f4ca4be05937172e795fe357a51695da9507a",
+    "included": false,
+    "immutable_download_url": null,
+    "permission": "UNRESOLVED; do not upload"
+  }
+]

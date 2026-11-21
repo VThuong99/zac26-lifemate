@@ -1,0 +1,33 @@
+{
+  "seed": 2026110813,
+  "base_sha256": "f8d3ddf17460618aada6d8e8ec8bd1d6b735a207612e2b282773eecf4bde6045",
+  "p19_adapter_sha256": "cd3926c12a82d52a0ee1f1a75aefbb284076c527bd4507a6d8a3048972fbaa20",
+  "tokenizer_sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
+  "training_inputs_sha256": "1a24f4047e42d5d89e6af113113341a46618f491f1623455e38e634406334ff2",
+  "selected_sha256": "38e172de353d9b38b119467fb631eb5cf350f9f45ae16d7c19c224fb34e0c1c2",
+  "learning_rate": 4e-05,
+  "batch": 1,
+  "accumulation": 8,
+  "lora_rank": 4,
+  "lora_alpha": 4,
+  "presentations_per_arm": 124,
+  "control": "S and K share identical 124 SFT presentations, examples, seed, initialization, optimizer and loss; K additionally receives one reference-anchored first-token preference term per optimizer step.",
+  "mask": "native chat template; only target action plus EOS",
+  "limitations": "Exposed train examples; initial Q8 raw top-20 chosen/rejected probabilities at exact serving template, not full-sequence DPO or independent confirmation. Reviewer-only candidate remains subject to conditional, entity and runtime safety screens.",
+  "justification": "Tests multi-person item and observed-price arithmetic across two distinct tools, not generic numeric transcription or prompt-only guidance.",
+  "target_modules": [
+    "q_proj",
+    "v_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "pairs_sha256": "713e30f86e568fb11755a183a45f4ca4be05937172e795fe357a51695da9507a",
+  "preference_weight": 0.1,
+  "preference_beta": 1.0,
+  "pair_ids": [
+    "train_1673",
+    "train_1017",
+    "train_1087"
+  ]
+}

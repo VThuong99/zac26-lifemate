@@ -1,0 +1,74 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Competition datasets
+train/
+public_test/
+train+public_test/
+__MACOSX/
+*.zip
+
+# Generated results
+results/
+submission.jsonl
+
+# Secrets
+.env
+
+# Final archival policy: preserve originals locally; stage reviewed paths only.
+.env.*
+.aws/
+.ssh/
+*.pem
+*.key
+id_rsa
+id_ed25519
+
+# Restricted data and unreviewed historical research (tracked files are unaffected).
+private_test/
+datasets/
+/experiments/
+/submissions/
+/docs/organizer/
+
+# Models, serialized datasets, audio, native binaries and distribution archives.
+models/
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.gguf
+*.onnx
+*.bin
+*.model
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.wav
+*.flac
+*.mp3
+*.ogg
+*.m4a
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.bz2
+*.xz
+*.7z
+*.whl
+*.so
+*.so.*
+
+# Disposable caches remain local; no historical artifact was deleted.
+unsloth_compiled_cache/
+.cache/
+.mypy_cache/
+*.bak
+*.tmp
+*.swp

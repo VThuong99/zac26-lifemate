@@ -1,0 +1,33 @@
+# Historical training reproduction for frozen K
+
+No training was executed for this release. This directory preserves recovered historical implementation and recipes. **Complete training reproduction is blocked:** the ten inputs in `required-private-assets.json`, their underlying authorized organizer audio, some intermediate preparation dependencies, training-only base checkpoints and immutable authorized download locations are not packaged. Local fingerprints do not replace accessible training data. Do not advertise this directory as a successful clean-room reproduction.
+
+The image includes only weights required at inference. In particular, the P34 `epoch-2.pt` is required for K's CTC sidecar at inference, despite its checkpoint filename. The Qwen pretraining/P9 training bases and original Gipformer training checkpoint are training-only and excluded. The runtime imports an Icefall architecture definition in `train.py`; this import constructs a model and does not start training.
+
+| Component | Origin and historical construction | Recovered recipe |
+|---|---|---|
+| Decision model | Qwen3.5-4B source revision `851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`; P9 LoRA merged, then P19 real-ASR LoRA merged; Q8_0 GGUF | Source architecture 4,659,865,088 parameters; actual GGUF 4,205,751,296 tensor elements; context 8,192. P9 seed 20261030, BF16 rank/alpha16, LR1e-4. P19 seed20261031, one epoch, rank/alpha16, LR1e-5, microbatch1, accumulation16; 1,198 original decisions +373 gated real-ASR variants from374 selected training requests. Exact configs archived. |
+| Primary ASR | Gipformer1.5-68M RNNT revision `dd9227dcd8705c13f33bdbe59728d546ab94480f`, P34 epoch2 ONNX export | 69,651,511 training parameters including CTC; 68,625,511 without CTC. 2,475 train clips/282 dev clips, seed20261103, two FP32 epochs, AdamW1e-5, weight decay0, batch1, clipping5. Loss .75 simple RNNT +.55 pruned RNNT +.2 CTC; prune range5. Epoch2 selected by dev WER. CPU Sherpa greedy four threads. |
+| CTC/acoustic review | Same P34 epoch2 checkpoint, Icefall revision `3f848bb6d0acc970c9b294a30ca0a04a7c9c78d1`, SentencePiece vocabulary2000 | CUDA FP32 CTC with zero-dither80-bin fbank; ONNX confidence sidecar and frozen parent-compatible routing. No new sidecar training. Count repeated model instances conservatively in total. |
+| Independent ASR | PhoWhisper-medium revision `55a7e3eb6c906de891f8f06a107754427dd3be79` | 763,857,920 loaded parameters. Publisher checkpoint used unchanged, FP16 CUDA, Vietnamese transcribe, greedy one beam, max_length224. Publisher's exact original training is not reconstructed here. |
+| DPO write reviewer | `results/p20c_grounding_preferences_v1` adapter converted to F32 GGUF | P19-initialized BF16, rank/alpha16, one epoch, seed20261101, LR5e-6, beta.1, accumulation16; reviewed chosen/rejected training decisions with grammar-conditioned likelihood. Full source data/grammar masks require authorized restoration. |
+| K terminal reviewer | `conditional_terminal_preference_sft_v1/K` F32 GGUF | Seed2026110813; rank/alpha4; q/v/gate/up/down projections;124 SFT presentations; batch1 accumulation8; LR4e-5, weight decay0; first-divergent-token preference weight.1/beta1.0; three frozen pairs;16 optimizer steps. Only the original reviewer routing activates it. |
+
+`source-manifest.json` identifies 44 recovered files. P19 source was extracted selectively from its historical generation archive, not inferred from a newer experimental model. The `historical/` tree retains original paths and commands for evidence; it is not an alternate inference entrypoint. The serving entrypoint contains no E13–E19 model or adaptation. `../manifests/models.json` contains every packaged inference file's size and SHA-256.
+
+Data methodology: P9/P19 used organizer **train** examples and fixed family partitions. P19 adds gated transcripts from authentic train audio; the configured ASR gate admits120 of374 requests. P34 groups conversations, exact normalized transcripts and identical PCM before its train/dev division, preserving protected groups, and fixes full-string token targets. Its recorded normalization is NFC/whitespace handling; no public/private test labeling was performed by this release. DPO and terminal reviewer inputs derive from historically reviewed train decisions. These records do not support a claim of an independently regenerated synthetic corpus; where a preparation step depends on historical reviews, those reviewed assets must be restored exactly. No reserved human labels or unused holdouts are included or consumed for release validation.
+
+After rights are approved, restore only the exact hashes listed in `required-private-assets.json` and the base-model fingerprints in the recipes. In a new **training** workspace, reconstruct the historical directory layout, install the archived training environment, and run the recorded implementation in this order:
+
+```bash
+# Examples of the archived programs; missing inputs must be restored first.
+python scripts/train_p9.py --model "$PINNED_QWEN_BASE" --output "$NEW_P9_OUTPUT"
+python scripts/train_p19_real_asr.py --model "$VERIFIED_P9_MERGED" --output "$NEW_P19_OUTPUT"
+python experiments/p34_gipformer_finetune/train.py --help
+python results/p20c_grounding_preferences_v1/train.py --help
+python experiments/continuous_improvement/conditional_terminal_preference_sft_v1/train.py --arm K
+```
+
+The last command writes its historical relative output; use an isolated reconstructed layout. The `--help` commands intentionally do not claim missing training flags have been resolved. Follow the archived export scripts, validate strict checkpoint key/shape loading, export the selected ONNX model, merge P19, convert GGUF with llama.cpp `8ca4060b7e30e76baaa5670ee1ec1b760b7f8552`, quantize Q8_0 and convert both adapters F32. Check all output hashes and run the full trajectory regression, not only a training loss or a model import. CUDA training may still fail bitwise reproducibility on a changed environment; no new reproduction has been measured.
+
+Pinned upstream references, usable only under their applicable permissions: [Qwen source revision](https://huggingface.co/Qwen/Qwen3.5-4B/tree/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a), [Gipformer source revision](https://huggingface.co/g-group-ai-lab/gipformer1.5-68M-rnnt/tree/dd9227dcd8705c13f33bdbe59728d546ab94480f), [PhoWhisper source revision](https://huggingface.co/vinai/PhoWhisper-medium/tree/55a7e3eb6c906de891f8f06a107754427dd3be79), [Icefall source](https://github.com/k2-fsa/icefall/tree/3f848bb6d0acc970c9b294a30ca0a04a7c9c78d1). These are not substitutes for the team's trained checkpoints or restricted training data. No external training artifact was uploaded.

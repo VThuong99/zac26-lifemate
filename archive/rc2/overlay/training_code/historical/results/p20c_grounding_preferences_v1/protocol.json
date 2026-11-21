@@ -1,0 +1,57 @@
+{
+  "hypothesis": "P19-initialized preference optimization improves observation-grounded offline decisions beyond a matched positive-SFT control.",
+  "selection_rule": "Pre-existing 317 first-review pending records; exclude groups of nine accepted pairs; one record per conservative group. Fixed strata and quotas with SHA-256 group/key ranking, then deterministic fill. Screen metadata only; no P9 verdicts, scores, outcome labels or semantic acceptability used for selection.",
+  "strata_quotas": [
+    [
+      "observed_argument",
+      30
+    ],
+    [
+      "observed_stop_or_ask",
+      15
+    ],
+    [
+      "observed_other",
+      20
+    ],
+    [
+      "initial_argument",
+      20
+    ],
+    [
+      "initial_stop_or_ask",
+      15
+    ],
+    [
+      "coverage_other",
+      20
+    ]
+  ],
+  "selection_count": 120,
+  "selection_strata": {
+    "observed_argument": 30,
+    "observed_stop_or_ask": 15,
+    "observed_other": 20,
+    "initial_argument": 20,
+    "initial_stop_or_ask": 15,
+    "coverage_other": 20
+  },
+  "observed_prefixes": 65,
+  "seed": "p20c-selection-20261101",
+  "batch_size": 20,
+  "gate": {
+    "pairs": 30,
+    "groups": 30,
+    "observed_prefix": 5
+  },
+  "recipe_if_eligible": "Same BF16 P19 start and reference; rank16 alpha16 LoRA, one epoch, seed 20261101, learning rate 5e-6, beta 0.1, gradient accumulation16; paired chosen NLL and preservation exposure matched, DPO includes reference-relative action likelihood and EOS. Grammar conditioned scoring and finite gradients/fidelity required. No sweep.",
+  "acceptance": "Exploratory matched Q4 diagnostic: DPO beats SFT on exact and observation-conditioned decisions without worse strict arguments, stop/continue errors or schema validity; paired changes disclosed; not independent E2E.",
+  "boundary": "No exposed panel, protected or diagnostic connected groups; no ToolEnv.",
+  "inputs": {
+    "results/p20b_grounding_preferences_v1/screened_divergences.jsonl": "d2f0223e476687f92ed0e2b908ba7c1f8347194cdcda8548b25eb2db5183b036",
+    "results/p20b_grounding_preferences_v1/pending_adjudication.jsonl": "1c413c07d9afb9ebee47c69767f74cc21b2bf9175952be9d79e1b28ffc78ca9c",
+    "results/p20b_grounding_preferences_v1/verified_pairs.jsonl": "0f6485741161d2e2c727fef0803ed7f10cbbcb4c0f0418c4a8929911c2988e49"
+  },
+  "selection_sha256": "776df065bb83870f53828181e9fa24075a6db6fa1d810edb2067603bbd89cd27",
+  "output": "/workspace/GPU_benchmark/lifemate/results/p20c_grounding_preferences_v1"
+}

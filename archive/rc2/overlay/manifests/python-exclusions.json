@@ -1,0 +1,12 @@
+[
+  {
+    "path": "dependencies/main/typer/.agents/skills/typer/SKILL.md",
+    "sha256": "9009daf749d0830e86e61f3ec1b4671666835a77e59fb3d5973bbc5f3ccac146",
+    "reason": "Unused upstream agent instructions"
+  },
+  {
+    "path": "dependencies/jupyter/tornado/test/test.key",
+    "sha256": "2c95ec86909e3299af80778674140159a44c2b8c8422f31a82e81d40572f0c74",
+    "reason": "Unused public upstream TLS test key; avoid shipping private-key fixtures"
+  }
+]

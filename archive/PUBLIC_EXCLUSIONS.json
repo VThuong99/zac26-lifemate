@@ -1,0 +1,25 @@
+{
+  "original_source_copy_count": 365,
+  "publication_source_copy_count": 363,
+  "excluded": [
+    {
+      "path": "archive/rc2/overlay/training_code/historical/results/p34_gipformer_finetune_v1/export_parity.json",
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/historical/results/p34_gipformer_finetune_v1/export_parity.json",
+      "sha256": "7f1721cbbb4b31d3629be1e2709a6d95db264d2a8bd182db22e8db478690849b",
+      "reason": "Contains a complete organizer training transcript; original preserved locally."
+    },
+    {
+      "path": "archive/rc2/overlay/training_code/restored/lifemate/results/p34_gipformer_finetune_v1/export_parity.json",
+      "source": "lifemate-final-20261116-rc2/overlay/training_code/restored/lifemate/results/p34_gipformer_finetune_v1/export_parity.json",
+      "sha256": "7f1721cbbb4b31d3629be1e2709a6d95db264d2a8bd182db22e8db478690849b",
+      "reason": "Contains a complete organizer training transcript; original preserved locally."
+    }
+  ],
+  "other_exclusions": [
+    "All original Git ancestors and other branches",
+    "Original organizer documents and datasets",
+    "Per-case research reports and JSONL records",
+    "Model/native binaries, raw audio, Docker/source archives, caches and credentials"
+  ],
+  "inference_code_modified": false
+}

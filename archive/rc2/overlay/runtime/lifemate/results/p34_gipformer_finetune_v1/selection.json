@@ -1,0 +1,28 @@
+{
+  "selection_rule": "minimum P34 dev corpus WER; ties earlier epoch",
+  "epoch": 2,
+  "dev_wer": 0.09774436090225563,
+  "dev_cer": 0.07030665669409125,
+  "candidate_metrics": [
+    [
+      0.10720349260247393,
+      1,
+      0.0780852655198205
+    ],
+    [
+      0.09774436090225563,
+      2,
+      0.07030665669409125
+    ]
+  ],
+  "checkpoint": "results/p34_gipformer_finetune_v1/epoch-2.pt",
+  "checkpoint_sha256": "d534da662de0acdf6cf897c7ec8d7ecba919d15d8e8cb3c7465d59870c9b356a",
+  "onnx_dir": "results/p34_gipformer_finetune_v1/export_epoch2",
+  "onnx_sha256": {
+    "encoder.onnx": "20da9e374b4304a04e0de6ae957dc4d049098efcc7129b6c8bac56ff454926fb",
+    "decoder.onnx": "8eea05056196b6d63e68b8ecf9abc048e5886650555aaff80e457a422ebff147",
+    "joiner.onnx": "4b2394aa23e087c4a36478b2514692db1ef4304f8a0fefab70e70b4dc237eea9",
+    "tokens.txt": "f536d03c2e95ebd2930cf0abec88e823bd17d3c1933da7ae6a82db3b80605e15"
+  },
+  "evaluation_cohort_used_for_selection": false
+}

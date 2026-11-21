@@ -1,0 +1,9 @@
+{
+  "completed": true,
+  "examples": 1571,
+  "elapsed_seconds": 1487.051653796807,
+  "peak_allocated_bytes": 13060964864,
+  "peak_reserved_bytes": 16888365056,
+  "adapter_sha256": "cd3926c12a82d52a0ee1f1a75aefbb284076c527bd4507a6d8a3048972fbaa20",
+  "checkpoint_note": "checkpoints retain optimizer and RNG, but this trainer does not implement resume"
+}

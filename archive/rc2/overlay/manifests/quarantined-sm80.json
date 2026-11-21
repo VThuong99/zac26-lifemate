@@ -1,0 +1,163 @@
+[
+  {
+    "path": "native/sm80/bin/libggml-base.so",
+    "bytes": 930472,
+    "sha256": "06e318d60c0ba26a6ccaad5068e1198e6e7b3cc6bf4323d30717ae86b387e5c7",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  },
+  {
+    "path": "native/sm80/bin/libggml-base.so.0",
+    "bytes": 930472,
+    "sha256": "06e318d60c0ba26a6ccaad5068e1198e6e7b3cc6bf4323d30717ae86b387e5c7",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  },
+  {
+    "path": "native/sm80/bin/libggml-base.so.0.27.0",
+    "bytes": 930472,
+    "sha256": "06e318d60c0ba26a6ccaad5068e1198e6e7b3cc6bf4323d30717ae86b387e5c7",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  },
+  {
+    "path": "native/sm80/bin/libggml-cpu.so",
+    "bytes": 1592440,
+    "sha256": "5de0a0a98db7fbb242c286bad58838cfc6479e5c7daf775183bb11318e6ab585",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  },
+  {
+    "path": "native/sm80/bin/libggml-cpu.so.0",
+    "bytes": 1592440,
+    "sha256": "5de0a0a98db7fbb242c286bad58838cfc6479e5c7daf775183bb11318e6ab585",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  },
+  {
+    "path": "native/sm80/bin/libggml-cpu.so.0.27.0",
+    "bytes": 1592440,
+    "sha256": "5de0a0a98db7fbb242c286bad58838cfc6479e5c7daf775183bb11318e6ab585",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  },
+  {
+    "path": "native/sm80/bin/libggml-cuda.so",
+    "bytes": 71398096,
+    "sha256": "7382e5cb07dcc5d48a87e0fdf2de7a0121b4a9dc17dfe455e24bcaadf6e3310b",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  },
+  {
+    "path": "native/sm80/bin/libggml-cuda.so.0",
+    "bytes": 71398096,
+    "sha256": "7382e5cb07dcc5d48a87e0fdf2de7a0121b4a9dc17dfe455e24bcaadf6e3310b",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  },
+  {
+    "path": "native/sm80/bin/libggml-cuda.so.0.27.0",
+    "bytes": 71398096,
+    "sha256": "7382e5cb07dcc5d48a87e0fdf2de7a0121b4a9dc17dfe455e24bcaadf6e3310b",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  },
+  {
+    "path": "native/sm80/bin/libggml.so",
+    "bytes": 56208,
+    "sha256": "fa75a095be02be3dc9144efcce692285d19e071072bdd0749ec3d36eb4378479",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  },
+  {
+    "path": "native/sm80/bin/libggml.so.0",
+    "bytes": 56208,
+    "sha256": "fa75a095be02be3dc9144efcce692285d19e071072bdd0749ec3d36eb4378479",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  },
+  {
+    "path": "native/sm80/bin/libggml.so.0.27.0",
+    "bytes": 56208,
+    "sha256": "fa75a095be02be3dc9144efcce692285d19e071072bdd0749ec3d36eb4378479",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  },
+  {
+    "path": "native/sm80/bin/libllama-common.so",
+    "bytes": 6464552,
+    "sha256": "c6ea38fb163c1bdaa22833c559624163a7d10b300b48a2f62860471f2adbcba5",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  },
+  {
+    "path": "native/sm80/bin/libllama-common.so.0",
+    "bytes": 6464552,
+    "sha256": "c6ea38fb163c1bdaa22833c559624163a7d10b300b48a2f62860471f2adbcba5",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  },
+  {
+    "path": "native/sm80/bin/libllama-common.so.0.7.0",
+    "bytes": 6464552,
+    "sha256": "c6ea38fb163c1bdaa22833c559624163a7d10b300b48a2f62860471f2adbcba5",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  },
+  {
+    "path": "native/sm80/bin/libllama-server-impl.so",
+    "bytes": 7834136,
+    "sha256": "a18b090377db091864b5520f06a4d4b38ccff4dba9ed143e864f11ce5c694c28",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  },
+  {
+    "path": "native/sm80/bin/libllama.so",
+    "bytes": 5406944,
+    "sha256": "6cdb0e5881e8ac2a1f1b7f377e9b13629d76a0222c8c9fd3b8e301bcf4d4a30a",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  },
+  {
+    "path": "native/sm80/bin/libllama.so.0",
+    "bytes": 5406944,
+    "sha256": "6cdb0e5881e8ac2a1f1b7f377e9b13629d76a0222c8c9fd3b8e301bcf4d4a30a",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  },
+  {
+    "path": "native/sm80/bin/libllama.so.0.7.0",
+    "bytes": 5406944,
+    "sha256": "6cdb0e5881e8ac2a1f1b7f377e9b13629d76a0222c8c9fd3b8e301bcf4d4a30a",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  },
+  {
+    "path": "native/sm80/bin/libmtmd.so",
+    "bytes": 2294504,
+    "sha256": "f32e2618233673cfc6171dcba302ba6bf0e35913e0a6d80f5d4dd6f6f65eccbb",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  },
+  {
+    "path": "native/sm80/bin/libmtmd.so.0",
+    "bytes": 2294504,
+    "sha256": "f32e2618233673cfc6171dcba302ba6bf0e35913e0a6d80f5d4dd6f6f65eccbb",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  },
+  {
+    "path": "native/sm80/bin/libmtmd.so.0.7.0",
+    "bytes": 2294504,
+    "sha256": "f32e2618233673cfc6171dcba302ba6bf0e35913e0a6d80f5d4dd6f6f65eccbb",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  },
+  {
+    "path": "native/sm80/bin/llama-server",
+    "bytes": 17888,
+    "sha256": "7696f404ce5055077f01d3aed8903c8c9a5cb56bb329bdfbbf44db66fd68c9de",
+    "transfer_permission": "UNRESOLVED",
+    "in_image": false
+  }
+]

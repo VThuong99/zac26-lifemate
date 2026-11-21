@@ -1,0 +1,169 @@
+{
+  "date": "2026-11-21",
+  "scope": "Historical validation of the complete local archive; public snapshot omits two transcript-bearing parity reports. This is not a claim that restricted test fixtures ship in Git.",
+  "tests_passed": 153,
+  "suites": [
+    {
+      "suite": "rc2-candidate",
+      "passed": 38,
+      "returncode": 0,
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/workspace/GPU_benchmark/lifemate-final-20261116-rc2/tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/workspace/GPU_benchmark",
+      "log_sha256": "307bb9345f6286e0ea1447234e336f1613661847cb36c8009933de69cc4ceab6"
+    },
+    {
+      "suite": "host-validation",
+      "passed": 43,
+      "returncode": 0,
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/workspace/GPU_benchmark/lifemate-host-validation/tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/workspace/GPU_benchmark",
+      "log_sha256": "18a4e28fed70327b580a90c07cbc438452bc8d68001ec9d7576ae2918cf4d751"
+    },
+    {
+      "suite": "private-workflow",
+      "passed": 62,
+      "returncode": 0,
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/workspace/GPU_benchmark/lifemate-private-rc2-host-20261120",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/workspace/GPU_benchmark",
+      "log_sha256": "28cb636cd7d3700cd1ee1994ac380957888828f569e2d075a570a5e7dcc68506"
+    },
+    {
+      "suite": "failure-investigation",
+      "passed": 6,
+      "returncode": 0,
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/workspace/GPU_benchmark/lifemate-private-rc2-investigation-20261120",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/workspace/GPU_benchmark",
+      "log_sha256": "2f5ac7ff297eee2c9fd37f59a1f81115f548fa3eb5e9a3b4bd8f6a545c45f7c2"
+    },
+    {
+      "suite": "rc2-transport-current",
+      "passed": 4,
+      "returncode": 0,
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_transport.TransportTest.test_private_split_discovery_and_ambiguous_mount",
+        "test_transport.TransportTest.test_reference_fields_and_duplicate_ids_rejected",
+        "test_transport.TransportTest.test_partial_failure_never_becomes_submission",
+        "test_transport.TransportTest.test_offline_socket_guard"
+      ],
+      "cwd": "/workspace/GPU_benchmark/lifemate-final-20261116-rc2/overlay/tests",
+      "log_sha256": "a168382bb6aab6295a81b023660ded284377a560f70c6c3a8eac0a4fc9176134"
+    }
+  ],
+  "copied_files_equal_originals": 365,
+  "frozen_entries_verified_after_tests": 552,
+  "frozen_regular_files": 550,
+  "frozen_symlinks": 2,
+  "docker_archive_sha256_matches": true,
+  "docker_archive_md5_matches": true,
+  "source_archive_sha256_matches": true,
+  "rc2_context_entries": 343,
+  "rc2_context_mismatches": [],
+  "context_manifest_matches_release": true,
+  "syntax_counts": {
+    "python": 262,
+    "shell": 11,
+    "json": 57,
+    "notebook_cells": 4
+  },
+  "syntax_errors": [],
+  "new_document_links_checked": 41,
+  "preexisting_modified_files": [
+    {
+      "path": "AGENTS.md",
+      "unchanged": true
+    },
+    {
+      "path": "docs/milestones/p22_ceiling_and_bottlenecks.md",
+      "unchanged": true
+    },
+    {
+      "path": "docs/organizer/lifemate_rules.md",
+      "unchanged": true
+    },
+    {
+      "path": "experiments/research/STATE.md",
+      "unchanged": true
+    },
+    {
+      "path": "experiments/research/experiments.jsonl",
+      "unchanged": true
+    }
+  ],
+  "verifier_checks": [
+    "valid_copy",
+    "same_size_corruption_rejected",
+    "missing_file_rejected",
+    "unsafe_path_rejected:../escape",
+    "unsafe_path_rejected:/absolute",
+    "unsafe_path_rejected:archive/../escape",
+    "symlink_copy_rejected"
+  ],
+  "history_blobs_secret_scanned": 795,
+  "history_secret_pattern_matches": 0,
+  "candidate_copy_secret_pattern_matches": 0,
+  "history_blobs_over_10_MiB": 0,
+  "excluded_stale_test": "overlay/tests/test_transport.py::test_failed_ampere_candidate_cannot_be_auto_selected is an inherited RC1 expectation; current RC2 backend test passed",
+  "limitation": "Tests require original workspace fixtures; no claim of complete source-only test portability, training reproduction, official score verification or redistribution rights.",
+  "link_errors": [],
+  "final_scope_files": 379,
+  "final_scope_and_current_tracked_secret_matches": 0,
+  "current_tracked_paths_scanned": 705,
+  "staged_whitespace": {
+    "inherited_lines": 13,
+    "files": [
+      "archive/host_validation/run_host_validation.sh",
+      "archive/rc2/overlay/runtime/third_party/icefall-p12-3f848bb6/icefall/err.py"
+    ],
+    "decision": "Preserve byte-exact copies; generated CSV normalized to LF. Newly authored files must pass."
+  },
+  "publication_copied_files": 363
+}

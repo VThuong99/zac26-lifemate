@@ -1,0 +1,206 @@
+[
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/LICENSE",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/LICENSE",
+    "bytes": 11358,
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/asr_datamodule.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/asr_datamodule.py",
+    "bytes": 17652,
+    "sha256": "a7dd8e1fc26413d2f0097931fa3ccc77e514068d2761ce2b5140d65bf8c1c036"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/attention_decoder.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/attention_decoder.py",
+    "bytes": 20115,
+    "sha256": "a9984edb638bb55aa5d987a2f325095cf5cc26d393c6c617e6ff3a83cad1d2f1"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/decoder.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/decoder.py",
+    "bytes": 4755,
+    "sha256": "92ee967e4b927a3ef2e4cc2d900756609a191f859c956a400cfe642d6ef0cf52"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/encoder_interface.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/encoder_interface.py",
+    "bytes": 1652,
+    "sha256": "fc70f530c33e2489435ff2cb4bb0dad8b9d6f58a248c425cbd6100c62f628569"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/export-onnx.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/export-onnx.py",
+    "bytes": 23222,
+    "sha256": "4e632b5d36b76c0883bc1a2aa5103a82c0cc9fbe9f2521450c65a0e8ece68117"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/joiner.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/joiner.py",
+    "bytes": 2213,
+    "sha256": "2d924a5a00f7a2bb2340c1a991f8a71037bcfbc7e98cbabe26527ffa7d4030d4"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/label_smoothing.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/label_smoothing.py",
+    "bytes": 3874,
+    "sha256": "32234a83a21a2444d2f789990e2a99d4d3e70f561c5de0184182d84658ac7867"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/model.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/model.py",
+    "bytes": 18066,
+    "sha256": "1e516fec1ad65220470a7db69bf3d16e4736a0b9943ef8f5ad75bb962d7a3296"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/optim.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/optim.py",
+    "bytes": 50335,
+    "sha256": "7282cd6db1d234e086110feb1f39f076a76095a6b026b939cebc81f2ed0f5d45"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/scaling.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/scaling.py",
+    "bytes": 70943,
+    "sha256": "d5a5db141cd00b4beaa990fe6827599b3248b2fddd87e8dc7809b0dbd9d6633b"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/subsampling.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/subsampling.py",
+    "bytes": 13138,
+    "sha256": "e04de281f136560e2d44b5f7df174d0364b5feb2c22608173b60de02630c2a66"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/train.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/train.py",
+    "bytes": 51319,
+    "sha256": "1f1a7099182a2bf970a4d7aca45b0eef9f10cd3dcf66262bbb11247da53e6068"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/zipformer.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/egs/librispeech/ASR/zipformer/zipformer.py",
+    "bytes": 93875,
+    "sha256": "4d5365ed19dee07f5a51fcaaa26e18310f7fafbdf2a391e24a7cc01d1b2e8cfe"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/icefall/__init__.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/icefall/__init__.py",
+    "bytes": 1427,
+    "sha256": "7da4b3c496a3d8a5d9f3bcb7dfe1958340fc8237b03eba5d6eeba94501ea8444"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/icefall/byte_utils.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/icefall/byte_utils.py",
+    "bytes": 4043,
+    "sha256": "21c9c52130f1bfb4f2e5dda1fe239589af2660d778522db8f97a5d681a50c0e2"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/icefall/checkpoint.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/icefall/checkpoint.py",
+    "bytes": 15572,
+    "sha256": "938f24209aee82108fd693f5e76cbcc4809b41e6a06598478540ff0cd4ffa76d"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/icefall/context_graph.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/icefall/context_graph.py",
+    "bytes": 22548,
+    "sha256": "9a694cd56e3d804090f75f78e7f2f02078162e6fd91237de0f1316059a774c37"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/icefall/decode.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/icefall/decode.py",
+    "bytes": 78452,
+    "sha256": "e9af7585836686e02710bb8c937f52cc423a1b1a6eee86dfee845c02c4c35f99"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/icefall/diagnostics.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/icefall/diagnostics.py",
+    "bytes": 28652,
+    "sha256": "6ab1fe00dd9eff357ff430df75967a48de4e8affc6839f9aeff99cccdef7e178"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/icefall/dist.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/icefall/dist.py",
+    "bytes": 1966,
+    "sha256": "6a162acd9ebc13e35a9530b2c01f069220418d2d3651eb96a7c6bc976b12bbdf"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/icefall/env.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/icefall/env.py",
+    "bytes": 3493,
+    "sha256": "0dd3b1193446dd3de824a745ddb3f85036d3e539fbefcb0569e7fa423d6b9da3"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/icefall/err.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/icefall/err.py",
+    "bytes": 2142,
+    "sha256": "0310d8bea2d14eed9a3d2fc785ea1e749a520ec79fe84fae543326e51b7d0118"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/icefall/hooks.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/icefall/hooks.py",
+    "bytes": 4295,
+    "sha256": "615cc4b135d250cb0f328048d4c5c2d4019b9bb80ae89ee51a314e5171c7fbfd"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/icefall/lm_wrapper.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/icefall/lm_wrapper.py",
+    "bytes": 7821,
+    "sha256": "b83053ca20f0850990a15e86b809f278a94ed3589a47f85eac03437426040f06"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/icefall/ngram_lm.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/icefall/ngram_lm.py",
+    "bytes": 5295,
+    "sha256": "e943c2d605bab6c39bfc3033392e8b84e14088eaed92468d6e735c1e49893d8a"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/icefall/rnn_lm/__init__.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/icefall/rnn_lm/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/icefall/rnn_lm/model.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/icefall/rnn_lm/model.py",
+    "bytes": 10312,
+    "sha256": "01cf2167957dba5d2f0ba0b6d3705ffe64f4447858647011625604d168e51ca5"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/icefall/transformer_lm/__init__.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/icefall/transformer_lm/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/icefall/transformer_lm/attention.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/icefall/transformer_lm/attention.py",
+    "bytes": 22349,
+    "sha256": "94fe04858e011ca91bc73a8b9d38c6b48560a508eba8f7b860a99241c455ad24"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/icefall/transformer_lm/encoder.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/icefall/transformer_lm/encoder.py",
+    "bytes": 11234,
+    "sha256": "109cebc39d36d6256f98fb0c7ff07a83aff1a5bddba8dd6dda399a8b8e39993c"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/icefall/transformer_lm/model.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/icefall/transformer_lm/model.py",
+    "bytes": 3396,
+    "sha256": "ee4f4960b6104d2f3d7405a1cd8f495531bc3c023f6cbece4d7895462255a582"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/icefall/transformer_lm/scaling.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/icefall/transformer_lm/scaling.py",
+    "bytes": 36364,
+    "sha256": "57fb71f4f29fb3321a2eaa72642fcfb0caab95c810bc68337f6bbbfceb766e1d"
+  },
+  {
+    "source": "/workspace/GPU_benchmark/third_party/icefall-p12-3f848bb6/icefall/utils.py",
+    "path": "source/runtime/third_party/icefall-p12-3f848bb6/icefall/utils.py",
+    "bytes": 84221,
+    "sha256": "35beb5077b458872621094d7b176adf58fb6a7d4de81a60f033184052b6555d6"
+  }
+]

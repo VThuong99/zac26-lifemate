@@ -1,0 +1,188 @@
+{
+  "checkpoints_and_metadata": [
+    {
+      "path": "/workspace/GPU_benchmark/models/qwen35-4b-source-851bf6e806efd8/model.safetensors-00001-of-00002.safetensors",
+      "expected_sha256": "26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61",
+      "role": "P9 source base",
+      "included": false,
+      "transfer_permission": "UNRESOLVED",
+      "exists_locally": true,
+      "bytes": 5329398688,
+      "actual_sha256": "26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61",
+      "status": "VERIFIED_LOCAL"
+    },
+    {
+      "path": "/workspace/GPU_benchmark/models/qwen35-4b-source-851bf6e806efd8/model.safetensors-00002-of-00002.safetensors",
+      "expected_sha256": "cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188",
+      "role": "P9 source base",
+      "included": false,
+      "transfer_permission": "UNRESOLVED",
+      "exists_locally": true,
+      "bytes": 3990429408,
+      "actual_sha256": "cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188",
+      "status": "VERIFIED_LOCAL"
+    },
+    {
+      "path": "/workspace/GPU_benchmark/models/qwen35-4b-source-851bf6e806efd8/config.json",
+      "expected_sha256": "ddc63e1c717afa86c865bb5e01313d89d72bb53b97ad4a8a03ba8510c0621670",
+      "role": "P9 source base",
+      "included": false,
+      "transfer_permission": "UNRESOLVED",
+      "exists_locally": true,
+      "bytes": 3161,
+      "actual_sha256": "ddc63e1c717afa86c865bb5e01313d89d72bb53b97ad4a8a03ba8510c0621670",
+      "status": "VERIFIED_LOCAL"
+    },
+    {
+      "path": "/workspace/GPU_benchmark/models/qwen35-4b-source-851bf6e806efd8/tokenizer_config.json",
+      "expected_sha256": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8",
+      "role": "P9 source base",
+      "included": false,
+      "transfer_permission": "UNRESOLVED",
+      "exists_locally": true,
+      "bytes": 16710,
+      "actual_sha256": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8",
+      "status": "VERIFIED_LOCAL"
+    },
+    {
+      "path": "/workspace/GPU_benchmark/models/qwen35-4b-source-851bf6e806efd8/chat_template.jinja",
+      "expected_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+      "role": "P9 source base",
+      "included": false,
+      "transfer_permission": "UNRESOLVED",
+      "exists_locally": true,
+      "bytes": 7756,
+      "actual_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+      "status": "VERIFIED_LOCAL"
+    },
+    {
+      "path": "/workspace/GPU_benchmark/models/qwen35-4b-p9-merged-v1/model.safetensors",
+      "expected_sha256": "f8d3ddf17460618aada6d8e8ec8bd1d6b735a207612e2b282773eecf4bde6045",
+      "role": "P19/K/DPO training base",
+      "included": false,
+      "transfer_permission": "UNRESOLVED",
+      "exists_locally": true,
+      "bytes": 9078624992,
+      "actual_sha256": "f8d3ddf17460618aada6d8e8ec8bd1d6b735a207612e2b282773eecf4bde6045",
+      "status": "VERIFIED_LOCAL"
+    },
+    {
+      "path": "/workspace/GPU_benchmark/models/qwen35-4b-p9-merged-v1/config.json",
+      "expected_sha256": "dcb113295094ee2a38bb9758322454ab4938901c045164a1c17e67082df71d52",
+      "role": "P9 merged base metadata",
+      "included": false,
+      "transfer_permission": "UNRESOLVED",
+      "exists_locally": true,
+      "bytes": 2821,
+      "actual_sha256": "dcb113295094ee2a38bb9758322454ab4938901c045164a1c17e67082df71d52",
+      "status": "VERIFIED_LOCAL"
+    },
+    {
+      "path": "/workspace/GPU_benchmark/models/qwen35-4b-p9-merged-v1/tokenizer.json",
+      "expected_sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
+      "role": "P9 merged base metadata",
+      "included": false,
+      "transfer_permission": "UNRESOLVED",
+      "exists_locally": true,
+      "bytes": 19989343,
+      "actual_sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
+      "status": "VERIFIED_LOCAL"
+    },
+    {
+      "path": "/workspace/GPU_benchmark/models/qwen35-4b-p9-merged-v1/tokenizer_config.json",
+      "expected_sha256": "83febe739ecefd99f984f546dfdc10149cedf293b9ee0291b99894341188b613",
+      "role": "P9 merged base metadata",
+      "included": false,
+      "transfer_permission": "UNRESOLVED",
+      "exists_locally": true,
+      "bytes": 1098,
+      "actual_sha256": "83febe739ecefd99f984f546dfdc10149cedf293b9ee0291b99894341188b613",
+      "status": "VERIFIED_LOCAL"
+    },
+    {
+      "path": "/workspace/GPU_benchmark/models/qwen35-4b-p9-merged-v1/chat_template.jinja",
+      "expected_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+      "role": "P9 merged base metadata",
+      "included": false,
+      "transfer_permission": "UNRESOLVED",
+      "exists_locally": true,
+      "bytes": 7756,
+      "actual_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+      "status": "VERIFIED_LOCAL"
+    },
+    {
+      "path": "models/gipformer15-68m-dd9227d-p12/model.pt",
+      "expected_sha256": "7315ea2e15addfe796e673f0b4c9c5200e80371c029524fcc52f96161620eee2",
+      "role": "P34 source base",
+      "included": false,
+      "transfer_permission": "UNRESOLVED",
+      "exists_locally": true,
+      "bytes": 279040913,
+      "actual_sha256": "7315ea2e15addfe796e673f0b4c9c5200e80371c029524fcc52f96161620eee2",
+      "status": "VERIFIED_LOCAL"
+    },
+    {
+      "path": "models/gipformer15-68m-dd9227d-p12/bpe.model",
+      "expected_sha256": "289dbb44527c13c419ae3a4d8ce6a349f01a97f8777e69934a77e3692d2f10db",
+      "role": "P34 source base",
+      "included": false,
+      "transfer_permission": "UNRESOLVED",
+      "exists_locally": true,
+      "bytes": 270695,
+      "actual_sha256": "289dbb44527c13c419ae3a4d8ce6a349f01a97f8777e69934a77e3692d2f10db",
+      "status": "VERIFIED_LOCAL"
+    },
+    {
+      "path": "models/gipformer15-68m-dd9227d-p12/tokens.txt",
+      "expected_sha256": "f536d03c2e95ebd2930cf0abec88e823bd17d3c1933da7ae6a82db3b80605e15",
+      "role": "P34 source base",
+      "included": false,
+      "transfer_permission": "UNRESOLVED",
+      "exists_locally": true,
+      "bytes": 25847,
+      "actual_sha256": "f536d03c2e95ebd2930cf0abec88e823bd17d3c1933da7ae6a82db3b80605e15",
+      "status": "VERIFIED_LOCAL"
+    },
+    {
+      "path": "lifemate/results/p19_real_asr_sft_train_v1/adapter/adapter_model.safetensors",
+      "expected_sha256": "cd3926c12a82d52a0ee1f1a75aefbb284076c527bd4507a6d8a3048972fbaa20",
+      "role": "P19 adapter used for K/DPO training",
+      "included": false,
+      "transfer_permission": "UNRESOLVED",
+      "exists_locally": true,
+      "bytes": 129934448,
+      "actual_sha256": "cd3926c12a82d52a0ee1f1a75aefbb284076c527bd4507a6d8a3048972fbaa20",
+      "status": "VERIFIED_LOCAL"
+    },
+    {
+      "path": "lifemate/results/p19_real_asr_training_gate_v1/report.json",
+      "expected_sha256": "c58e3080935f94e31629b7c62dc76d82a3f69e1d39cd2d51c8e59453ca19a9a1",
+      "role": "P19 training gate metadata",
+      "included": false,
+      "transfer_permission": "UNRESOLVED",
+      "exists_locally": true,
+      "bytes": 1325,
+      "actual_sha256": "c58e3080935f94e31629b7c62dc76d82a3f69e1d39cd2d51c8e59453ca19a9a1",
+      "status": "VERIFIED_LOCAL"
+    }
+  ],
+  "upstreams": [
+    {
+      "path": "third_party/icefall-p12-3f848bb6",
+      "expected_revision": "3f848bb6d0acc970c9b294a30ca0a04a7c9c78d1",
+      "actual_revision": "3f848bb6d0acc970c9b294a30ca0a04a7c9c78d1",
+      "tracked_clean": true,
+      "matches": true
+    },
+    {
+      "path": "third_party/llama.cpp-p9-8ca4060b",
+      "expected_revision": "8ca4060b7e30e76baaa5670ee1ec1b760b7f8552",
+      "actual_revision": "8ca4060b7e30e76baaa5670ee1ec1b760b7f8552",
+      "tracked_clean": true,
+      "matches": true
+    }
+  ],
+  "training_executed": false,
+  "data_parsed": false,
+  "full_training_dependency_closure_claimed": false
+}

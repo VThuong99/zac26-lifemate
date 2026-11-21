@@ -1,0 +1,15 @@
+{
+  "previous_context_sha256": "6fed918a59a5cd79e80eb17706026e9fe31414d3a9bd185f879e69179a365c30",
+  "preserved_build_sha256": "cc21548d068e44aa82d616d526285bd211af380f0f2d73fafb574776c25de981",
+  "preserved_evidence_sha256": {
+    "evidence/gpu-pass.json": "f157964ab84bc992dc486db1cce2cfc484e6f9ad0d7496301fa8e65b71c8dbd2",
+    "runs/20261116T142101Z-gpu-qtxYSa/report.json": "afd95ffbaceaf87bb384e07864be7e77bda6686d210eae6ee0dae8f423804944",
+    "runs/20261116T142101Z-gpu-qtxYSa/plan.json": "6b5ea07681fa462ee75c34553fea5cbb3961072386ae92c8fb784b0eda561205"
+  },
+  "changed_host_files": [
+    "host.sh",
+    "tools/candidate.py"
+  ],
+  "unchanged_image_and_harness_inputs": true,
+  "reason": "Monitor inherited lock descriptors; cleanup waited in a subshell that cannot reap the parent shell child. Close monitor lock descriptors and wait in the owning shell. Reuse authenticated prior stages."
+}

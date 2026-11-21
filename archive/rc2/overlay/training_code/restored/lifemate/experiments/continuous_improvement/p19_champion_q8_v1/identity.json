@@ -1,0 +1,35 @@
+{
+  "models": {
+    "f32": {
+      "tensor_count": 426,
+      "tokenizer_fields_sha256": "e8e74be7f17576af6ce34b674a923b2712c1d947a123837e945555b9ea3b27ba",
+      "size_bytes": 16833972864,
+      "sha256": "8ec199dc9f2f63df6f6ab1843327c8b49d85c1f5489800549614ec2ed9de0629"
+    },
+    "q4": {
+      "tensor_count": 426,
+      "tokenizer_fields_sha256": "e8e74be7f17576af6ce34b674a923b2712c1d947a123837e945555b9ea3b27ba",
+      "size_bytes": 2708804224,
+      "sha256": "fc596f336207a81766df77f66a7d445d2d7371798746173176a1483a52487b46"
+    },
+    "q8": {
+      "tensor_count": 426,
+      "tokenizer_fields_sha256": "e8e74be7f17576af6ce34b674a923b2712c1d947a123837e945555b9ea3b27ba",
+      "size_bytes": 4482402944,
+      "sha256": "ab80d2da1323d516a5eb5e2c38382a02264b5b0ac35f53cab9d4e9e0987a9095"
+    }
+  },
+  "quantizer_sha256": "547c758acaa44d78be7b3bf06ed73cb0ae2f319b09548cf3e4fa5f8fcd6d498a",
+  "quantization": "Q8_0",
+  "tensor_counts_match": true,
+  "tokenizer_metadata_match": true,
+  "q8_tensor_element_count": 4205751296,
+  "parameter_count_limit": "Tensor elements provide an architecture-size check; compare with frozen P19 manifest and P34 stack.",
+  "conservative_parameter_accounting": {
+    "decision_source_parameters": 4659865088,
+    "asr_source_parameters_each": 69651511,
+    "two_asr_plus_decision_upper_bound": 4799168110,
+    "evidence": "experiments/p34_gipformer_finetune/OVERNIGHT_REPORT.md",
+    "q8_same_426_tensor_architecture_as_p19": true
+  }
+}

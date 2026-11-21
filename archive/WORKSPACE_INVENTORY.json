@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-21",
+  "scope": "Pre-archive file metadata; excludes .git, does not follow symlink files; no dataset contents.",
+  "roots": [
+    {
+      "root": "lifemate",
+      "files": 216663,
+      "bytes": 187329803477,
+      "large_files_over_10_MiB": 883
+    },
+    {
+      "root": "lifemate-final-20261116-rc2",
+      "files": 550,
+      "bytes": 16949999533,
+      "large_files_over_10_MiB": 2
+    },
+    {
+      "root": "lifemate-release-k-20261115",
+      "files": 47207,
+      "bytes": 83606881208,
+      "large_files_over_10_MiB": 61
+    },
+    {
+      "root": "lifemate-host-validation",
+      "files": 102,
+      "bytes": 1249130,
+      "large_files_over_10_MiB": 0
+    },
+    {
+      "root": "lifemate-private-rc2-host-20261120",
+      "files": 19,
+      "bytes": 180001,
+      "large_files_over_10_MiB": 0
+    },
+    {
+      "root": "lifemate-private-rc2-investigation-20261120",
+      "files": 6,
+      "bytes": 203242,
+      "large_files_over_10_MiB": 0
+    },
+    {
+      "root": "lifemate-p27",
+      "files": 456,
+      "bytes": 3824094,
+      "large_files_over_10_MiB": 0
+    },
+    {
+      "root": "lifemate-recovery-20261031",
+      "files": 20,
+      "bytes": 3045488,
+      "large_files_over_10_MiB": 0
+    },
+    {
+      "root": "models",
+      "files": 189,
+      "bytes": 249695154089,
+      "large_files_over_10_MiB": 47
+    },
+    {
+      "root": "results",
+      "files": 58,
+      "bytes": 933725,
+      "large_files_over_10_MiB": 0
+    },
+    {
+      "root": "scripts",
+      "files": 11,
+      "bytes": 12473,
+      "large_files_over_10_MiB": 0
+    },
+    {
+      "root": "third_party",
+      "files": 77695,
+      "bytes": 9331401947,
+      "large_files_over_10_MiB": 148
+    }
+  ]
+}

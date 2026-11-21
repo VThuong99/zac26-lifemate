@@ -1,0 +1,23 @@
+{
+  "experiment": "p43_safe_temporal_itn",
+  "hypothesis": "safer span-grounded temporal annotations improve P34 on a broader train-derived cohort without unacceptable regressions",
+  "baseline": "P34 live greedy + frozen P19",
+  "candidate": "P42 annotation grammar with additional fail-closed context exclusions; original latest transcript and all history preserved; no dates or tool argument changes",
+  "cohort": "experiments/p43_safe_temporal_itn/cohort.json",
+  "cohort_sha256": "0d3a5bf71f03bf923d6727037e8cc9e14b237213580e8e449113605e3a92249e",
+  "data_role": "200 train requests outside 95 P42 IDs and approximate P42 families; mixed training/research exposure, not a fresh model holdout",
+  "gate": "GO only if synthetic safety tests pass, review of all proposed annotations finds no unsupported or unresolved time/daypart, paired mean local F1 B-A >= +0.03 and bootstrap 95% lower bound >0, >= 3 net complete successes, no candidate-introduced reference-relative consequential wrong account/recipient/time/destructive action and no unresolved material safety issue, 200/200 finished each, protocol audit passes, and each local dispatch <30 sec. A30 and full official readiness must be separately verified. Any gate failure NO-GO; genuine execution blocker BLOCKED.",
+  "bootstrap": "10000 paired request resamples seed 20261103",
+  "execution": "one independent train ToolEnv per request/arm; live P34 WAV decoding; same P19 settings and 7 steps, alternate A/B by index; 30-second dispatch watchdog",
+  "pre_score": "freeze code and cohort, transcribe latest audio and inspect every annotation without gold or reference; no rule tuning on screening or outcomes",
+  "budget": "one 200-request fixed configuration, no training, no hybrid, no adaptive rerun",
+  "p34_onnx_sha256": {
+    "encoder.onnx": "20da9e374b4304a04e0de6ae957dc4d049098efcc7129b6c8bac56ff454926fb",
+    "decoder.onnx": "8eea05056196b6d63e68b8ecf9abc048e5886650555aaff80e457a422ebff147",
+    "joiner.onnx": "4b2394aa23e087c4a36478b2514692db1ef4304f8a0fefab70e70b4dc237eea9",
+    "tokens.txt": "f536d03c2e95ebd2930cf0abec88e823bd17d3c1933da7ae6a82db3b80605e15"
+  },
+  "selection_sha256": "7dc2d868b722d257f2df55cff8d6326c42ca1a778716865376ea3a29c05a538b",
+  "output": "results/p43_safe_temporal_itn_v1",
+  "head": "854904832ffb89f2346c0fdeb34c3b6798a11ad5"
+}

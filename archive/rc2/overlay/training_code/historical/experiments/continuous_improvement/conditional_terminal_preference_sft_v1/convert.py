@@ -1,0 +1,7 @@
+"""Convert one trained adapter to F32 GGUF without a full-model merge."""
+import hashlib,json,os,subprocess,sys,time
+from pathlib import Path
+R=Path(__file__).resolve().parents[3];D=Path(__file__).resolve().parent;arm=sys.argv[1];assert arm in ("K","S");out=D/arm;adapter=out/"adapter/p23";result=json.loads((out/"result.json").read_text());sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();assert sha(adapter/"adapter_model.safetensors")==result["adapter_sha256"]
+converter=R.parent/"third_party/llama.cpp-p9-8ca4060b/convert_lora_to_gguf.py";dest=out/"adapter_f32.gguf";assert not dest.exists();env=os.environ.copy();env.update({"HF_HUB_OFFLINE":"1","TRANSFORMERS_OFFLINE":"1","PYTHONPATH":str(R.parent/"third_party/llama.cpp-p9-8ca4060b/gguf-py")+":"+str(R)+":"+str(R/"results/e4_model_preflight_v1/converter_deps")});cmd=[sys.executable,str(converter),str(adapter),"--base",str(R.parent/"models/qwen35-4b-p9-merged-v1"),"--outfile",str(dest),"--outtype","f32"];start=time.monotonic()
+with (out/"conversion.log").open("x") as log:subprocess.run(cmd,check=True,env=env,stdout=log,stderr=subprocess.STDOUT)
+(out/"conversion_metadata.json").write_text(json.dumps({"arm":arm,"source_sha256":result["adapter_sha256"],"converted_sha256":sha(dest),"command":cmd,"seconds":time.monotonic()-start,"note":"Overlay applies FP32-trained adapter to P19 Q8; quantization difference is a material experimental limitation."},indent=2)+"\n");print(arm,"converted",flush=True)

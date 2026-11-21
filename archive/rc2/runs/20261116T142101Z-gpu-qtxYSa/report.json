@@ -1,0 +1,15 @@
+{
+  "selected_stage_pass": true,
+  "stage": "gpu",
+  "sdk_checks_pass": true,
+  "behavioral_parity_pass": null,
+  "overall_release_compliance": "UNRESOLVED",
+  "remaining_blockers": [
+    "Training restoration and immutable authorized inputs incomplete",
+    "Redistribution authorization unresolved",
+    "Actual A30 runtime unverified"
+  ],
+  "sdk_module_executions": 0,
+  "permitted_environment_opens": 0,
+  "operational_checks_pass": true
+}

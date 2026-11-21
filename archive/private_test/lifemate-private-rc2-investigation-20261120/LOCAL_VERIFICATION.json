@@ -1,0 +1,34 @@
+{
+  "scope": "Read-only source/evidence investigation; no runner or image changes",
+  "host_run": "/home/duongthuong/lifemate-private-rc2-results/20261120T133830Z-full-0q1t9859",
+  "host_evidence_visible_in_development_container": false,
+  "pinned_rc2_context_verification": "PASS",
+  "read_only_audit_cpu_tests": 6,
+  "recorded_first_prompt_reconstruction_exact_matches": 10,
+  "recorded_token_count_exact_matches": 44,
+  "input_requests_screened": 625,
+  "source_configured_context": 8192,
+  "host_reported_rejected_prompt_tokens": 8209,
+  "next_id_by_verified_official_order": "private_0327",
+  "candidate_index": 323,
+  "candidate_static_screen": {
+    "index": 323,
+    "id": "private_0327",
+    "static_base_prompt_tokens": 7444,
+    "base_without_history_tokens": 3983,
+    "history_turns": 22,
+    "history_user_audio_clips": 11,
+    "history_tool_results": 15,
+    "available_tool_schemas": 49
+  },
+  "exact_failed_receipt_and_prefix_audit": "AWAITING HOST OUTPUT",
+  "docker_commands_executed": 0,
+  "gpu_inference_started": false,
+  "toolenv_instances_created": 0,
+  "files": {
+    "reconstruct_prompt.py": "c0de8542167ecd932519e88f699c8c85956481219757bb5e4a8c0fc6ebe2bb29",
+    "inspect_failure.py": "159a8f640542e45f5aa99422633986627f631a51f28590b8357cddef6325088e",
+    "test_inspect_failure.py": "1ab57ce1ba5caf75e00dd707778e5e80314ec7f3aab3baa456e01abe82cb522c",
+    "screen_inputs.py": "39f495cb28ee3890603f69a6813aee19762a265c353e009f039068c315e561c2"
+  }
+}

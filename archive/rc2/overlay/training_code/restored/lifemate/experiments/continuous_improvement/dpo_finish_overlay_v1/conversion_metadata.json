@@ -1,0 +1,17 @@
+{
+  "source_sha256": "c035955915cccefe8af352ebf99d02d060715a173341d0cc20207eb4eab6a997",
+  "adapter_sha256": "a6ea37f0299997125bb3522048d8f0e5b4d6e50b65546e77b8dcba8588f7a0bb",
+  "command": [
+    "/workspace/GPU_benchmark/lifemate/../.venvs/lifemate-p9/bin/python",
+    "/workspace/GPU_benchmark/third_party/llama.cpp-p9-8ca4060b/convert_lora_to_gguf.py",
+    "/workspace/GPU_benchmark/lifemate/results/p20c_grounding_preferences_v1/dpo/adapter/p20c",
+    "--base",
+    "/workspace/GPU_benchmark/models/qwen35-4b-p9-merged-v1",
+    "--outfile",
+    "/workspace/GPU_benchmark/lifemate/experiments/continuous_improvement/dpo_finish_overlay_v1/adapter_f32.gguf",
+    "--outtype",
+    "f32"
+  ],
+  "seconds": 1.9444717150181532,
+  "limitations": "P19 Q4 overlay is not numerically identical to DPO merged Q4; behavioral comparisons require actual measurements."
+}

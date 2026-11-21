@@ -1,0 +1,15 @@
+{
+  "objective": "Inventory all organizer train audio/text pairs and prepare non-lossy, leakage-aware inspection manifests; no training or decision-model inference",
+  "input": "train/train.jsonl and train/audio only; no environment files",
+  "normalization": "Unicode NFC then collapse Unicode whitespace to ASCII spaces and trim; preserve case, punctuation, digits, identifiers and wording; preserve original separately",
+  "tokenizer": "pinned Gipformer bpe.model; require no unknown and exact decoded normalized text for training readiness; uppercase diagnostic only, no rewrites",
+  "groups": "union request conversation, existing P9 lexical families, exact normalized casefold transcript, exact decoded PCM; protect all P9 validation and excluded components; assign remaining groups to dev by SHA256 seed 20261103, 10% threshold",
+  "duplicates": "exact same decoded PCM and normalized text: keep first deterministic occurrence for split and flag duplicates; conflicting text on same PCM: exclude all; group before split",
+  "review": "P32 ten flagged audio clips and all train_0999 clips; duration/transcript rate and clipping flags are heuristics, not truth; preserve existing attested reviews separately",
+  "speaker": "group by speaker only when explicit trustworthy speaker ID exists; no inference from user profile or voice",
+  "fixed_seed": 20261103,
+  "output": "results/p34_asr_data_v1",
+  "acceptance": "GO only if usable label-preserving training targets have no tokenizer unknowns or changed roundtrips and alignment/quality and split constraints are established; otherwise NO-GO",
+  "no_training": true,
+  "no_gold_calls": true
+}

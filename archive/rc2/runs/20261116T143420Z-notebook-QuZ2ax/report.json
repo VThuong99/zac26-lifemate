@@ -1,0 +1,37 @@
+{
+  "selected_stage_pass": true,
+  "stage": "notebook",
+  "sdk_checks_pass": true,
+  "behavioral_parity_pass": true,
+  "overall_release_compliance": "UNRESOLVED",
+  "remaining_blockers": [
+    "Training restoration and immutable authorized inputs incomplete",
+    "Redistribution authorization unresolved",
+    "Actual A30 runtime unverified"
+  ],
+  "comparison": {
+    "expected": 10,
+    "records": 10,
+    "exact_cases": 10,
+    "parity_pass": true,
+    "issues": [],
+    "first_divergence": null,
+    "all_action_divergences": [],
+    "failed_receipts": [],
+    "status_counts": {
+      "finished": 10
+    },
+    "timing": {
+      "pass": true,
+      "issues": [],
+      "measured_records": 10,
+      "max_ms": 2574,
+      "mean_ms": 1746.8,
+      "limit_ms_exclusive": 30000,
+      "equality_to_reference_required": false
+    }
+  },
+  "sdk_module_executions": 44,
+  "permitted_environment_opens": 10,
+  "operational_checks_pass": true
+}
