@@ -4,7 +4,8 @@ The user explicitly selected the existing **public** repository
 `https://github.com/VThuong99/zac26-lifemate`. It is configured as `origin`.
 GitHub CLI authenticated as `VThuong99` and verified public visibility and
 admin/push permission. `git ls-remote --symref origin` returned no refs.
-No repository was created, visibility changed or content uploaded.
+At that initial check, no content had been uploaded. No repository was created
+and visibility was not changed.
 
 ## Audited scope
 
@@ -70,21 +71,30 @@ must not be represented as proof of a fully self-contained public checkout.
 Only the publication branch may be considered for upload, never `--all`,
 `--mirror`, or tags/branches that make the research history reachable.
 
-## Remaining authorization
+## Authorization and reviewed snapshot
 
-The latest user instruction establishes the public destination and conditional
-permission to push safe, authorized material. The release's recorded
-team/company source ownership and public-transfer permission remain unconfirmed.
-An automated scan cannot establish that authority. Confirmation is needed for
-the concrete source-only publication snapshot; organizer data and contaminated
-history remain excluded even if team-source permission is confirmed.
+On November 21, 2026, the user explicitly confirmed authority to publicly release
+the team/company source snapshot at
+`0cb8a6b8a732045c53a583bcadd07839a82c49da` to the selected public repository.
+That confirmation resolves the source-release authority question in the
+historical release records. Organizer data and contaminated history remain
+excluded. The follow-up commit changes only documentation and manifest purpose
+metadata to record this authorization.
+
+The reviewed snapshot contains 379 files, including 363 exact source/evidence
+copies. Every committed blob matched its reviewed file inventory. Checks passed
+for secret patterns, complete training transcripts of at least eight words,
+263 Python files, 11 shell files, 60 JSON files and 37 documentation links.
+There were no binary files or files over 1 MiB. Bounded scans do not establish
+ownership or guarantee detection of every possible secret or short excerpt;
+source-release authority rests on the user's explicit confirmation.
 
 Third-party Icefall/llama.cpp notices and pinned provenance are retained. No model
 weights, proprietary binaries, datasets, audio or Docker archives are included.
 No blanket open-source license is invented for team code. The historical
 publication and training-restoration records remain evidence of their original
-dates, not current instructions or proof that permissions were subsequently
-granted.
+dates. The source-publication authorization above was supplied separately by
+the user after review of the concrete snapshot.
 
 Detailed, content-free audit records are saved locally under
 `../lifemate-public-audit-20261121/`: repository metadata, history inventory,

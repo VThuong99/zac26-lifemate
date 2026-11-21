@@ -1,7 +1,7 @@
 {
   "format": 1,
   "created_date": "2026-11-21",
-  "purpose": "Source-only public-release candidate; excludes organizer data and original research history; source ownership approval pending",
+  "purpose": "Source-only public archive; excludes organizer data and original research history; user confirmed team/company source-publication authority on 2026-11-21 for reviewed snapshot 0cb8a6b8a732045c53a583bcadd07839a82c49da",
   "workspace_layout": "Original paths are relative to the workspace containing lifemate/ and its sibling release directories.",
   "files": {
     "archive/rc2/overlay/Dockerfile": {

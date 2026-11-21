@@ -3,7 +3,10 @@
 Prepared November 21, 2026 for `https://github.com/VThuong99/zac26-lifemate`.
 The user explicitly selected this existing public repository. Its visibility is
 unchanged. GitHub CLI authenticated as `VThuong99` and confirmed write access.
-No upload has occurred; team/company source-release authority remains pending.
+On November 21, 2026, the user confirmed authority to publicly release the reviewed
+team/company source snapshot at `0cb8a6b8a732045c53a583bcadd07839a82c49da`.
+The follow-up publication commit records that authorization in documentation and
+manifest metadata; the reviewed source files remain unchanged.
 
 ## Publication contents
 
@@ -26,8 +29,8 @@ No frozen RC2 file, original checkpoint, result or existing user change was alte
 `public-archive-20261121` is a separate local publication branch with a root commit
 that has no research-history parent. Creating it does not rewrite `main` or the
 P27 branch and does not create another GitHub repository. The target repository
-had no refs at inspection. Only this reviewed branch may be pushed to its `main`
-once source-release authority is confirmed; never push `--all`, `--mirror` or
+had no refs at inspection. This reviewed branch is authorized for publication to
+its `main`; never push `--all`, `--mirror` or
 research tags/branches. The full local history contains restricted organizer
 content and must not be uploaded.
 
@@ -55,7 +58,8 @@ Actual A30 runtime and final host continuation receipts remain unverified.
 
 The complete local history failed the public data audit; details are in
 [PUBLIC_RELEASE_AUDIT.md](PUBLIC_RELEASE_AUDIT.md). The publication snapshot excludes
-those confirmed data-bearing files and every research-history ancestor. A final
-secret/content/size/manifest/reference audit is required on its exact commit.
-The remaining approval concerns authority to publish team/company source, not
-permission to release organizer data. No blanket team-code license is invented.
+those confirmed data-bearing files and every research-history ancestor. Its
+379-file tree passed the secret/content/size/manifest/reference audit, including
+verification that all 363 copied source/evidence files match their originals.
+The user's confirmation clears team/company source-release authority for this
+snapshot. Organizer data remains excluded. No blanket team-code license is invented.

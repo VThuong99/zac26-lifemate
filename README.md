@@ -132,11 +132,12 @@ This checks copied bytes only; it runs no model, training or ToolEnv. Additional
 lightweight validation and remaining handover requirements are recorded in
 [ARCHIVAL_HANDOVER.md](docs/ARCHIVAL_HANDOVER.md).
 
-The intended destination is the existing public repository
+The publication destination is the existing public repository
 `https://github.com/VThuong99/zac26-lifemate`. This source-only publication branch
 contains no original research-history ancestors. The
 [public-release audit](docs/PUBLIC_RELEASE_AUDIT.md) records the restricted
-content excluded from the complete local archive. Team/company source-release
-authority must be confirmed before upload; no blanket open-source license is
+content excluded from this snapshot. On November 21, 2026, the user confirmed
+authority to publicly release the reviewed team/company source snapshot at
+`0cb8a6b8a732045c53a583bcadd07839a82c49da`. No blanket open-source license is
 granted here. Never add organizer datasets, audio, weights, Docker archives,
 credentials or assets with unresolved redistribution rights.
